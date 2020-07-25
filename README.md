@@ -1,3 +1,13 @@
-# xcraft.ch
+# Sources of [xcraft.ch](http://xcraft.ch)
 
-Website
+Start the local hugo server.
+
+```sh
+./run
+```
+
+Populate the `public/` output directory.
+
+```sh
+./build
+```

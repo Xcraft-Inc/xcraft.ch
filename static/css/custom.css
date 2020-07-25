@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  src: url(fonts/Ubuntu-R.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Bold';
+  font-style: normal;
+  src: url(fonts/Ubuntu-B.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  src: url(fonts/Ubuntu-L.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Light';
+  font-style: italic;
+  src: url(fonts/Ubuntu-LI.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Thin';
+  font-style: normal;
+  src: url(fonts/Ubuntu-Th.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  src: url(fonts/UbuntuMono-R.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  src: url(fonts/UbuntuMono-RI.ttf) format('truetype');
+}
+
+:root {
+  --MAIN-TEXT-color: #e6e6e6;
+  --MAIN-LINK-color: #599a3e;
+  --MAIN-LINK-HOVER-color: #74b559;
+  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #ddd;
+}
+
+html {
+  --scrollbarBG: black;
+  --thumbBG: var(--MAIN-LINK-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+body {
+  font-size: 90% !important;
+  font-family: 'Ubuntu';
+  background-color: black;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Ubuntu Thin';
+  color: #aaa !important;
+}
+
+code {
+  font-family: 'Ubuntu Mono';
+  background-color: #333;
+  border: 0;
+  color: var(--MAIN-TEXT-color);
+  padding: 2px;
+  font-size: 100%;
+}
+
+blockquote code,
+blockquote p {
+  color: #aaa;
+}
+
+blockquote {
+  color: #aaa;
+  font-family: 'Ubuntu Light';
+  font-style: italic;
+  border-left: 2px solid var(--MAIN-LINK-color);
+}
+
+img {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #ccc;
+  border: solid 1px #666;
+}
+
+hr {
+  border-bottom: 2px solid var(--MAIN-LINK-color);
+}
+
+#chapter h1 {
+  border-bottom: 2px solid #aaa;
+}
+
+.links {
+  font-family: 'Ubuntu Light';
+  font-variant: small-caps;
+  font-size: 120%;
+}
+
+.mermaid {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #ccc;
+  border: solid 1px #666;
+}
+
+#header img {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+  width: 40%;
+  filter: drop-shadow(0px 0px 50px white);
+}
+
+#header a,
+#header a:hover {
+  font-family: 'Ubuntu Bold';
+  color: #3b6628;
+  font-size: 2.2rem;
+  text-align: right;
+}
+
+#body .nav:hover {
+  background-color: #26411a;
+}
+
+#top-bar {
+  background-color: #222;
+}

@@ -64,7 +64,7 @@ To make an upload (from a client to a server) we provide the stream in the
 Xcraft command message via the key `xcraftUpload`.
 
 ```js
-yield quest.cmd(cmd, { xcraftUpload: myStream });
+quest.cmd(cmd, {xcraftUpload: myStream});
 ```
 
 In order to download (a send from the server to the client), the server must

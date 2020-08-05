@@ -126,7 +126,7 @@ blockquote p {
 
 blockquote {
   color: #aaa;
-  font-family: 'Ubuntu Light';
+  font-family: 'Ubuntu';
   font-style: italic;
   border-left: 2px solid var(--MAIN-LINK-color);
 }

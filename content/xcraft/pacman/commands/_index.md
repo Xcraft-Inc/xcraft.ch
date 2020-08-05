@@ -30,9 +30,9 @@ available repositories depends of the current [`devroot/`][1] settings.
 
 ## pacman.reinstall
 
-Unlike the install command, here it's possible to reinstall an already
-installed package. Excepted for this case, the behaviors are the same that
-the install command.
+Unlike the install command, here it's possible to reinstall an already installed
+package. Excepted for this case, the behaviors are the same that the install
+command.
 
 ## pacman.status
 
@@ -40,10 +40,10 @@ It's possible to check if a package is already installed with this command.
 
 ## pacman.build
 
-When a package is a _source_ package, then it's possible to use this
-command in order to generate a binary package. Then all build steps are
-handled here. The new package is published in the repository. Then it's
-possible to install this new package in `devroot/`.
+When a package is a _source_ package, then it's possible to use this command in
+order to generate a binary package. Then all build steps are handled here. The
+new package is published in the repository. Then it's possible to install this
+new package in `devroot/`.
 
 Many steps are necessary in order to build a binary package.
 

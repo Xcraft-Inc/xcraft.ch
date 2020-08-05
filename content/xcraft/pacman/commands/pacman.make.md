@@ -25,8 +25,8 @@ pacman.make package1,@deps,package2    # To make package1, its dependencies and
 ```
 
 In some cases (like for Continuous Integration), you can overload some
-properties for a specific package or all packages. The overload is done on
-the properties available in the definition files.
+properties for a specific package or all packages. The overload is done on the
+properties available in the definition files.
 
 ```sh
 pacman.make package1 \                # Overload the version of package1.
@@ -53,22 +53,22 @@ pacman.make srcpackage,@deps \
 ```
 
 It makes the srcpackage and its dependencies. The package will be created with
-the version 1.0.0, and because this package is related to a git repository,
-the tag `v1.0.0` will be used.
+the version 1.0.0, and because this package is related to a git repository, the
+tag `v1.0.0` will be used.
 
 > In this case, the reference can be a commit, a branch or a tag.
 
 ### Timestamps
 
-A package is not re-maked if the files in its `packages/` have not changed.
-A timestamp is saved in the `var/xcraft-contrib-pacman/` directory with the
+A package is not re-maked if the files in its `packages/` have not changed. A
+timestamp is saved in the `var/xcraft-contrib-pacman/` directory with the
 current timestamp. Before a `make`, this timestamp is compared against all
 timestamps (mtime) of the files available in `packages/`.
 
 > Note that if a `data.get.uri` target has changed, this mechanism will not
-> detect anything. File, repository, etc,... is only downloaded or copied
-> by the [xcraft-contrib-peon][4] (_make_ or _install_ time, it depends if the
-> package embeds the data or not).
+> detect anything. File, repository, etc,... is only downloaded or copied by the
+> [xcraft-contrib-peon][4] (_make_ or _install_ time, it depends if the package
+> embeds the data or not).
 
 Here an example where it can be a problem:
 

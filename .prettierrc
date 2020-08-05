@@ -3,3 +3,4 @@ quoteProps: 'consistent'
 singleQuote: true
 trailingComma: 'es5'
 endOfLine: 'auto'
+proseWrap: 'always'

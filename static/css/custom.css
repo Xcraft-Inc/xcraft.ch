@@ -1,43 +1,43 @@
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-style: normal;
-  src: url(fonts/Ubuntu-R.ttf) format('truetype');
+  src: url(fonts/Ubuntu-R.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Ubuntu Bold';
+  font-family: "Ubuntu Bold";
   font-style: normal;
-  src: url(fonts/Ubuntu-B.ttf) format('truetype');
+  src: url(fonts/Ubuntu-B.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Ubuntu Light';
+  font-family: "Ubuntu Light";
   font-style: normal;
-  src: url(fonts/Ubuntu-L.ttf) format('truetype');
+  src: url(fonts/Ubuntu-L.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Ubuntu Light';
+  font-family: "Ubuntu Light";
   font-style: italic;
-  src: url(fonts/Ubuntu-LI.ttf) format('truetype');
+  src: url(fonts/Ubuntu-LI.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Ubuntu Thin';
+  font-family: "Ubuntu Thin";
   font-style: normal;
-  src: url(fonts/Ubuntu-Th.ttf) format('truetype');
+  src: url(fonts/Ubuntu-Th.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Ubuntu Mono';
+  font-family: "Ubuntu Mono";
   font-style: normal;
-  src: url(fonts/UbuntuMono-R.ttf) format('truetype');
+  src: url(fonts/UbuntuMono-R.ttf) format("truetype");
 }
 
 @font-face {
-  font-family: 'Ubuntu Mono';
+  font-family: "Ubuntu Mono";
   font-style: italic;
-  src: url(fonts/UbuntuMono-RI.ttf) format('truetype');
+  src: url(fonts/UbuntuMono-RI.ttf) format("truetype");
 }
 
 :root {
@@ -67,7 +67,7 @@ html {
 
 body {
   font-size: 90% !important;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   background-color: black;
 }
 
@@ -101,12 +101,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Ubuntu Thin';
+  font-family: "Ubuntu Thin";
   color: #aaa !important;
 }
 
 code {
-  font-family: 'Ubuntu Mono';
+  font-family: "Ubuntu Mono";
   background-color: #333;
   border: 0;
   color: var(--MAIN-TEXT-color);
@@ -121,7 +121,7 @@ blockquote p {
 
 blockquote {
   color: #aaa;
-  font-family: 'Ubuntu Light';
+  font-family: "Ubuntu Light";
   font-style: italic;
   border-left: 2px solid var(--MAIN-LINK-color);
 }
@@ -142,8 +142,13 @@ hr {
   border-bottom: 2px solid #aaa;
 }
 
+#body-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .links {
-  font-family: 'Ubuntu Light';
+  font-family: "Ubuntu Light";
   font-variant: small-caps;
   font-size: 120%;
 }
@@ -168,7 +173,7 @@ hr {
 
 #header a,
 #header a:hover {
-  font-family: 'Ubuntu Bold';
+  font-family: "Ubuntu Bold";
   color: #3b6628;
   font-size: 2.2rem;
   text-align: right;

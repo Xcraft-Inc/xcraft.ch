@@ -143,6 +143,10 @@ hr {
   border-bottom: 2px solid var(--MAIN-LINK-color);
 }
 
+#sidebar ul li a:hover {
+  text-shadow: 0px 0px 5px #ccc;
+}
+
 #chapter h1 {
   border-bottom: 2px solid #aaa;
 }

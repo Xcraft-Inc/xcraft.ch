@@ -105,6 +105,10 @@ h6 {
   color: #aaa !important;
 }
 
+li::marker {
+  margin-right: 5px;
+}
+
 code {
   font-family: 'Ubuntu Mono';
   background-color: #333;

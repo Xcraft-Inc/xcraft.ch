@@ -131,14 +131,6 @@ blockquote {
   border-left: 2px solid var(--MAIN-LINK-color);
 }
 
-img {
-  background-color: #ccc;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 8px #ccc;
-  border: solid 1px #666;
-}
-
 hr {
   border-bottom: 2px solid var(--MAIN-LINK-color);
 }

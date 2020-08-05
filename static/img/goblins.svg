@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -9,87 +7,65 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
-   version="1.1"
    id="svg8"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="goblin.svg">
+   version="1.1"
+   viewBox="0 0 105.83332 95.061012"
+   height="95.061012mm"
+   width="105.83332mm">
   <defs
      id="defs2">
     <linearGradient
-       inkscape:collect="always"
        id="linearGradient2693">
       <stop
-         style="stop-color:#000000;stop-opacity:1;"
+         id="stop2689"
          offset="0"
-         id="stop2689" />
+         style="stop-color:#000000;stop-opacity:1;" />
       <stop
-         style="stop-color:#000000;stop-opacity:0;"
+         id="stop2691"
          offset="1"
-         id="stop2691" />
+         style="stop-color:#000000;stop-opacity:0;" />
     </linearGradient>
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="18.919644 : 563.04556 : 1"
-       inkscape:vp_y="0 : 3779.5275 : 0"
-       inkscape:vp_z="812.62048 : 563.04556 : 1"
-       inkscape:persp3d-origin="415.77005 : 375.95896 : 1"
-       id="perspective2325" />
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="30.291666 : 596.80745 : 1"
-       inkscape:vp_y="0 : 3779.5275 : 0"
-       inkscape:vp_z="823.99249 : 596.80745 : 1"
-       inkscape:persp3d-origin="427.14207 : 409.72085 : 1"
-       id="perspective2309" />
     <linearGradient
-       id="linearGradient833"
-       osb:paint="solid">
+       osb:paint="solid"
+       id="linearGradient833">
       <stop
-         style="stop-color:#44aa00;stop-opacity:1;"
+         id="stop831"
          offset="0"
-         id="stop831" />
+         style="stop-color:#44aa00;stop-opacity:1;" />
     </linearGradient>
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="-46.49107 : 144.34227 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="163.50894 : 144.34227 : 1"
-       inkscape:persp3d-origin="58.50893 : 94.842267 : 1"
-       id="perspective815" />
     <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2693"
-       id="linearGradient2695"
-       x1="31.428572"
-       y1="321.09113"
-       x2="308.57144"
+       gradientUnits="userSpaceOnUse"
        y2="381.09113"
-       gradientUnits="userSpaceOnUse" />
+       x2="308.57144"
+       y1="321.09113"
+       x1="31.428572"
+       id="linearGradient2695"
+       xlink:href="#linearGradient2693" />
+    <linearGradient
+       y2="381.09113"
+       x2="308.57144"
+       y1="321.09113"
+       x1="31.428572"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient847"
+       xlink:href="#linearGradient2693" />
+    <linearGradient
+       y2="381.09113"
+       x2="308.57144"
+       y1="321.09113"
+       x1="31.428572"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient849"
+       xlink:href="#linearGradient2693" />
+    <linearGradient
+       y2="381.09113"
+       x2="308.57144"
+       y1="321.09113"
+       x1="31.428572"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient851"
+       xlink:href="#linearGradient2693" />
   </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="1051.0977"
-     inkscape:cy="527.51728"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     showguides="false"
-     inkscape:window-width="3773"
-     inkscape:window-height="1025"
-     inkscape:window-x="67"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -103,89 +79,86 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="Calque 1"
-     inkscape:groupmode="layer"
+     transform="translate(-56.318451,-104.23214)"
      id="layer1">
+    <rect
+       y="104.23214"
+       x="56.318451"
+       height="95.061012"
+       width="105.83332"
+       id="rect845"
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.35079092;stroke-miterlimit:4;stroke-dasharray:none" />
     <path
-       style="fill:#112b00;fill-opacity:1;stroke:#7fae00;stroke-width:0.01352765;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       inkscape:transform-center-x="-0.21352032"
-       inkscape:transform-center-y="-0.31810221"
-       d="m 61.138726,137.36016 c 38.868984,7.09932 -5.926656,-7.34017 62.486204,4.76256 68.41286,12.10273 -10.96722,-21.97116 -14.98188,-14.15443 -7.54895,14.69813 20.09411,24.74559 3.24083,5.69416 -51.110552,-57.776813 -0.51703,12.83878 -7.15318,21.61961 -15.311535,20.26004 -13.605815,22.06844 -8.639405,38.6519 0,0 20.198185,-75.40971 27.732175,-40.46413 0.81154,3.76421 28.83107,-36.79001 0.23879,-35.90561 -28.592275,0.8844 -66.042885,19.2262 -62.923548,19.79594 z"
        id="path2337"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cssssssssc" />
+       d="m 61.138726,137.36016 c 38.868984,7.09932 -5.926656,-7.34017 62.486204,4.76256 68.41286,12.10273 -10.96722,-21.97116 -14.98188,-14.15443 -7.54895,14.69813 20.09411,24.74559 3.24083,5.69416 -51.110552,-57.776813 -0.51703,12.83878 -7.15318,21.61961 -15.311535,20.26004 -13.605815,22.06844 -8.639405,38.6519 0,0 20.198185,-75.40971 27.732175,-40.46413 0.81154,3.76421 28.83107,-36.79001 0.23879,-35.90561 -28.592275,0.8844 -66.042885,19.2262 -62.923548,19.79594 z"
+       style="fill:#112b00;fill-opacity:1;stroke:#7fae00;stroke-width:0.01352765;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <path
-       sodipodi:nodetypes="cssssssssc"
-       inkscape:connector-curvature="0"
-       id="path2361"
+       style="fill:#71c837;fill-opacity:1;stroke:#7fae00;stroke-width:0.01352765;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 64.918502,136.41522 c 38.868978,7.09932 -5.926656,-7.34017 62.486188,4.76256 68.41286,12.10273 -10.96722,-21.97116 -14.98188,-14.15443 -7.54894,14.69813 20.09411,24.74559 3.24083,5.69416 -51.110536,-57.776812 -0.51703,12.83878 -7.15318,21.61961 -15.311515,20.26004 -13.605795,22.06844 -8.639385,38.6519 0,0 20.198165,-75.40971 27.732155,-40.46413 0.81155,3.76421 28.83107,-36.79001 0.23879,-35.90561 -28.592255,0.8844 -66.042869,19.2262 -62.923532,19.79594 z"
-       inkscape:transform-center-y="-0.31810221"
-       inkscape:transform-center-x="-0.21352032"
-       style="fill:#71c837;fill-opacity:1;stroke:#7fae00;stroke-width:0.01352765;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       id="path2361" />
     <flowRoot
-       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Streamster;-inkscape-font-specification:Streamster;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot2637"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Streamster;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Streamster;font-stretch:normal;font-variant:normal"><flowRegion
+       xml:space="preserve"><flowRegion
          id="flowRegion2639"><rect
-           id="rect2641"
-           width="209.28572"
-           height="50.714287"
+           y="381.09113"
            x="400.71429"
-           y="381.09113" /></flowRegion><flowPara
-         id="flowPara2643"></flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.21096802px;line-height:1.25;font-family:Streamster;-inkscape-font-specification:Streamster;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.4802742"
-       x="103.44329"
-       y="178.17342"
+           height="50.714287"
+           width="209.28572"
+           id="rect2641" /></flowRegion><flowPara
+         id="flowPara2643" /></flowRoot>    <text
+       transform="scale(1.0047093,0.9953128)"
        id="text2647"
-       transform="scale(1.0047093,0.9953128)"><tspan
-         sodipodi:role="line"
-         id="tspan2645"
-         x="103.44329"
+       y="178.17342"
+       x="103.44329"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.21096802px;line-height:1.25;font-family:Streamster;-inkscape-font-specification:Streamster;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.4802742"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.4802742"
          y="178.17342"
-         style="stroke-width:0.4802742">Goblins</tspan></text>
+         x="103.44329"
+         id="tspan2645">Goblins</tspan></text>
     <flowRoot
-       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Streamster;-inkscape-font-specification:Streamster;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot2649"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Streamster;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Streamster;font-stretch:normal;font-variant:normal"><flowRegion
+       xml:space="preserve"><flowRegion
          id="flowRegion2651"><rect
-           id="rect2653"
-           width="176.42857"
-           height="92.14286"
+           y="342.51968"
            x="87.14286"
-           y="342.51968" /></flowRegion><flowPara
-         id="flowPara2655"></flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
+           height="92.14286"
+           width="176.42857"
+           id="rect2653" /></flowRegion><flowPara
+         id="flowPara2655" /></flowRoot>    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Streamster;-inkscape-font-specification:Streamster;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot2665"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Streamster;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Streamster;font-stretch:normal;font-variant:normal"><flowRegion
+       xml:space="preserve"><flowRegion
          id="flowRegion2667"><rect
-           id="rect2669"
-           width="284.28571"
-           height="77.14286"
+           y="337.51968"
            x="50"
-           y="337.51968" /></flowRegion><flowPara
-         id="flowPara2671"></flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
+           height="77.14286"
+           width="284.28571"
+           id="rect2669" /></flowRegion><flowPara
+         id="flowPara2671" /></flowRoot>    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:'Rocket Rinder';-inkscape-font-specification:'Rocket Rinder';letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient2695);fill-opacity:1;stroke:none"
        id="flowRoot2681"
-       style="fill:url(#linearGradient2695);fill-opacity:1;stroke:none;font-family:'Rocket Rinder';font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Rocket Rinder';font-stretch:normal;font-variant:normal"><flowRegion
-         id="flowRegion2683"
-         style="-inkscape-font-specification:'Rocket Rinder';font-family:'Rocket Rinder';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill-opacity:1;fill:url(#linearGradient2695)"><rect
-           id="rect2685"
-           width="394.28571"
-           height="57.857143"
-           x="77.14286"
+       xml:space="preserve"><flowRegion
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Rocket Rinder';-inkscape-font-specification:'Rocket Rinder';fill:url(#linearGradient849);fill-opacity:1"
+         id="flowRegion2683"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Rocket Rinder';-inkscape-font-specification:'Rocket Rinder';fill:url(#linearGradient847);fill-opacity:1"
            y="338.23398"
-           style="-inkscape-font-specification:'Rocket Rinder';font-family:'Rocket Rinder';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;fill-opacity:1;fill:url(#linearGradient2695)" /></flowRegion><flowPara
-         id="flowPara2687"
-         style="fill-opacity:1;fill:url(#linearGradient2695)"></flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
+           x="77.14286"
+           height="57.857143"
+           width="394.28571"
+           id="rect2685" /></flowRegion><flowPara
+         style="fill:url(#linearGradient851);fill-opacity:1"
+         id="flowPara2687" /></flowRoot>    <flowRoot
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Streamster;-inkscape-font-specification:Streamster;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot2697"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:Streamster;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Streamster;font-stretch:normal;font-variant:normal"><flowRegion
+       xml:space="preserve"><flowRegion
          id="flowRegion2699"><rect
-           id="rect2701"
-           width="425"
-           height="52.857143"
+           y="331.80539"
            x="49.285713"
-           y="331.80539" /></flowRegion><flowPara
-         id="flowPara2703"></flowPara></flowRoot>  </g>
+           height="52.857143"
+           width="425"
+           id="rect2701" /></flowRegion><flowPara
+         id="flowPara2703" /></flowRoot>  </g>
 </svg>

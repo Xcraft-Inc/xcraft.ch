@@ -1,9 +1,9 @@
 ---
-title: "Goblins"
+title: 'Goblins'
 date: 2020-07-24
 weight: 25
 chapter: true
-pre: "<b>2. </b>"
+pre: '<b>2. </b>'
 ---
 
 ### Chapter 2

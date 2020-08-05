@@ -1,5 +1,5 @@
 ---
-title: "Transport"
+title: 'Transport'
 date: 2020-08-05
 weight: 10
 draft: true
@@ -35,7 +35,7 @@ data = {key1: ImmutableJS, key2: Shredder}; /* One JS objet which contains Immut
 
 ```js
 data = {
-  key1: { subkey1: ImmutableJS, subkey2: Shredder },
+  key1: {subkey1: ImmutableJS, subkey2: Shredder},
 }; /* Deep Immutable.js / Shredder */
 ```
 
@@ -71,7 +71,7 @@ In order to download (a send from the server to the client), the server must
 provide an `xcraftStream` (this name will be changed to `xcraftDownload`).
 
 ```js
-quest.evt(topic, { xcraftStream: myStream });
+quest.evt(topic, {xcraftStream: myStream});
 ```
 
 When these keys are specified, a streamer will automatically be built in order

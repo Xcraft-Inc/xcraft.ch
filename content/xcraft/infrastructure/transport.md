@@ -43,7 +43,7 @@ Everything that are not JSON like functions for example. But it's not a
 fatality, the functions are just "lost" because not serialized during the
 transport.
 
-## What about the streams
+## Streams
 
 The previous section shows us that we can easily transport immutable like
 non-immutable data. But what about the streams that are not in these categories?
@@ -98,6 +98,10 @@ yield xcraftStream.streamer(appId, stream, null, next);
 > namespace).
 
 ![image](/img/transport.png)
+
+### Multi-streams
+
+TODO
 
 [1]: https://immutable-js.github.io/immutable-js/
 [2]: https://github.com/Xcraft-Inc/xcraft-core-shredder

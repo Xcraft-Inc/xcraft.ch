@@ -191,3 +191,9 @@ hr {
 #top-bar {
   background-color: #222;
 }
+
+.fab,
+.fas {
+  text-align: center;
+  width: 1.3em;
+}

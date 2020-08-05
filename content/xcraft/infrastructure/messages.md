@@ -77,8 +77,8 @@ The transport layer has a mechanism called the streamer. This one works with the
 Xcraft commands and events in order to send transparently the streams via chunks
 (the chunk size is around 4 KB (the default nodejs size)).
 
-According to the way how work an Xcraft network (topology), the streaming from a
-client (portal) to a server (thrall) or the reverse, must use the commands or
+According to the way how works an Xcraft network (topology), the streaming from
+a client (portal) to a server (thrall) or the reverse, must use the commands or
 the events. When creating the streamer, it's necessary to specify the mode,
 **download** or **upload**.
 

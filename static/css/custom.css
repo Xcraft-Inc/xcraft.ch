@@ -117,6 +117,7 @@ code {
 blockquote code,
 blockquote p {
   color: #aaa;
+  font-size: 1rem;
 }
 
 blockquote {

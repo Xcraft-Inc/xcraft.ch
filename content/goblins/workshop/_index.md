@@ -1,11 +1,13 @@
 ---
-title: 'workshop'
+title: "Workshop"
 date: 2020-07-04
 weight: 20
+chapter: true
+pre: "<b>2.1 </b>"
 ---
 
-# About 
-The goblin workshop is made for crafting and modeling business app's
+### Chapter 2.1
 
-- model entities
-- easy CRUD via workitem's
+# Workshop
+
+...

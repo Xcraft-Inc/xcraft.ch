@@ -21,22 +21,44 @@ of the following points:
 **Compliant:**
 
 ```js
-data = 1;                                   /* literal                                                */
-data = {};                                  /* JSON object                                            */
-data = ImmutableJS;                         /* Just one Immutable.js                                  */
-data = Shredder;                            /* Just one Shredder                                      */
-data = [ImmutableJS, ..., ImmutableJS];     /* Array of Immutable.js                                  */
-data = [Shredder, ..., Shredder];           /* Array of Shredder                                      */
-data = [ImmutableJS, ..., Shredder];        /* Mix of Immutable.js and Shredder                       */
-data = {key1: ImmutableJS, key2: Shredder}; /* One JS objet which contains Immutables.js and Shredder */
+/* literal */
+data = 1;
+
+/* JSON object */
+data = {};
+
+/* Just one Immutable.js */
+data = ImmutableJS;
+
+/* Just one Shredder */
+data = Shredder;
+
+/* Array of Immutable.js */
+data = [ImmutableJS, ImmutableJS];
+
+/* Array of Shredder */
+data = [Shredder, Shredder];
+
+/* Mix of Immutable.js and Shredder */
+data = [ImmutableJS, Shredder];
+
+/* One JS objet which contains Immutables.js and Shredder */
+data = {
+  key1: ImmutableJS,
+  key2: Shredder,
+};
 ```
 
 **Not compliant:**
 
 ```js
+/* Deep Immutable.js / Shredder */
 data = {
-  key1: {subkey1: ImmutableJS, subkey2: Shredder},
-}; /* Deep Immutable.js / Shredder */
+  key1: {
+    subkey1: ImmutableJS,
+    subkey2: Shredder,
+  },
+};
 ```
 
 Everything that are not JSON like functions for example. But it's not a

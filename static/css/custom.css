@@ -148,6 +148,11 @@ hr {
   margin: auto;
 }
 
+#chapter {
+  max-width: 1000px;
+  margin: auto;
+}
+
 .links {
   font-family: 'Ubuntu Light';
   font-variant: small-caps;

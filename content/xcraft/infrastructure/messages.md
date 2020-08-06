@@ -122,9 +122,8 @@ yield xcraftStream.streamer(appId, stream, null, next);
 receives the commands. The reason is that the transport layer exports the
 commands on the buses. Because the transport layer exists in all Xcraft servers,
 in order to have visible commands (no overload), the `appId` must be provided in
-the name (it's like a namespace). {{% /notice %}}
-
-![image](/img/transport.png)
+the name (it's like a namespace). ![image](/img/transport.png?classes=shadow)
+{{% /notice %}}
 
 ### Multi-streams
 

@@ -136,6 +136,14 @@ div.notices p {
   color: #666;
 }
 
+#body .notices img {
+  margin: 0.75rem auto;
+}
+
+#body img.shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.75);
+}
+
 blockquote code,
 blockquote p {
   color: #aaa;

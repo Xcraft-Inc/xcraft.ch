@@ -126,7 +126,7 @@ div.notices.warning p {
 }
 
 div.notices p {
-  border-radius: 2px;
+  border-radius: 4px;
   font-size: 100%;
   padding: 10px;
 }

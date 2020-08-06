@@ -15,11 +15,11 @@ The events are routed accordingly to the destinations and a lot of events are
 just used in broadcasting. These events are sent on all backends (**EE** and
 **Axon**).
 
-> It's important to understand that the **objects passed via EE are not cloned
-> and then, the functions are not stripped**. It's forbidden to mute an object
-> from a message and to depend of these mutations from the caller. Providing
-> functions as value in the Xcraft messages is forbidden. There is no cloning or
-> cleaning only for performance reasons.
+{{% notice warning %}} It's important to understand that the **objects passed
+via EE are not cloned and then, the functions are not stripped**. It's forbidden
+to mute an object from a message and to depend of these mutations from the
+caller. Providing functions as value in the Xcraft messages is forbidden. There
+is no cloning or cleaning only for performance reasons. {{% /notice %}}
 
 The use of the transport is done via the routers. These routers use the backends
 accordingly to the routing table and the topics.

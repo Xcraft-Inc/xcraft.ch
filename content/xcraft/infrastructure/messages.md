@@ -115,11 +115,11 @@ const stream = fs.createWriteStream(outputFile);
 yield xcraftStream.streamer(appId, stream, null, next);
 ```
 
-> The `appId` is necessary for that the right sub-server receives the commands.
-> The reason is that the transport layer exports the commands on the buses.
-> Because the transport layer exists in all Xcraft servers, in order to have
-> visible commands (no overload), the `appId` must be provided in the name (it's
-> like a namespace).
+{{% notice info %}} The `appId` is necessary for that the right sub-server
+receives the commands. The reason is that the transport layer exports the
+commands on the buses. Because the transport layer exists in all Xcraft servers,
+in order to have visible commands (no overload), the `appId` must be provided in
+the name (it's like a namespace). {{% /notice %}}
 
 ![image](/img/transport.png)
 

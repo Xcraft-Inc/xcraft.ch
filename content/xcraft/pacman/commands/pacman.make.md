@@ -56,7 +56,8 @@ It makes the srcpackage and its dependencies. The package will be created with
 the version 1.0.0, and because this package is related to a git repository, the
 tag `v1.0.0` will be used.
 
-> In this case, the reference can be a commit, a branch or a tag.
+{{% notice info %}} In this case, the reference can be a commit, a branch or a
+tag. {{% /notice %}}
 
 ### Timestamps
 
@@ -65,10 +66,12 @@ timestamp is saved in the `var/xcraft-contrib-pacman/` directory with the
 current timestamp. Before a `make`, this timestamp is compared against all
 timestamps (mtime) of the files available in `packages/`.
 
-> Note that if a `data.get.uri` target has changed, this mechanism will not
-> detect anything. File, repository, etc,... is only downloaded or copied by the
-> [xcraft-contrib-peon][4] (_make_ or _install_ time, it depends if the package
-> embeds the data or not).
+{{% notice note %}} Note that if a `data.get.uri` target has changed, this
+mechanism will not detect anything. File, repository, etc,... is only downloaded
+or copied by the [xcraft-contrib-peon][4] (_make_ or _install_ time, it depends
+if the package embeds the data or not).
+
+{{% /notice %}}
 
 Here an example where it can be a problem:
 
@@ -83,5 +86,6 @@ The `foobar/` directory is located in the toolchain, but for _pacman_, it is
 just a data location like `http` for example. If you change something in the
 `foobar/` directory, nothing will be detected by pacman.
 
-> Note that the version should probably change in this case. Then the package
-> will be processed because the definition file will have a newer timestamp.
+{{% notice note %}} Note that the version should probably change in this case.
+Then the package will be processed because the definition file will have a newer
+timestamp. {{% /notice %}}

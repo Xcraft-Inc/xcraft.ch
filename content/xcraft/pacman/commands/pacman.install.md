@@ -18,6 +18,7 @@ possible that this _MSI_ needs a reboot in order to continue the installation.
 If it happens, you must restart the system, then you can send the same command
 again, then the next dependencies will be installed as expected.
 
-> Note that the detection about a reboot necessity is still WIP.
+{{% notice note %}} Note that the detection about a reboot necessity is still
+WIP. {{% /notice %}}
 
 See [xcraft-core-process][5] for more informations.

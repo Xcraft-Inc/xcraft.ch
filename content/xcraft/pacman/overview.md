@@ -21,12 +21,12 @@ is mandatory. But for some packages, it can be necessary to have some resources
 directly in the package definition directory (only for core packages or very
 small packages). See [... TODO: page unavailable ...](TODO) for details.
 
-> When a package must be created, the `config.yaml` file is used in order to
-> generate the `WPKG/control` file that wpkg look for. This control file is
-> based on the Debian rules, where some fields are just copied from the
-> `config.yaml` file. The step from 1 to 2 is not just a file conversion. A
-> mechanism looks for the resource URI and the embedded flag. If necessary, the
-> resources are copied (downloaded) along the `WPKG` directory.
+{{% notice info %}} When a package must be created, the `config.yaml` file is
+used in order to generate the `WPKG/control` file that wpkg look for. This
+control file is based on the Debian rules, where some fields are just copied
+from the `config.yaml` file. The step from 1 to 2 is not just a file conversion.
+A mechanism looks for the resource URI and the embedded flag. If necessary, the
+resources are copied (downloaded) along the `WPKG` directory. {{% /notice %}}
 
 ### Step 2
 
@@ -55,26 +55,27 @@ packages for the consumer.
 One repository is located in `var/wpkg/`. The wpkg command creates a index file
 along the deb packages. This repository is only for development packages.
 
-> When a package is in a repository, it can be installed easily in a target with
-> its dependencies. Some packages can be stored directly in the production
-> repository if necessary.
+{{% notice info %}} When a package is in a repository, it can be installed
+easily in a target with its dependencies. Some packages can be stored directly
+in the production repository if necessary. {{% /notice %}}
 
 ### Step 5
 
 The development packages (step 4) are deployed in a `devroot/`. This location
 concerns only the tools (for the toolchain) and the source packages.
 
-> The goal for installing source packages in `devroot/` is to compile these
-> products in order to generate binary packages. Then these binary packages are
-> stored in the production repository.
+{{% notice info %}} The goal for installing source packages in `devroot/` is to
+compile these products in order to generate binary packages. Then these binary
+packages are stored in the production repository. {{% /notice %}}
 
 ### Step 6
 
 The production repository can be anywhere. This is the main repository for the
 consumers.
 
-> At this point, we can use the production repository in any targets. For
-> example it can be used in order to install the products in a virtual machine.
+{{% notice note %}} At this point, we can use the production repository in any
+targets. For example it can be used in order to install the products in a
+virtual machine. {{% /notice %}}
 
 ### Step 7
 

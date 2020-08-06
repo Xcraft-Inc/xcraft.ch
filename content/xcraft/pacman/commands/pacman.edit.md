@@ -11,8 +11,8 @@ The package definitions are located in the `packages/` directory where you can
 find the sub-directories of the projects. Every project has a file named
 `config.yaml`. This file can be edited by hand or with the `zog` command.
 
-> It's better to use `zog`or `lokthar` for editing unless you know exactly what
-> are you going.
+{{% notice tip %}} It's better to use `zog` or `lokthar` for editing unless you
+know exactly what are you going. {{% /notice %}}
 
 ### Create or modify a package definition
 
@@ -23,9 +23,9 @@ some questions about this new package.
 
 The name must follows these rules:
 
-> Must consist only of lower case letters (a-z), digits (0-9), plus (+) and
-> minus (-) signs, and periods (.). They must be at least two characters long
-> and must start with an alphanumeric character.
+Must consist only of lower case letters (a-z), digits (0-9), plus (+) and minus
+(-) signs, and periods (.). They must be at least two characters long and must
+start with an alphanumeric character.
 
 #### Version (required)
 

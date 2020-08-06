@@ -166,9 +166,15 @@ hr {
 }
 
 #chapter h1 {
-  border-bottom: 2px solid #aaa;
-  max-width: 750px;
-  margin: 0 auto;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    to left,
+    transparent 0%,
+    #aaa 20%,
+    #aaa 80%,
+    transparent 100%
+  );
+  border-image-slice: 1;
 }
 
 #body-inner {

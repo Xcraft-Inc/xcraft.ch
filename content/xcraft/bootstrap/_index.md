@@ -10,4 +10,4 @@ pre: '<b>3.2 </b>'
 
 # Bootstrap
 
-...
+Be brave and go ahead

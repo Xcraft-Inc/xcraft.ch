@@ -10,4 +10,4 @@ pre: '<b>3.1 </b>'
 
 # Infrastructure
 
-Communications, messages, routing, commands, events, ...
+A land needs roads, horses, dialects and more in order to trade between species

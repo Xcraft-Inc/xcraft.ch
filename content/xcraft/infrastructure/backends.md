@@ -5,6 +5,9 @@ weight: 50
 draft: true
 ---
 
+> Use horses when traveling in the lands, but prefer more faster and appropriate
+> transports when talking to your neighbours
+
 There are two backends in the transport layer. The first one is named **EE** and
 it's based on the `EventEmitter` of nodejs. The second one is named **Axon** and
 implements a particular protocol on TCP/IP. The base idea is simple. A message

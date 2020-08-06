@@ -12,7 +12,8 @@ pre: '<b>2.1 </b>'
 
 The goblin idea match perfectly with the actor model of Carl Hewitt designed
 in 1973. We don't know this model before designing this framework, after some
-search on wikipedia we discover that our work match the definition perfectly:
+search on wikipedia we discover that our work match the following definition
+perfectly.
 
 > The actor model in computer science is a mathematical model of concurrent
 > computation that treats actor as the universal primitive of concurrent
@@ -20,8 +21,7 @@ search on wikipedia we discover that our work match the definition perfectly:
 > decisions, create more actors, send more messages, and determine how to
 > respond to the next message received. Actors may modify their own private
 > state, but can only affect each other indirectly through messaging (removing
-> the need for lock-based synchronization). -- Wikipedia
-> [source](https://en.wikipedia.org/wiki/Actor_model)
+> the need for lock-based synchronization). -- Wikipedia [source][1]
 
 Goblins use xcraft messages to send command's and event's to others, example:
 
@@ -61,3 +61,5 @@ doSomething = function* (quest, content) {
   }
 };
 ```
+
+[1]: https://en.wikipedia.org/wiki/Actor_model

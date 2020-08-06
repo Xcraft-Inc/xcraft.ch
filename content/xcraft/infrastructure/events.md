@@ -20,6 +20,8 @@ joker for `[0..n]` characters. The parenthesis can be used for **OR** condition
 
 ## Cache
 
+> A troll can hide another
+
 The topics are converted to regexes in the low lever layers. These regexes have
 a cost because there are thousand of subscriptions and we must be sure that
 every received messages are not tested against all registered regexes. A cache

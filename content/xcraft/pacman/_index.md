@@ -10,4 +10,4 @@ pre: '<b>3.3 </b>'
 
 # Pacman
 
-The Package Manager
+The `Pac`kage `Man`ager

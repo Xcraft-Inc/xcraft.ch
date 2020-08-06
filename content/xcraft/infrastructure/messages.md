@@ -68,6 +68,9 @@ during the transport.
 
 ## Streams
 
+> Streams are like the rivers. You need a lot of rocks? Then use your boats and
+> not your horses.
+
 The previous section shows us that we can easily transport immutables like
 non-immutable data. But what about the streams that are not in these categories?
 It's very important to support the streams in Xcraft in order to transfer large

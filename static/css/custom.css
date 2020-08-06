@@ -118,6 +118,24 @@ code {
   font-size: 100%;
 }
 
+div.notices.note p,
+div.notices.info p,
+div.notices.tip p,
+div.notices.warning p {
+  border-top-width: 27px;
+}
+
+div.notices p {
+  border-radius: 2px;
+  font-size: 100%;
+  padding: 10px;
+}
+
+.notices code {
+  background-color: #ccc;
+  color: #666;
+}
+
 blockquote code,
 blockquote p {
   color: #aaa;

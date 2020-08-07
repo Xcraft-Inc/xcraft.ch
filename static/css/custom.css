@@ -177,6 +177,23 @@ hr {
   border-image-slice: 1;
 }
 
+#chapter h2,
+#chapter h3,
+#chapter h4,
+#chapter h5,
+#chapter h6 {
+  text-align: left;
+}
+
+#chapter p:nth-child(3) {
+  text-align: center;
+  font-size: 1.4rem !important;
+}
+
+#chapter h3:nth-child(1) {
+  text-align: center;
+}
+
 #body-inner {
   max-width: 1000px;
   margin: auto;
@@ -185,6 +202,15 @@ hr {
 #chapter {
   max-width: 1000px;
   margin: auto;
+}
+
+#chapter p {
+  font-size: 100% !important;
+  text-align: left;
+}
+
+#chapter blockquote {
+  font-size: 1rem;
 }
 
 #chapter #body-inner {

@@ -10,7 +10,7 @@ pre: '<b>2.3 </b>'
 
 # The Goblin desktop UX
 
-> "It is not for gnomes..."
+It is not for gnomes...
 
 ![Logo](/img/desktop.png)
 

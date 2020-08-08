@@ -22,8 +22,9 @@ possible to have dedicated work for each node. A client in the network can be
 just a front-end by command line or with a graphical interface. But a client can
 be a server too. It's not something like usual µServices. In the nodes you can
 find services, µServices, nanoServices, picoServices... A node can be on the
-same host, or on an other. A node can be connected to multiple other nodes. It's
-not magic, no need to have [Mana][1] for playing with Xcraft (or maybe a little
+same host, or on an other. A node can be connected to multiple other nodes.
+Between nodes you use buses (roads) and sometimes you are the chief. It's not
+magic, no need to have [Mana][1] for playing with Xcraft (or maybe a little
 bit?).
 
 [1]: https://en.wikipedia.org/wiki/Magic_(game_terminology)

@@ -10,9 +10,12 @@ pre: '<b>3.1 </b>'
 
 # Infrastructure
 
-A land needs roads, horses, dialects and more in order to trade between species
+A land needs chiefs, roads, horses, dialects and more in order to trade between
+species
 
-> Don't Be Afraid of the Dark
+> The beginning of wisdom is the statement 'I do not know.' The person who
+> cannot make that statement is one who will never learn anything. And I have
+> prided myself on my ability to learn. -- Thrall
 
 The infrastructure is organized by a network of Xcraft servers where it's
 possible to have dedicated work for each node. A client in the network can be

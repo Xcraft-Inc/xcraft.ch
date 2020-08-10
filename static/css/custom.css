@@ -262,3 +262,42 @@ hr {
   text-align: center;
   width: 1.3em;
 }
+
+@media print {
+  #sidebar {
+    visibility: hidden;
+  }
+
+  #body {
+    margin: 0;
+    color: black;
+    background-color: white;
+  }
+
+  #body .padding {
+    padding: 0;
+  }
+
+  #body-inner {
+    margin: 0;
+    max-width: none;
+  }
+
+  #top-bar {
+    visibility: hidden;
+  }
+
+  .nav {
+    visibility: hidden;
+  }
+
+  div.notices.note p,
+  div.notices.info p,
+  div.notices.tip p,
+  div.notices.warning p,
+  div.notices p,
+  div.notices p:first-child:after,
+  div.notices p:first-child:before {
+    color: black;
+  }
+}

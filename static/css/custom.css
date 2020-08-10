@@ -283,7 +283,8 @@ hr {
     max-width: none;
   }
 
-  #top-bar {
+  #top-bar,
+  #top-bar-sticky-wrapper {
     visibility: hidden;
   }
 
@@ -299,5 +300,15 @@ hr {
   div.notices p:first-child:after,
   div.notices p:first-child:before {
     color: black;
+  }
+
+  div.notices.note p,
+  div.notices.info p,
+  div.notices.tip p,
+  div.notices.warning p,
+  div.notices p {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
   }
 }

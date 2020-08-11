@@ -123,7 +123,7 @@ very special cases where it's necessary to use a `busClient` for a different
 
 After the `next` callback, it's possible to pass options. Only one option is
 really used, it's `{forceNested: true}` and it's only used internally. I will
-explain in details in [an other section](TODO).
+explain in details in [an other section // TODO](TODO).
 
 ### Send events
 

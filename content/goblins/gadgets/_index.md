@@ -14,10 +14,9 @@ A wide variety of gadgets
 
 ![various gadgets](/img/gadgets.various.jpg)
 
-> The fool on the sand has built his house...  
-> The sage on the rock has built his house, and he uses a multitude of
-> gadgets!  
-> -- Anonymous author, name known to the editor
+> The fool on the sand has built his house.  
+> The sage on the gadgets has built his house.  
+> -- Popular song, author unknown
 
 [1]:
   https://techcrash.net/the-very-best-computer-gadgets-available-on-the-market/

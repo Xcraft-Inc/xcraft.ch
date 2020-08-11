@@ -53,7 +53,7 @@ watt(function* () {
   const {BusClient} = require('xcraft-core-busclient');
   const busClient = new BusClient();
   yield busClient.connect('ee', null, next);
-});
+})();
 ```
 
 It's the most simpler connection. In this case, we are connecting to our own
@@ -77,10 +77,10 @@ watt(function* () {
     '*::*'
   );
   yield busClient.connect('axon', null, next);
-});
+})();
 ```
 
-As explained in the [backends](/xcraft/infrastructure/backends) article, there
+As explained in the [backends](/xcraft/infrastructure/backends) section, there
 are two backends: **EventEmitter** and **Axon**. It makes sense to always use
 the `ee` backend when we are connecting to the server of our own process. But of
 course, in the case of an other process, `axon` is mandatory (see the previous
@@ -91,12 +91,39 @@ server token for the second argument. You should **never** use the second
 argument. It's especially used by Xcraft in order to open a connection while the
 server is starting and the autoconnect stuff is still not available. Just set to
 `null`, then something like an autoconnect will be engaged. After this call, you
-are connected and you can send commands, events (if you are not a pure client
-(like explaind [here](#pure))) and receive data.
+are connected and you can send commands, events (if you are not a pure client;
+like explaind [here](#pure)) and receive data.
 
 ### Send commands
 
-...
+Once connected, you can send a command to a service in order to do something.
+
+```js
+watt(function* () {
+  const {BusClient} = require('xcraft-core-busclient');
+  const busClient = new BusClient();
+  yield busClient.connect('ee', null, next);
+  const msg = yield busClient.command.send(
+    'peon.work',
+    {ressources: ['or', 'wood', 'rock']} /* payload */,
+    null,
+    next
+  );
+})();
+```
+
+The first argument is the full command name. Most of time, a command begins with
+a namespace which is the service's name. In this example, it's the service
+`"peon"` and we want to run the `"work"` command. The second argument is the
+payload sent with this command. In our example, the `work()` handler will
+receive an object with an array of `ressources`. The third agrument is the
+`orcName`. Please, do not use this argument (always pass `null`). It's used for
+very special cases where it's necessary to use a `busClient` for a different
+`orcName` (something like routing).
+
+After the `next` callback, it's possible to pass options. Only one option is
+really used, it's `{forceNested: true}` and it's only used internally. I will
+explain in details in [an other section // TODO](TODO).
 
 ### Send events
 

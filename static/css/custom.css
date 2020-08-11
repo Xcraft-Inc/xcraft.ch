@@ -116,6 +116,7 @@ code {
   color: var(--MAIN-TEXT-color);
   padding: 2px;
   font-size: 100%;
+  vertical-align: baseline;
 }
 
 div.notices.note p,

@@ -53,7 +53,7 @@ watt(function* () {
   const {BusClient} = require('xcraft-core-busclient');
   const busClient = new BusClient();
   yield busClient.connect('ee', null, next);
-});
+})();
 ```
 
 It's the most simpler connection. In this case, we are connecting to our own
@@ -77,7 +77,7 @@ watt(function* () {
     '*::*'
   );
   yield busClient.connect('axon', null, next);
-});
+})();
 ```
 
 As explained in the [backends](/xcraft/infrastructure/backends) article, there
@@ -91,8 +91,8 @@ server token for the second argument. You should **never** use the second
 argument. It's especially used by Xcraft in order to open a connection while the
 server is starting and the autoconnect stuff is still not available. Just set to
 `null`, then something like an autoconnect will be engaged. After this call, you
-are connected and you can send commands, events (if you are not a pure client
-(like explaind [here](#pure))) and receive data.
+are connected and you can send commands, events (if you are not a pure client;
+like explaind [here](#pure)) and receive data.
 
 ### Send commands
 

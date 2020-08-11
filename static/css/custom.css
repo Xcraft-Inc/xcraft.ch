@@ -137,6 +137,11 @@ div.notices p {
   color: #666;
 }
 
+.featherlight-image {
+  min-width: 50vw;
+  padding: 10px;
+}
+
 img {
   background-color: black;
   color-adjust: exact;

@@ -4,6 +4,10 @@ date: 2020-08-11
 weight: 5
 ---
 
+![oldmanbook](/img/oldmanbook.svg?width=200px)
+
+> Books are for people who wish they were somewhere else. -- Mark Twain
+
 | Word      | Definition                                            |
 | --------- | ----------------------------------------------------- |
 | [Axon][1] | Message-oriented socket library inspired by zeromq    |

@@ -127,7 +127,59 @@ explain in details in [an other section // TODO](TODO).
 
 ### Send events
 
-...
+You can send events when your `busClient` is provided by an Xcraft server. It's
+always the case when your are implementing a command handler. From this handler
+you can send commands too.
+
+To send events, it's a bit like the commands with some differences:
+
+```js
+peon.work = function (msg) {
+  const busClient = require('xcraft-core-busclient').getGlobal();
+  const {ressources} = msg.data;
+  try {
+    const workList = [];
+    /* Do a lot of work and populate workList */
+    busClient.events.send(
+      `${msg.orcName}::peon.work.${msg.id}.finished`,
+      workList
+    );
+  } catch (ex) {
+    busClient.events.send(`${msg.orcName}::peon.work.${msg.id}.error`, ex);
+  }
+};
+```
+
+In this example, you can see the "common" implementation of an Xcraft command
+handler. When the stuff is done without error, you must send the `.finished`
+event. But if an error occures, then you must send an `.error` event with the
+reason (mostly the exception object).
+
+When you send an event, you must pass the namespace in the topic when you use
+`busClient.events.send`. The namespace is mostly the client `orcName` which has
+make the call on this command handler.
+
+An handler receives a `resp` object as second argument. With this `resp` object,
+a small wrapper adds the appropriate namespace for you when you send an event.
+
+For example (same behaviour but simpler):
+
+```js
+peon.work = function (msg, resp) {
+  const {ressources} = msg.data;
+  try {
+    const workList = [];
+    /* Do a lot of work and populate workList */
+    resp.events.send(`peon.work.${msg.id}.finished`, workList);
+  } catch (ex) {
+    resp.events.send(`peon.work.${msg.id}.error`, ex);
+  }
+};
+```
+
+It's still not a Goblin thing. The `resp` object is just a small wrapper over
+`busClient`. In the [Goblin API](#goblin-api) section, you will learn a more
+high level API.
 
 ### Subscribe to events
 

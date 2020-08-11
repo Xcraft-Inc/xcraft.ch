@@ -140,6 +140,7 @@ div.notices p {
 img {
   background-color: black;
   color-adjust: exact;
+  page-break-inside: avoid;
 }
 
 table,
@@ -149,8 +150,13 @@ th {
   border-color: #999;
 }
 
+tr {
+  page-break-inside: avoid;
+}
+
 th {
   background: #999;
+  page-break-inside: avoid;
 }
 
 #body .notices img {

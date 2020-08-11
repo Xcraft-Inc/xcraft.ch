@@ -138,7 +138,7 @@ div.notices p {
 }
 
 .featherlight-image {
-  min-width: 50vw;
+  min-height: 75vh;
   padding: 10px;
 }
 

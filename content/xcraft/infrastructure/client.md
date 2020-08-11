@@ -18,11 +18,11 @@ is for "cross" because it's cross-platform. And **craft** is for "crafting".
 
 Now that you understand the origin, the low level layer is the first layer which
 has been built. The servers, the communications, the first services are based on
-the Xcraft layer. After some years, a new layer has appeared; the Goblins layer.
+the Xcraft layer. After some years, a new layer has appeared; the Goblin layer.
 In this layer, you write reducers and quests (redux) and you play mostly with
 immutable states.
 
-This is why there are two differents API. But note that the Goblins API uses the
+This is why there are two differents API. But note that the Goblin API uses the
 Xcraft API.
 
 ## Xcraft API
@@ -193,12 +193,12 @@ high level API.
 
 ## Goblin API
 
-With the Goblin API it's simpler because more stuff is hidden in the goblins
+With the Goblin API it's simpler because more stuff is hidden in the Goblin
 layer. It's no longer necessary to connect to a server because you are already
 connected. It's no longer necessary to subscribe explicitly to the dedicated
-command events `finished` and `error` because it's already handled by the
-goblins layer. The magic is in the `quest` context provided by the goblins layer
-when a quest is executed.
+command events `finished` and `error` because it's already handled by the Goblin
+layer. The magic is in the `quest` context provided by the Goblin layer when a
+quest is executed.
 
 ### Send commands
 

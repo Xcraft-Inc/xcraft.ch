@@ -5,10 +5,6 @@ weight: 10
 draft: true
 ---
 
-> The dream of alchemists has always been to [transmute][1] lead into gold. With
-> converters, this is possible. Well almost...  
-> -- Albert le Grand, 1193 - 1280
-
 ![getDisplayed vs. parseEdited](/img/converters.overview.png)
 
 ## Canonical
@@ -16,7 +12,7 @@ draft: true
 ![hard canonical](/img/converters.hard.png)
 
 **Canonical** values are used by the computer. The format of canonical values is
-fixed and rigid. These are the values that are persisted in [RethinkDB][3].
+fixed and rigid. These are the values that are persisted in [RethinkDB][1].
 
 > In computer science, canonicalization (sometimes standardization or
 > normalization) is a process for converting data that has more than one
@@ -124,6 +120,5 @@ const displayedNow = DateConverters.getDisplayed(
 );
 ```
 
-[1]: https://en.wikipedia.org/wiki/Nuclear_transmutation
+[1]: https://rethinkdb.com/
 [2]: https://en.wikipedia.org/wiki/Canonicalization
-[3]: https://rethinkdb.com/

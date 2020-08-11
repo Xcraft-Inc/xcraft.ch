@@ -5,7 +5,7 @@ weight: 5
 draft: true
 ---
 
-There is two levels of accesses to the buses of an Xcraft server. There is the
+There are two levels of accesses to the buses of an Xcraft server. There is the
 low level (for Orcs), and it's the Xcraft API. For the Goblins, you will use an
 higher level of API based on the Quest context.
 
@@ -32,7 +32,7 @@ will assign to your client an identity (an orcName). This is with this identity
 that you can send commands and receive dedicated events. When connecting to a
 server, two buses are used. One bus is dedicated to the commands, and a second
 bus is dedicated to the events. It means that you need two sockets when you are
-communicating between processes.
+communicating between processes.<a name="pure"></a>
 
 {{% notice info %}} With just a busClient, you can't send events. Only a server
 can send events and it's a question of patterns. There are two patterns used
@@ -46,7 +46,53 @@ The server works as **pull** / **pub** and the client as **push** / **sub**.
 
 ### Connect
 
-...
+You can connect to our own server (in-process) by this way:
+
+```js
+watt(function* () {
+  const {BusClient} = require('xcraft-core-busclient');
+  const busClient = new BusClient();
+  yield busClient.connect('ee', null, next);
+});
+```
+
+It's the most simpler connection. In this case, we are connecting to our own
+server and we are processing only the events which are dedicated to our client.
+
+The constructor can take some arguments. The first argument is the bus settings.
+You can specify these settings when it's necessary like in the case of servers
+in an other process. When passing `null`, then it uses the current server
+settings. The second argument is an array of event subscriptions. By passing
+`*::*` we will receive even the events of other clients.<a name="axon"></a>
+
+```js
+watt(function* () {
+  const {BusClient} = require('xcraft-core-busclient');
+  const busClient = new BusClient(
+    {
+      host: '127.0.0.1',
+      commanderPort: 10000,
+      notifierPort: 20000,
+    },
+    '*::*'
+  );
+  yield busClient.connect('axon', null, next);
+});
+```
+
+As explained in the [backends](/xcraft/infrastructure/backends) article, there
+are two backends: **EventEmitter** and **Axon**. It makes sense to always use
+the `ee` backend when we are connecting to the server of our own process. But of
+course, in the case of an other process, `axon` is mandatory (see the previous
+[code sample](#axon)).
+
+The `connect(backend, token)` method has the backend for first argument and the
+server token for the second argument. You should **never** use the second
+argument. It's especially used by Xcraft in order to open a connection while the
+server is starting and the autoconnect stuff is still not available. Just set to
+`null`, then something like an autoconnect will be engaged. After this call, you
+are connected and you can send commands, events (if you are not a pure client
+(like explaind [here](#pure))) and receive data.
 
 ### Send commands
 

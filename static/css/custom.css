@@ -139,6 +139,7 @@ div.notices p {
 
 img {
   background-color: black;
+  color-adjust: exact;
 }
 
 #body .notices img {

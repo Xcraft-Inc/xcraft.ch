@@ -142,6 +142,17 @@ img {
   color-adjust: exact;
 }
 
+table,
+td,
+tr,
+th {
+  border-color: #999;
+}
+
+th {
+  background: #999;
+}
+
 #body .notices img {
   margin: 0.75rem auto;
   background-color: transparent;

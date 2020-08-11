@@ -137,8 +137,13 @@ div.notices p {
   color: #666;
 }
 
+img {
+  background-color: black;
+}
+
 #body .notices img {
   margin: 0.75rem auto;
+  background-color: transparent;
 }
 
 #body img.shadow {

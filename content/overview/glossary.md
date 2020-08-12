@@ -12,6 +12,7 @@ weight: 5
 | Word       | Definition                                                                                                                                  |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Axon][1]  | The Message-oriented socket library inspired by zeromq which is used for communicating between processes                                    |
+| bus        | Channel for sending/receiving commands and events (there are two buses and it can be in-process or multi-processes)                         |
 | Goblin     | An Xcraft module based on the Goblin layer                                                                                                  |
 | orcName    | Bus client identifier when connecting to an Xcraft server                                                                                   |
 | quest      | Async action (for side effect) dispatched with [Redux][2] (based on the Goblin layer, it's triggered by a generated Xcraft command handler) |

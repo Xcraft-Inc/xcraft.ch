@@ -145,12 +145,9 @@ peon.work = function (msg) {
   const busClient = require('xcraft-core-busclient').getGlobal();
   const {ressources} = msg.data;
   try {
-    const workList = [];
-    /* Do a lot of work and populate workList */
-    busClient.events.send(
-      `${msg.orcName}::peon.work.${msg.id}.finished`,
-      workList
-    );
+    const res = [];
+    /* Do a lot of work and populate res */
+    busClient.events.send(`${msg.orcName}::peon.work.${msg.id}.finished`, res);
   } catch (ex) {
     busClient.events.send(`${msg.orcName}::peon.work.${msg.id}.error`, ex);
   }

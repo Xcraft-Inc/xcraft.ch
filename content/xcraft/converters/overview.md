@@ -6,11 +6,11 @@ tags: ['devel', 'converters']
 draft: true
 ---
 
-![getDisplayed vs. parseEdited](/img/converters.overview.png)
+![getDisplayed vs. parseEdited](/img/converters.overview.png?classes=blackprint)
 
 ## Canonical
 
-![hard canonical](/img/converters.hard.png)
+![hard canonical](/img/converters.hard.png?classes=blackprint)
 
 **Canonical** values are used by the computer. The format of canonical values is
 fixed and rigid. These are the values that are persisted in [RethinkDB][1].
@@ -65,7 +65,7 @@ possible to something plausible.
 
 ## Displayed
 
-![soft displayed](/img/converters.soft.png)
+![soft displayed](/img/converters.soft.png?classes=blackprint)
 
 **Displayed** values are for human users. A displayed value has several possible
 representations, more or less long, to adapt to different situations in the UI.

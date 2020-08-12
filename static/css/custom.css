@@ -332,6 +332,14 @@ hr {
     display: none !important;
   }
 
+  .blackprint {
+    background-color: black;
+  }
+
+  img {
+    background-color: transparent;
+  }
+
   pre {
     padding: 0.25rem;
     margin: 0;

@@ -1,6 +1,7 @@
 ---
 title: 'Glossary'
 date: 2020-08-11
+tags: ['general']
 weight: 5
 ---
 

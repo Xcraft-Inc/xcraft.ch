@@ -2,6 +2,7 @@
 title: 'The quest'
 date: 2020-08-05
 weight: 15
+tags: ['devel', 'goblin']
 draft: true
 ---
 

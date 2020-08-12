@@ -17,7 +17,9 @@ weight: 5
 | orcName    | Bus client identifier when connecting to an Xcraft server                                                                                   |
 | quest      | Async action (for side effect) dispatched with [Redux][2] (based on the Goblin layer, it's triggered by a generated Xcraft command handler) |
 | [Redux][2] | A Predictable State Container for JS Apps (the base of the Goblin layer)                                                                    |
+| [Watt][3]  | A Powerful control flow using generators (an other name is `gigawatts` because the project is forked); it's like `async` / `await`          |
 | Xcraft     | Main infrastructure and toolchain                                                                                                           |
 
 [1]: https://github.com/Xcraft-Inc/axon
 [2]: https://redux.js.org/
+[3]: https://github.com/Xcraft-Inc/gigawatts

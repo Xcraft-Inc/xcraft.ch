@@ -18,11 +18,11 @@ is for "cross" because it's cross-platform. And **craft** is for "crafting".
 
 Now that you understand the origin, the low level layer is the first layer which
 has been built. The servers, the communications, the first services are based on
-the Xcraft layer. After some years, a new layer has appeared; the Goblins layer.
+the Xcraft layer. After some years, a new layer has appeared; the Goblin layer.
 In this layer, you write reducers and quests (redux) and you play mostly with
 immutable states.
 
-This is why there are two differents API. But note that the Goblins API uses the
+This is why there are two differents API. But note that the Goblin API uses the
 Xcraft API.
 
 ## Xcraft API
@@ -46,7 +46,9 @@ The server works as **pull** / **pub** and the client as **push** / **sub**.
 
 ### Connect
 
-You can connect to our own server (in-process) by this way:
+![key](/img/key.svg?width=256)
+
+You can connect to your own server (in-process) by this way:
 
 ```js
 watt(function* () {
@@ -56,8 +58,8 @@ watt(function* () {
 })();
 ```
 
-It's the most simpler connection. In this case, we are connecting to our own
-server and we are processing only the events which are dedicated to our client.
+It's the most simpler connection. In this case, we are connecting to the server
+and we are processing only the events which are dedicated to our client.
 
 The constructor can take some arguments. The first argument is the bus settings.
 You can specify these settings when it's necessary like in the case of servers
@@ -96,6 +98,8 @@ like explaind [here](#pure)) and receive data.
 
 ### Send commands
 
+![george](/img/george.svg)
+
 Once connected, you can send a command to a service in order to do something.
 
 ```js
@@ -126,6 +130,8 @@ really used, it's `{forceNested: true}` and it's only used internally. I will
 explain in details in [an other section // TODO](TODO).
 
 ### Send events
+
+![oldmanbooks](/img/oldmanbooks.svg?width=256px)
 
 You can send events when your `busClient` is provided by an Xcraft server. It's
 always the case when your are implementing a command handler. From this handler
@@ -185,18 +191,14 @@ high level API.
 
 ...
 
-### Examples
-
-...
-
 ## Goblin API
 
-With the Goblin API it's simpler because more stuff is hidden in the goblins
+With the Goblin API it's simpler because more stuff is hidden in the Goblin
 layer. It's no longer necessary to connect to a server because you are already
 connected. It's no longer necessary to subscribe explicitly to the dedicated
-command events `finished` and `error` because it's already handled by the
-goblins layer. The magic is in the `quest` context provided by the goblins layer
-when a quest is executed.
+command events `finished` and `error` because it's already handled by the Goblin
+layer. The magic is in the `quest` context provided by the Goblin layer when a
+quest is executed.
 
 ### Send commands
 

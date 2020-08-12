@@ -137,6 +137,12 @@ div.notices p {
   color: #666;
 }
 
+.featherlight-image {
+  min-width: 50vh;
+  padding: 10px;
+  object-fit: cover;
+}
+
 img {
   background-color: black;
   color-adjust: exact;
@@ -157,6 +163,8 @@ tr {
 th {
   background: #999;
   page-break-inside: avoid;
+  color: black;
+  font-family: 'Ubuntu Thin';
 }
 
 #body .notices img {
@@ -239,6 +247,14 @@ hr {
 
 #chapter #body-inner {
   max-width: 1000px;
+}
+
+.highlight pre {
+  padding: 0;
+}
+
+.hljs {
+  padding: 1rem;
 }
 
 .links {

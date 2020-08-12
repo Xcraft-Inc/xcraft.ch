@@ -12,7 +12,7 @@ theme = "hugo-theme-learn"
   # See the config.toml file from this documentation site to have an example.
   editURL = "https://github.com/Xcraft-Inc/xcraft.ch/tree/master/content/"
   # Author of the site, will be used in meta information
-  author = "Mathieu Schroeter and Samuel Loup"
+  author = "Mathieu Schroeter, Samuel Loup and Daniel Roux"
   # Description of the site, will be used in meta information
   description = "Xcraft framework and toolchain"
   # Shows a checkmark for visited pages on the menu

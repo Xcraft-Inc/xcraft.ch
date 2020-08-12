@@ -2,6 +2,7 @@
 title: 'pacman.make'
 date: 2020-07-24
 weight: 20
+tags: ['toolchain', 'pacman']
 draft: true
 ---
 

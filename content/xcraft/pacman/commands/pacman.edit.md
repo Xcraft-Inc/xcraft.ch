@@ -2,6 +2,7 @@
 title: 'pacman.edit'
 date: 2020-07-24
 weight: 15
+tags: ['toolchain', 'pacman']
 draft: true
 ---
 

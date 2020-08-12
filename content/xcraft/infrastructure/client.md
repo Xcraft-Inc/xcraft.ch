@@ -2,6 +2,7 @@
 title: 'Client'
 date: 2020-08-05
 weight: 5
+tags: ['devel', 'client']
 draft: true
 ---
 

@@ -2,6 +2,7 @@
 title: 'Events'
 date: 2020-08-05
 weight: 8
+tags: ['devel', 'bus']
 draft: true
 ---
 

@@ -49,3 +49,8 @@ theme = "hugo-theme-learn"
   name = "<i class='fas fa-bullhorn'></i> Credits"
   url = "/credits"
   weight = 30
+
+[[menu.shortcuts]]
+  name = "<i class='fas fa-tags'></i> Tags"
+  url = "/tags"
+  weight = 40

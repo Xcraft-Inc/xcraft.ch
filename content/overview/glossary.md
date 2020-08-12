@@ -9,11 +9,14 @@ weight: 5
 
 > Books are for people who wish they were somewhere else. -- Mark Twain
 
-| Word      | Definition                                            |
-| --------- | ----------------------------------------------------- |
-| [Axon][1] | Message-oriented socket library inspired by zeromq    |
-| Goblin    | Xcraft module based on the Goblin layer               |
-| orcName   | Client identifier when connecting to an Xcraft server |
-| Xcraft    | Main infrastructure and toolchain                     |
+| Word       | Definition                                                                                                                                  |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Axon][1]  | The Message-oriented socket library inspired by zeromq which is used for communicating between processes                                    |
+| Goblin     | An Xcraft module based on the Goblin layer                                                                                                  |
+| orcName    | Bus client identifier when connecting to an Xcraft server                                                                                   |
+| quest      | Async action (for side effect) dispatched with [Redux][2] (based on the Goblin layer, it's triggered by a generated Xcraft command handler) |
+| [Redux][2] | A Predictable State Container for JS Apps (the base of the Goblin layer)                                                                    |
+| Xcraft     | Main infrastructure and toolchain                                                                                                           |
 
 [1]: https://github.com/Xcraft-Inc/axon
+[2]: https://redux.js.org/

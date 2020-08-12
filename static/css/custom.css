@@ -248,6 +248,14 @@ hr {
   max-width: 1000px;
 }
 
+.highlight pre {
+  padding: 0;
+}
+
+.hljs {
+  padding: 1rem;
+}
+
 .links {
   font-family: 'Ubuntu Light';
   font-variant: small-caps;

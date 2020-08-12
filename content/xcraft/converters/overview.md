@@ -26,7 +26,7 @@ fixed and rigid. These are the values that are persisted in [RethinkDB][1].
 
 Generally, canonical values are `string`, except for `number` and `bool`, which
 use JS native types. For each type, the string containing the canonical value
-respects a precise syntax (see tests in `lib\xcraft-core-converters\test` for
+respects a precise syntax (see tests in `lib/xcraft-core-converters/test` for
 documentation).
 
 Examples of canonical values:
@@ -78,7 +78,7 @@ string for the human user (the parameter `format` is optional). For example:
 | **date** | `getDisplayed("2020-03-31")` → `"31.03.2020"`                                      |
 | **date** | `getDisplayed("2020-03-31", "dMy")` → `"31 mars 2020"` _(with parameter `format`)_ |
 
-See in `lib\xcraft-core-converters\lib` for documentation of each type.
+See in `lib/xcraft-core-converters/lib` for documentation of each type.
 
 ## Many types
 

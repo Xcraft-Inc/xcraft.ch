@@ -2,7 +2,7 @@
 title: 'Client'
 date: 2020-08-05
 weight: 5
-tags: ['devel', 'client']
+tags: ['devel', 'bus']
 draft: true
 ---
 

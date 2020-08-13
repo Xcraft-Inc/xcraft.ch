@@ -7,24 +7,26 @@ draft: true
 
 ## WidgetDoc
 
+![smile](/img/smile1.png?width=250px)
+
 `WidgetDoc` is a great tool for experimenting with most widgets. You choose the
 widget and then interactively define its properties. You immediately see the
 graphical result and the code to write to obtain this result. Nice, isn't it?
 
 Most of the apps created have a [Desktop](/goblins/desktop) which contains a
-**WidgetDoc** button at the bottom left:
+**WidgetDoc** button in the footer:
 
 ![Call WidgetDoc](/img/widgetdoc.call.png?width=600px)
 
 {{% notice info %}} `WidgetDoc` is itself a [widget](/goblins/gadgets).  
-If your app doesn't have a **WidgetDoc** button, you can create a dialog and
-drop a `WidgetDoc` widget inside. {{% /notice %}}
+If your app doesn't have a **WidgetDoc** button, you can create a workitem, a
+wizard or a dialog and drop a `WidgetDoc` widget inside. {{% /notice %}}
 
 On the first run, the window looks like this:
 
 ![Call WidgetDoc](/img/widgetdoc.run.png)
 
-After choosing the widget `Button`, the interface shows the following 3 columns:
+After choosing the widget `Button`, the interface shows this 3 columns:
 
 ![WidgetDoc and button](/img/widgetdoc.button.png)
 

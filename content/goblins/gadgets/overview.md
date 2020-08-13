@@ -7,6 +7,8 @@ draft: true
 
 ## Easily build your UI
 
+![smile](/img/smile2.png?width=250px)
+
 `Goblin-gadgets` contains a large collection of standard `widgets`, allowing to
 build complex UI easily and quickly. The secret is in the boxing, each box can
 hold other boxes, and so on. The boxes are called `container` and they are
@@ -15,7 +17,7 @@ always rectangular.
 ![containers](/img/gadgets.containers.png?width=500px)
 
 Here is an example of a complex UI, with the highlighting of a `container` that
-itself contains other`containers`.
+itself contains other`containers`:
 
 ![samples](/img/gadgets.sample1.png?width=900px)
 
@@ -29,12 +31,12 @@ There are many widgets, for all common uses:
 | `Button`      | Action button                                   |
 | `Calendar`    | Complex calendar to choose a date               |
 | `ColorPicker` | Choosing a color (RGB, HSL, CMYK or grey scale) |
-| `Field`       | Text imput                                      |
 | `Gauge`       | Displays a progress                             |
 | `Label`       | Static text                                     |
 | `Slider`      | Entering an analog value                        |
 | `Splitter`    | Split content into 2 parts                      |
 | `Table`       | List with header, rows and columns              |
+| `TextInput`   | Free text input                                 |
 | `Ticket`      | Ticket shaped container                         |
 | `Tree`        | Tree list                                       |
 | usw.          |                                                 |
@@ -43,7 +45,7 @@ There are many widgets, for all common uses:
 
 `container` is itself a widget that contains child widgets:
 
-```
+```jsx
 <Container>
   <Label />
   <Button />
@@ -60,7 +62,7 @@ its appearance:
 
 The `text` property determines the name displayed in the `Button`:
 
-```
+```jsx
 <Container>
   <Button kind="action" text="Clear" />
   <Button kind="task-tab" text="Home" />
@@ -70,7 +72,7 @@ The `text` property determines the name displayed in the `Button`:
 The `container` component has a property that determines how its children are
 arranged (in row or in column):
 
-```
+```jsx
 <Container kind="row">
   <Label text="What action do you want to take?" />
   <Button kind="action" text="Save" />
@@ -78,7 +80,7 @@ arranged (in row or in column):
 </Container>
 ```
 
-```
+```jsx
 <Container kind="column">
   <Label text="First line" />
   <Label text="Second line" />

@@ -7,13 +7,15 @@ draft: true
 
 ## Make your own gadgets
 
+![smile](/img/smile5.png?width=250px)
+
 Coming soon...
 
 ## Render
 
 In a widget, the `html` is declared in a function `render`:
 
-```
+```jsx
 render() {
     return (
         <Container>

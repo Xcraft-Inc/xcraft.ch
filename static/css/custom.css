@@ -156,7 +156,13 @@ table,
 td,
 tr,
 th {
-  border-color: #999;
+  background: #27421b;
+  border: solid 2px #000;
+}
+
+td:first-child {
+  color: #70e83a;
+  background: #1a2c12;
 }
 
 tr {
@@ -164,9 +170,8 @@ tr {
 }
 
 th {
-  background: #999;
+  background: #000;
   page-break-inside: avoid;
-  color: black;
   font-family: 'Ubuntu Thin';
 }
 

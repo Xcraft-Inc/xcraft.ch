@@ -25,6 +25,3 @@ A wide variety of widgets
 > fell, (3x)  
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And the app resisted!  
 > -- Popular song, author unknown
-
-[1]:
-  https://techcrash.net/the-very-best-computer-gadgets-available-on-the-market/

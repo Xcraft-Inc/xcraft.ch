@@ -73,9 +73,8 @@ arranged (in row or in column):
 ```
 <Container kind="row">
   <Label text="What action do you want to take?" />
-  <Button kind="action" text="Undo" />
-  <Button kind="action" text="Redo" />
-  <Button kind="action" text="Clear" />
+  <Button kind="action" text="Save" />
+  <Button kind="action" text="Cancel" />
 </Container>
 ```
 

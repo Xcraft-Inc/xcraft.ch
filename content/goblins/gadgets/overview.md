@@ -24,18 +24,20 @@ with `widget`. {{% /notice %}}
 
 There are many widgets, for all common uses:
 
-- `Button`
-- `Calendar`
-- `ColorPicker`
-- `Field` (text imput)
-- `Gauge`
-- `Label` (static text)
-- `Slider`
-- `Splitter`
-- `Table` (list with rows and columns)
-- `Ticket`
-- `Tree`
-- usw.
+| Widget        | Function                                        |
+| ------------- | ----------------------------------------------- |
+| `Button`      | Action button                                   |
+| `Calendar`    | Complex calendar to choose a date               |
+| `ColorPicker` | Choosing a color (RGB, HSL, CMYK or grey scale) |
+| `Field`       | Text imput                                      |
+| `Gauge`       | Displays a progress                             |
+| `Label`       | Static text                                     |
+| `Slider`      | Entering an analog value                        |
+| `Splitter`    | Split content into 2 parts                      |
+| `Table`       | List with header, rows and columns              |
+| `Ticket`      | Ticket shaped container                         |
+| `Tree`        | Tree list                                       |
+| usw.          |                                                 |
 
 ![gadgets](/img/gadgets.sample2.png?width=600px)
 

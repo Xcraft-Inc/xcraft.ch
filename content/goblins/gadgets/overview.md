@@ -41,13 +41,13 @@ There are many widgets, for all common uses:
 
 ![gadgets](/img/gadgets.sample2.png?width=600px)
 
-`container` is itself a widget that contains child widgets.
+`container` is itself a widget that contains child widgets:
 
-```html
-    <Container>
-        <Label>
-        <Button>
-    </Container>
+```
+<Container>
+  <Label />
+  <Button />
+</Container>
 ```
 
 ## Properties
@@ -60,29 +60,29 @@ its appearance:
 
 The `text` property determines the name displayed in the `Button`:
 
-```html
-    <Container>
-        <Button kind="action" text="Clear">
-        <Button kind="task-tab" text="Home">
-    </Container>
+```
+<Container>
+  <Button kind="action" text="Clear" />
+  <Button kind="task-tab" text="Home" />
+</Container>
 ```
 
 The `container` component has a property that determines how its children are
 arranged (in row or in column):
 
-```html
-    <Container kind="row">
-        <Label text="What action do you want to take?">
-        <Button kind="action" text="Undo">
-        <Button kind="action" text="Redo">
-        <Button kind="action" text="Clear">
-    </Container>
+```
+<Container kind="row">
+  <Label text="What action do you want to take?" />
+  <Button kind="action" text="Undo" />
+  <Button kind="action" text="Redo" />
+  <Button kind="action" text="Clear" />
+</Container>
 ```
 
-```html
-    <Container kind="column">
-        <Label text="First line">
-        <Label text="Second line">
-        <Label text="Last line">
-    </Container>
+```
+<Container kind="column">
+  <Label text="First line" />
+  <Label text="Second line" />
+  <Label text="Last line" />
+</Container>
 ```

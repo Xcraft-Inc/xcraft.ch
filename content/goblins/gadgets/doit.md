@@ -8,3 +8,18 @@ draft: true
 ## Make your own gadgets
 
 Coming soon...
+
+## Render
+
+In a widget, the `html` is declared in a function `render`:
+
+```
+render() {
+    return (
+        <Container>
+            <Button kind="action" text="Clear" />
+            <Button kind="task-tab" text="Home" />
+        </Container>
+    )
+}
+```

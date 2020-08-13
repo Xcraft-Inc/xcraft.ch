@@ -24,10 +24,10 @@ fixed and rigid. These are the values that are persisted in [RethinkDB][1].
 > impose a meaningful sorting order.  
 > -- [Wikipedia][2]
 
-Generally, canonical values are `string`, except for `number` and `bool`, which
-use JS native types. For each type, the string containing the canonical value
-respects a precise syntax (see tests in `lib/xcraft-core-converters/test` for
-documentation).
+Generally, canonical values are `string`, except for `number` and `integer`,
+which use JS native types. For each type, the string containing the canonical
+value respects a precise syntax (see tests in `lib/xcraft-core-converters/test`
+for documentation).
 
 Examples of canonical values:
 
@@ -40,12 +40,12 @@ Examples of canonical values:
 | delay    | `"* * * 30 * * *"` _(30 days)_                                                                 |
 | color    | `"#FF000"` _(red in rgb)_, `"HSL(40,100,100)"`, `"CMYK(100,0,0,50)"`, `G(50)` _( medium gray)_ |
 
-`number` and `bool` use JS native types:
+`number` and `integer` use JS native types:
 
-| Type   | Example         |
-| ------ | --------------- |
-| number | `50`, `0.02`    |
-| bool   | `true`, `false` |
+| Type    | Example      |
+| ------- | ------------ |
+| number  | `50`, `0.02` |
+| integer | `450`, `-3`  |
 
 The function `parseEdited(edited)` parse a free text entered by the user. Some
 flexibility allows the user to enter data in various formats, possibly
@@ -84,20 +84,25 @@ See in `lib/xcraft-core-converters/lib` for documentation of each type.
 
 There are many types, for all uses:
 
-| Type     | Use                                                                                                                                                              |
-| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| date     | A date with day, month and year.                                                                                                                                 |
-| time     | A time with hours, minutes and seconds.                                                                                                                          |
-| datetime | A date and time.                                                                                                                                                 |
-| integer  | An integer, therefore without fractional part.                                                                                                                   |
-| number   | A real number, therefore with a fractional part.                                                                                                                 |
-| price    | A price in Swiss francs, with 2 decimal places for cents (accept big numbers).                                                                                   |
-| percent  | A percentage.                                                                                                                                                    |
-| delay    | Duration in minutes, hours, days, months or years.                                                                                                               |
-| length   | A length with different units ("km", "m", "cm", "mm", usw.). The canonical value is in meters.                                                                   |
-| weight   | A weight with different units ("t", "kg", "g", "mg"). The canonical value is in kilogram.                                                                        |
-| volume   | A volume defined by 3 lengths, or a number of liters, with different units ("m", "cm", "l", "dm3"). The function `getDisplayedIATA` format a dimensional weight. |
-| color    | A color in various color space (RGB, HSL, CMYK or gray scale).                                                                                                   |
+| Type     | Use                                                                         | Canonical                    | Displayed                                              |
+| -------- | --------------------------------------------------------------------------- | ---------------------------- | ------------------------------------------------------ |
+| date     | A date with day, month and year.                                            | `"2020-03-31"`               | `"31.03.2020"` `"31 mars 2020"` `"Mardi 31 mars 2020"` |
+| time     | A time with hours, minutes and seconds.                                     | `"13:20:30"`                 | `"13:20"`                                              |
+| ...      |                                                                             | `"01:30:45"`                 | `"1 heure 30"`                                         |
+| datetime | A date and time.                                                            | `"2019-01-18T12:48:00.000Z"` | `"18.01.2019 12:48"`                                   |
+| number   | A real number, therefore with a fractional part.                            | `2.003`                      | `"2.003"`                                              |
+| integer  | An integer, therefore without fractional part.                              | `45`                         | `"45"`                                                 |
+| price    | A price in Swiss francs, with 2 decimal places for cents (use big numbers). | `"29.9"`                     | `"29.90"`                                              |
+| percent  | A percentage in range [0..1].                                               | `"0.52"`                     | `"52%"`                                                |
+| delay    | A duration in minutes, hours, days, months or years.                        | `"* * 4 * * * *"`            | `"4h"`                                                 |
+| ...      |                                                                             | `"* * * 3.5 * * *"`          | `"3.5j"`                                               |
+| length   | A length in meters (displayed in "km", "m", "cm" or "mm").                  | `"0.045"`                    | `"0.045m"` `"4.5cm"` `"45mm"`                          |
+| weight   | A weight in kilogram (displayed in "t", "kg", "g" or "mg").                 | `"0.123"`                    | `"0.123kg"` `"123g"`                                   |
+| volume   | A volume defined by 3 lengths in meters (displayed in "m", "cm" or "mm").   | `"0.12 0.13 1.4"`            | `"12 × 13 × 140 cm"`                                   |
+| ...      | A volume defined by 1 value in meters (displayed in "l" or "dm3").          | `"0.012"`                    | `"12dm3"` `"12l"`                                      |
+| ...      | The function `getDisplayedIATA` format a dimensional weight.                | `"1 1 1"`                    | `"167kg"`                                              |
+| color    | A color in various color space (RGB, HSL, CMYK or gray scale).              | `"#FF0000"`                  | `"#FF0000"`                                            |
+| ...      |                                                                             | `"CMYK(0,0,0,0)"`            | `"CMYK(0,0,0,0)"`                                      |
 
 ## Common mistakes
 

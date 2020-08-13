@@ -5,7 +5,7 @@ weight: 30
 draft: true
 ---
 
-## Test gadgets for real
+## WidgetDoc
 
 `WidgetDoc` is a great tool for experimenting with most widgets. You choose the
 widget and then interactively define its properties. You immediately see the
@@ -24,33 +24,36 @@ On the first run, the window looks like this:
 
 ![Call WidgetDoc](/img/widgetdoc.run.png)
 
-The interface shows 3 columns:
+After choosing the widget `Button`, the interface shows the following 3 columns:
 
 ![WidgetDoc and button](/img/widgetdoc.button.png)
 
-| Column     | Function                                                                                                      |
-| ---------- | ------------------------------------------------------------------------------------------------------------- |
-| WIDGETS    | Widget choice.                                                                                                |
-| PROPERTIES | Defining properties. Each widget has its own list.                                                            |
-| PREVIEW    | Settings for the display of the widget (without influence on its properties), and preview of Code and widget. |
+| Column     | Function                                                                                                                               |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| WIDGETS    | Widget choice. The column displays the list of widgets that can be tested.                                                             |
+| PROPERTIES | Defining properties. The column displays the list of widget properties. Each widget has its own list.                                  |
+| PREVIEW    | SETTINGS for the display of the widget (without influence on its properties), and preview of CODE and widget (BUTTON in this example). |
 
 ### Column **WIDGETS**
 
 Simply choose the widget to test.
 
 {{% notice info %}} If the desired widget is not in the list, it does not
-contain the files `props.js` and `senarios.js`. {{% /notice %}}
+contain the files `goblin-gadgets/widgets/widget_name/props.js` and
+`goblin-gadgets/widgets/widget_name/senarios.js`. {{% /notice %}}
 
 ### Column **PROPERTIES**
 
 The **filter** is used to display only properties containing a given keyword,
 including in enumerations.
 
-The properties are listed in groups. If you prefer to see them in alphabetical
-order, deactivate the small button **Cube3D**.
+The properties are listed in _groups_. If you prefer to see them in
+_alphabetical order_, deactivate the small button **Cube3D** at the right.
 
-The `Scenarios` define the set of properties, to achieve a frequently used
-effect.
+The **Scenarios** define the set of properties, to achieve a frequently used
+effect. Each widget has its own scenarios.
+
+Each property occupies a row:
 
 ![One property](/img/widgetdoc.property.png?width=800px)
 
@@ -64,7 +67,7 @@ effect.
 | 6    | `optional` or `required`.            |
 
 Some properties can be of several different types. They have a small button
-**Triple ellipsis** which allows to choose the type:
+**Ellipsis** which allows to choose the type:
 
 ![Multi-types property](/img/widgetdoc.types.png?width=500px)
 

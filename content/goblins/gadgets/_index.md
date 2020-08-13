@@ -10,7 +10,7 @@ pre: '<b>2.4 </b>'
 
 # The Goblin gadgets UX
 
-A wide variety of gadgets
+A wide variety of widgets
 
 ![various gadgets](/img/gadgets.various.jpg)
 

@@ -7,14 +7,80 @@ draft: true
 
 ## Easily build your UI
 
-Les gadgets permettent de construire facilement et rapidement une UI complexe.
-Le secret réside dans le découpage en boîtes, chaque boîte pouvant contenir
-d'autres boîtes, et ainsi de suite. Les boîtes sont appelées `container` et
-elles sont toujours rectangulaires.
+`Goblin-gadgets` contains a large collection of standard `widgets`, allowing to
+build complex UI easily and quickly. The secret is in the boxing, each box can
+hold other boxes, and so on. The boxes are called `container` and they are
+always rectangular.
 
 ![containers](/img/gadgets.containers.png?width=500px)
 
-Voici un exemple de UI complexe, avec la mise en évidence d'un `container`
-contenant lui-même d'autres `container`.
+Here is an example of a complex UI, with the highlighting of a `container` that
+itself contains other`containers`.
 
 ![samples](/img/gadgets.sample1.png?width=900px)
+
+{{% notice info %}} We sometimes use the term `component`, which is synonymous
+with `widget`. {{% /notice %}}
+
+There are many widgets, for all common uses:
+
+- `Button`
+- `Calendar`
+- `ColorPicker`
+- `Field` (text imput)
+- `Gauge`
+- `Label` (static text)
+- `Slider`
+- `Splitter`
+- `Table` (list with rows and columns)
+- `Ticket`
+- `Tree`
+- usw.
+
+![gadgets](/img/gadgets.sample2.png?width=600px)
+
+`container` is itself a widget that contains child widgets.
+
+```html
+    <Container>
+        <Label>
+        <Button>
+    </Container>
+```
+
+## Properties
+
+Each widget has a wide range of properties, which determine its appearance and
+behavior. For example, the widget `Button` has a property `kind` which defines
+its appearance:
+
+![samples](/img/gadgets.buttons.png)
+
+The `text` property determines the name displayed in the `Button`:
+
+```html
+    <Container>
+        <Button kind="action" text="Clear">
+        <Button kind="task-tab" text="Home">
+    </Container>
+```
+
+The `container` component has a property that determines how its children are
+arranged (in row or in column):
+
+```html
+    <Container kind="row">
+        <Label text="What action do you want to take?">
+        <Button kind="action" text="Undo">
+        <Button kind="action" text="Redo">
+        <Button kind="action" text="Clear">
+    </Container>
+```
+
+```html
+    <Container kind="column">
+        <Label text="First line">
+        <Label text="Second line">
+        <Label text="Last line">
+    </Container>
+```

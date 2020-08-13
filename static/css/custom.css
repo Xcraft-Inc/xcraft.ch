@@ -175,6 +175,10 @@ th {
   font-family: 'Ubuntu Thin';
 }
 
+tr code {
+  background-color: #1a2c12;
+}
+
 #body .notices img {
   margin: 0.75rem auto;
   background-color: transparent;

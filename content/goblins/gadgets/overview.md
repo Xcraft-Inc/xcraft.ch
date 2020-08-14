@@ -16,10 +16,18 @@ always rectangular.
 
 ![containers](/img/gadgets.containers.png?width=500px)
 
-Here is an example of a complex UI, with the highlighting of a `container` that
-itself contains other`containers`:
+Here is an example of a dialog:
 
-![samples](/img/gadgets.sample1.png?width=900px)
+![samples](/img/gadgets.tree0.png?width=500px)
+
+Highlighting in red shows a `container` that contains 3 parts. Each part is
+itself a `container`.
+
+![samples](/img/gadgets.tree1.png?width=900px)
+
+The bottom `container` (3) contains 2 buttons:
+
+![samples](/img/gadgets.tree2.png?width=900px)
 
 {{% notice info %}} We sometimes use the term `component`, which is synonymous
 with `widget`. {{% /notice %}}

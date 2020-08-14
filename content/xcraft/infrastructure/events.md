@@ -6,7 +6,14 @@ tags: ['devel', 'bus']
 draft: true
 ---
 
-## Subscribe
+## How to use
+
+This section will explain a lot of details about the events and subscriptions
+mechanisms. It uses only the Goblin API. But note that it's possible to use the
+Xcraft API as well and in this case, you can find some informations at this
+[section](/xcraft/infrastructure/client).
+
+### Subscribe
 
 When subscribing to a topic for events, a simple syntax can be used in order to
 group multiple events to one subscription and without the use of regexes.
@@ -18,6 +25,12 @@ quest.sub(`*::${somethingId}.(added|updated)`, () => {});
 This is a complete example which shows all possibilities. The character `*` is a
 joker for `[0..n]` characters. The parenthesis can be used for **OR** condition
 (with the pipe `|`) a bit like with a regex.
+
+### Unsubscribe
+
+### Short subscription
+
+### Long subscription
 
 ## Cache
 

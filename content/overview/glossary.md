@@ -2,10 +2,10 @@
 title: 'Glossary'
 date: 2020-08-11
 tags: ['general']
-weight: 5
+weight: 10
 ---
 
-![oldmanbook](/img/oldmanbook.svg?width=200px)
+![oldmanbook](/img/overview.glossary.png?width=256px)
 
 > Books are for people who wish they were somewhere else. -- Mark Twain
 

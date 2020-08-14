@@ -324,6 +324,42 @@ hr {
     font-size: 100% !important;
   }
 
+  table {
+    color-adjust: exact !important;
+    background: transparent;
+  }
+
+  td,
+  tr {
+    color-adjust: exact !important;
+    background: #f0f0f0;
+    border: solid 2px white;
+  }
+
+  tr code {
+    color: black;
+    background-color: #e0e0e0;
+  }
+
+  th {
+    color-adjust: exact !important;
+    background: white;
+    color: black;
+    border: solid 2px white;
+    font-family: 'Ubuntu';
+  }
+
+  td,
+  th {
+    padding: 0.3rem;
+  }
+
+  td:first-child {
+    color-adjust: exact !important;
+    color: black;
+    background: #e0e0e0;
+  }
+
   #sidebar {
     display: none !important;
   }

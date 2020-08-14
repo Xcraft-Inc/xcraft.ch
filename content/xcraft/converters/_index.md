@@ -23,4 +23,6 @@ Converters have the task of passing data from one world to another in both
 directions. The usual data managed by the converters are numbers (integer,
 fractional or amount), dates, times, lengths, weights, colors, usw.
 
+![intro](/img/converters.samples.png?width=800px)
+
 [1]: https://en.wikipedia.org/wiki/Nuclear_transmutation

@@ -47,7 +47,7 @@ The server works as **pull** / **pub** and the client as **push** / **sub**.
 
 ### Connect
 
-![key](/img/key.svg?width=256)
+![infrastructure.connect](/img/infrastructure.connect.png?width=300px)
 
 You can connect to your own server (in-process) by this way:
 
@@ -99,7 +99,7 @@ like explaind [here](#pure)) and receive data.
 
 ### Send commands
 
-![george](/img/george.svg)
+![infrastructure.command](/img/infrastructure.command.png?width=200px)
 
 Once connected, you can send a command to a service in order to do something.
 
@@ -132,7 +132,7 @@ explain in details in [an other section // TODO](TODO).
 
 ### Send events
 
-![oldmanbooks](/img/oldmanbooks.svg?width=256px)
+![infrastructure.events](/img/infrastructure.events.png?width=256px)
 
 You can send events when your `busClient` is provided by an Xcraft server. It's
 always the case when your are implementing a command handler. From this handler
@@ -187,7 +187,45 @@ high level API.
 
 ### Subscribe to events
 
-...
+![infrastructure.subscription](/img/infrastructure.subscription.png?height=300px)
+
+Maybe you want to receive events and in this case, you must subscribe to a
+topic. Don't forget to unsubscribe when you don't want to receive this sort of
+event anymore (the system can not guess that you don't want this event, then it
+**leaks** without call to the unsubscribe function).
+
+```js
+watt(function* () {
+  const {BusClient} = require('xcraft-core-busclient');
+  const busClient = new BusClient();
+  yield busClient.connect('ee', null, next);
+
+  let unsubscribe = null;
+  try {
+    /* subscribe to an event */
+    unsubscribe = busClient.events.subscribe(
+      `${msg.orcName}::peon.work.done`,
+      (msg) => {
+        /* can be called multiple times */
+      }
+    );
+
+    const msg = yield busClient.command.send(
+      'peon.work',
+      {ressources: ['or', 'wood', 'rock']} /* payload */,
+      null,
+      next
+    );
+  } finally {
+    if (unsubscribe) {
+      unsubscribe();
+    }
+  }
+})();
+```
+
+You can find more informations about the events at this
+[section](/xcraft/infrastructure/events).
 
 ## Goblin API
 

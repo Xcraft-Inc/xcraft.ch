@@ -10,8 +10,11 @@
    id="svg2694"
    viewBox="0 0 775.55 1058.8"
    version="1.0"
-   sodipodi:docname="oldmanbook.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   sodipodi:docname="overview.glossary.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:export-filename="/home/schroeterm/devel/xcraft.ch/_images/overview.glossary.png"
+   inkscape:export-xdpi="46.418671"
+   inkscape:export-ydpi="46.418671">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -26,7 +29,7 @@
      id="namedview8"
      showgrid="false"
      inkscape:zoom="0.63043896"
-     inkscape:cx="661.50438"
+     inkscape:cx="316.50667"
      inkscape:cy="497.28653"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -53,14 +56,14 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2013-10-17T05:39:41</dc:date>
         <dc:description>This old man, who I guess is symbolic for Father Time, is reading from a big book. In front is what could be a skull, and beside him is an hourglass. Originally this was an anti-World War 1 political cartoon, but in order to make it more universal the text commentary on his book has been muted so it could mean anything for anyone.</dc:description>
         <dc:source>https://openclipart.org/detail/185078/old-man-reads-a-book-by-j4p4n-185078</dc:source>

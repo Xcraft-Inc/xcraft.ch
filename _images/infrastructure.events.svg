@@ -5,9 +5,36 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
    viewBox="0 0 936.42 955.31"
-   id="svg4410">
+   id="svg4410"
+   sodipodi:docname="infrastructure.events.svg"
+   inkscape:export-filename="/home/schroeterm/devel/xcraft.ch/_images/infrastructure.events.png"
+   inkscape:export-xdpi="51.464088"
+   inkscape:export-ydpi="51.464088"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1315"
+     inkscape:window-height="678"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="0.24704023"
+     inkscape:cx="-58.020092"
+     inkscape:cy="477.655"
+     inkscape:window-x="426"
+     inkscape:window-y="246"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4410" />
   <defs
      id="defs9" />
   <g
@@ -29,14 +56,14 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2013-09-27T06:46:27</dc:date>
         <dc:description>Originally there was some newspaper title obscuring this old man, so I put the effort into 'restoring' him before synthesizing this image. I think it worked, and now he can be old forever... ready for whatever wonderful clipart use you have for him!</dc:description>
         <dc:source>https://openclipart.org/detail/183916/old-man-and-books-by-j4p4n-183916</dc:source>

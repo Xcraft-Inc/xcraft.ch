@@ -16,6 +16,8 @@ A wide variety of converters for all uses
 > converters, this is possible. Well almost...  
 > -- Albert le Grand, 1193 - 1280
 
+![intro](/img/converters.intro.png?width=500px)
+
 The computer and the human being do not work in the same way, it is obvious.
 Converters have the task of passing data from one world to another in both
 directions. The usual data managed by the converters are numbers (integer,

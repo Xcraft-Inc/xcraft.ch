@@ -19,8 +19,9 @@ Most of the apps created have a [Desktop](/goblins/desktop) which contains a
 ![Call WidgetDoc](/img/widgetdoc.call.png?width=600px)
 
 {{% notice info %}} `WidgetDoc` is itself a [widget](/goblins/gadgets).  
-If your app doesn't have a **WidgetDoc** button, you can create a workitem, a
-wizard or a dialog and drop a `WidgetDoc` widget inside. {{% /notice %}}
+If your app doesn't have a **WidgetDoc** button, you can create a
+[workitem](/goblins/desktop/workitems), a wizard or a dialog and drop a
+`WidgetDoc` widget inside. {{% /notice %}}
 
 On the first run, the window looks like this:
 

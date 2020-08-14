@@ -11,3 +11,5 @@ pre: '<b>2.5 </b>'
 # Theme
 
 A wide variety of themes
+
+![various gadgets](/img/theme.samples.png)

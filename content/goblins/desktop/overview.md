@@ -5,8 +5,6 @@ weight: 5
 draft: true
 ---
 
-![Logo](/img/desktop.png)
-
 ## Zones
 
 ![Logo](/img/desktop_zones.png?width=600px)

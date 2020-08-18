@@ -9,17 +9,16 @@ draft: true
 
 ![smile](/img/smile5.png?width=250px)
 
-Nous allons créer un widget `smiley` qui affiche un indice de satisfaction à
-partir d'une valeur comprise entre 0 (triste) et 100 (content). Pour cela, il
-faut créer un nouveau dossier `smiley` dans le dossier `widgets` de votre app,
-qui contiendra 2 fichiers:
+We will create a `smiley` widget that displays a satisfaction rating from a
+value between 0 (unhappy) and 100 (happy). To do this, you have to create a new
+`smiley` folder in the `widgets` folder of your app, which will contain 2 files:
 
 | File                       | Content                   |
 | -------------------------- | ------------------------- |
 | `widgets/smiley/widget.js` | Class of the widget.      |
 | `widgets/smiley/styles.js` | Styles CSS of the widget. |
 
-Le squelette de notre fichier `widgets/smiley/widget.js` doit contenir ceci:
+The skeleton of our file `widgets/smiley/widget.js` should contain this:
 
 ```jsx
 import React from 'react';
@@ -38,7 +37,7 @@ export default class Smiley extends Widget {
 }
 ```
 
-Pour débuter simplement, créons un widget qui affiche un rond jaune:
+To get started simply, let's create a widget that shows a yellow circle:
 
 ```jsx
 render() {
@@ -46,7 +45,7 @@ render() {
 }
 ```
 
-Le fichier `widgets/smiley/styles.js` doit contenir le style CSS nommé `smiley`:
+The `widgets/smiley/styles.js` file must contain the CSS style named `smiley`:
 
 ```jsx
 export default function styles() {
@@ -64,17 +63,15 @@ export default function styles() {
 }
 ```
 
-{{% notice warning %}} La valeur de `200px` pour le rayon n'est pas une erreur,
-mais une simplification. En toute logique, il faudrait donner la moitié du
-diamètre (`100px`) plus l'épaisseur du border (`10px`), mais heureusement, CSS
-tronque la valeur si elle est trop grande, et on obtient donc bien un cercle.
-{{% /notice %}}
+{{% notice warning %}} The value of `200px` for the radius is not an error, but
+a simplification. Logically, we should give half the diameter (`100px`) and
+adding the thickness of the border (`10px`), but luckily, CSS truncates the
+value if it is too large, and we therefore get a circle. {{% /notice %}}
 
-{{% notice info %}} La gestion des styles utilise un cache pour plus
-d'efficacité, avec la lib [aphrodite](https://github.com/Khan/aphrodite).
-{{% /notice %}}
+{{% notice info %}} The styles management uses a cache for more efficiency, with
+the lib [aphrodite](https://github.com/Khan/aphrodite). {{% /notice %}}
 
-Dans le widget parent qui instancie le smiley, il faut écrire ceci:
+In the parent widget that instantiates the smiley, you have to write this:
 
 ```jsx
 import Smiley from 'goblin-gadgets/widgets/smiley/widget';
@@ -91,13 +88,13 @@ render() {
 }
 ```
 
-Et sans surprise, nous obtenons le résultat suivant:
+And unsurprisingly, we get the following result:
 
 ![step 1](/img/gadgets.doit.step1.png?width=200px)
 
-## Avec des yeux et un sourire
+## With eyes and a smile
 
-Ajoutons deux yeux et un sourire dans `widgets/smiley/widget.js`:
+Let's add two eyes and a smile in `widgets/smiley/widget.js`:
 
 ```jsx
 render() {
@@ -111,8 +108,8 @@ render() {
 }
 ```
 
-Dans `widgets/smiley/styles.js`, il nous faut ajouter 3 nouveaux styles CSS
-`leftEye`, `rightEye` et `smile`:
+In `widgets/smiley/styles.js`, we need to add 3 new CSS styles `leftEye`,
+`rightEye` and `smile`:
 
 ```jsx
 export default function styles() {
@@ -165,21 +162,20 @@ export default function styles() {
 }
 ```
 
-{{% notice info %}} C'est une bonne pratique de nommer le premier style (celui
-de la `div` racine) avec le même nom que le composant (ici `smiley`). Lorsque
-vous inspecterez le DOM, il sera ainsi plus facile de repérer le widget. Les
-styles des enfants (ici `leftEye`, `rightEye` et `smile`) peuvent être nommés
-librement. {{% /notice %}}
+{{% notice info %}} It's a good practice to name the first style (that of the
+root `div`) with the same name as the widget (here `smiley`). This will make it
+easier to find the widget when you inspect the DOM. The styles of the children
+(here `leftEye`, `rightEye` and `smile`) can be named freely. {{% /notice %}}
 
-Nous obtenons le magnifique résultat suivant:
+We obtain the following magnificent result:
 
 ![step 2](/img/gadgets.doit.step2.png?width=200px)
 
 ## The properties
 
-Notre smiley a une taille fixe de `200px`. Il serait cool de pouvoir spécifier
-sa taille à l'aide des propriétés, et permettre d'écrire ceci dans le widget
-parent qui instancie le smiley:
+Our smiley has a fixed size of `200px`. It would be cool to be able to specify
+its size using a property, and allow this to be written in the parent widget
+which instantiates the smiley:
 
 ```jsx
 render() {
@@ -187,8 +183,8 @@ render() {
 }
 ```
 
-Pour cela, il faut améliorer `widgets/smiley/styles.js` en déclarant la
-propriété `size`:
+For that, we must improve `widgets/smiley/styles.js` by declaring the `size`
+property:
 
 ```jsx
 export const propNames = ['size'];
@@ -208,8 +204,8 @@ export default function styles(theme, props) {
 }
 ```
 
-Si la propriété `size` est omise, il est bien utile d'avoir une valeur par
-défaut. On peut écrire ceci:
+If the `size` property is omitted, it is useful to have a default value. We can
+write this:
 
 ```jsx
 export const propNames = ['size'];
@@ -233,21 +229,20 @@ export default function styles(theme, props) {
 
 ## And more...
 
-Avec un peu de travail dans le CSS, et vous pourrez obtenir ceci:
+With a little bit of work in the CSS, you can achieve this:
 
 ![step 3](/img/gadgets.doit.step3.png?width=200px)
 
-Dans le widget définitif, il sera possible d'ajouter une propriété
-`satisfaction` (on voir ici les résultats avec les valeurs `100`, `75`, `50`,
-`25` et `0`):
+In the final widget, it will be possible to add a `satisfaction` property (we
+see here the results with the values `100`, `75`, `50`, `25` and `0`):
 
 ![step 4](/img/gadgets.doit.step4.png)
 
-Et pourquoi pas une propriété `color`?
+Why not a `color` property?
 
 ![step 5](/img/gadgets.doit.step5.png)
 
-Pour obtenir ces variantes, il suffit d'écrire:
+To obtain these variants, just write:
 
 ```jsx
 render() {
@@ -263,7 +258,7 @@ render() {
 }
 ```
 
-Vous trouverez le widget définitif dans `goblin-gadgets/widgets/smiley`. Il est
-possible de le tester avec [WidgetDoc](/goblins/gadgets/widgetdoc).
+You will find the definitive widget in `goblin-gadgets/widgets/smiley`. It is
+possible to test it with [WidgetDoc](/goblins/gadgets/widgetdoc).
 
 ![WidgetDoc](/img/gadgets.doit.widgetdoc.png)

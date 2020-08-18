@@ -265,3 +265,5 @@ render() {
 
 Vous trouverez le widget définitif dans `goblin-gadgets/widgets/smiley`. Il est
 possible de le tester avec [WidgetDoc](/goblins/gadgets/widgetdoc).
+
+![WidgetDoc](/img/gadgets.doit.widgetdoc.png)

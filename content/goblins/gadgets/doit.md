@@ -37,6 +37,8 @@ export default class Smiley extends Widget {
 }
 ```
 
+## The beginning (step 1)
+
 To get started simply, let's create a widget that shows a yellow circle:
 
 ```jsx
@@ -92,7 +94,7 @@ And unsurprisingly, we get the following result:
 
 ![step 1](/img/gadgets.doit.step1.png?width=200px)
 
-## With eyes and a smile
+## With eyes and a smile (step 2)
 
 Let's add two eyes and a smile in `widgets/smiley/widget.js`:
 
@@ -171,7 +173,113 @@ We obtain the following magnificent result:
 
 ![step 2](/img/gadgets.doit.step2.png?width=200px)
 
-## The properties
+## Nice gradient (step 3)
+
+Adding a gradient in CSS with the property `background` is child's play. First
+color `#f80` is orange at top, and second color `#ff0` is yellow at bottom:
+
+```jsx
+export default function styles() {
+  const smiley = {
+    position: 'relative',
+    width: '200px',
+    height: '200px',
+    borderRadius: '200px',
+    border: '10px solid black',
+    background: 'linear-gradient(180deg, #f80, #ff0)',
+  };
+```
+
+![step 3](/img/gadgets.doit.step3.png?width=200px)
+
+## Add reflexion (step 4)
+
+Let's add a `<div>` `reflexion1` in `widgets/smiley/widget.js`. This element is
+above the circle, but below the eyes:
+
+```jsx
+render() {
+    return (
+        <div className={this.styles.classNames.smiley}>
+            <div className={this.styles.classNames.reflexion1} />
+            <div className={this.styles.classNames.leftEye} />
+            <div className={this.styles.classNames.rightEye} />
+            <div className={this.styles.classNames.smile} />
+        </div>
+    )
+}
+```
+
+And create a new style CSS to draw an ellipse in `widgets/smiley/styles.js`:
+
+```jsx
+export default function styles() {
+  const reflexion1 = {
+      position: 'absolute',
+      left: '50px',
+      right: '50px',
+      top: '10px',
+      bottom: '80px',
+      borderRadius: '200px',
+      background: 'linear-gradient(180deg, white, #fc0)',
+      transform: 'scaleX(1.5)',
+      opacity: 0.8,
+  };
+```
+
+{{% notice info %}} We see here the ellipse bordered by a red line. Absolute
+positioning with `left`, `right`, `top` and `bottom` gives a circle. It is the
+transformation with `scaleX(1.5)` that gives an ellipse:
+![step 4](/img/gadgets.doit.step4b.png?width=200px) {{% /notice %}}
+
+![step 4](/img/gadgets.doit.step4.png?width=200px)
+
+## One more reflexion (step 5)
+
+Let's add a other `<div>` `reflexion2` in `widgets/smiley/widget.js`:
+
+```jsx
+render() {
+    return (
+        <div className={this.styles.classNames.smiley}>
+            <div className={this.styles.classNames.reflexion1} />
+            <div className={this.styles.classNames.reflexion2} />
+            <div className={this.styles.classNames.leftEye} />
+            <div className={this.styles.classNames.rightEye} />
+            <div className={this.styles.classNames.smile} />
+        </div>
+    )
+}
+```
+
+And create a new style CSS in `widgets/smiley/styles.js`:
+
+```jsx
+export default function styles() {
+  const reflexion2 = {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      borderStyle: 'solid',
+      borderRadius: '200px',
+      borderWidth: '5px',
+      borderColor: 'transparent white white transparent',
+      transform: 'rotate(45deg)',
+      opacity: 0.8,
+  };
+```
+
+{{% notice info %}} This element draws a semicircle, drawing a circle that has
+only the right (in red below) and bottom (in cyan below) borders, rotated 45
+degrees CW. We see here the element before the rotation:
+![step 5](/img/gadgets.doit.step5b.png?width=200px) In the final version drawn
+in the smiley face, these two borders are white, of course. {{% /notice %}}
+
+![step 5](/img/gadgets.doit.step5.png?width=200px)
+
+## The properties (step 6)
 
 Our smiley has a fixed size of `200px`. It would be cool to be able to specify
 its size using a property, and allow this to be written in the parent widget
@@ -227,20 +335,23 @@ export default function styles(theme, props) {
 }
 ```
 
-## And more...
+All other absole values `px` for eyes, smile and reflexions have to be
+calculated from the diameter (property `size`), which takes a lot of work!
+
+## And more... (step 7)
 
 With a little bit of work in the CSS, you can achieve this:
 
-![step 3](/img/gadgets.doit.step3.png?width=200px)
+![step 7](/img/gadgets.doit.step7.png?width=200px)
 
 In the final widget, it will be possible to add a `satisfaction` property (we
 see here the results with the values `100`, `75`, `50`, `25` and `0`):
 
-![step 4](/img/gadgets.doit.step4.png)
+![step 8](/img/gadgets.doit.step8.png)
 
 Why not a `color` property?
 
-![step 5](/img/gadgets.doit.step5.png)
+![step 9](/img/gadgets.doit.step9.png)
 
 To obtain these variants, just write:
 

@@ -11,3 +11,5 @@ pre: '<b>1. </b>'
 # Overview
 
 The basics
+
+![Xcraft](/img/xcraft.svg)

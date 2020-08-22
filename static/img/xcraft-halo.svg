@@ -126,19 +126,6 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter1717"
-       x="-0.079258798"
-       width="1.1585176"
-       y="-0.079258802"
-       height="1.1585176">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="5.6795256"
-         id="feGaussianBlur1719" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
        id="filter1771"
        x="-0.35643"
        width="1.71286"
@@ -203,10 +190,6 @@
        cx="105.50709"
        cy="111.19439"
        r="60.493229" />
-    <path
-       id="path1291"
-       style="fill:#000000;fill-opacity:0.23;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1717)"
-       d="M 39.158221,32.320619 98.689472,118.3102 39.158221,204.29977 h 52.916662 l 33.072917,-47.77175 33.07292,47.77175 h 52.91666 L 151.60614,118.3102 211.13738,32.320619 H 158.22072 L 125.1478,80.09238 92.074883,32.320619 Z" />
     <path
        d="m 18.52083,25.4 59.531249,85.98958 -59.531249,85.98958 h 52.916666 l 33.072884,-47.77176 33.07292,47.77176 h 52.91666 L 130.96872,111.38958 190.49996,25.4 H 137.5833 L 104.51038,73.171761 71.437496,25.4 Z"
        style="fill:#599a3e;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"

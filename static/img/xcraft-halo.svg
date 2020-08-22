@@ -8,7 +8,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="xcraft.svg"
+   sodipodi:docname="xcraft-halo.svg"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    id="svg8"
    version="1.1"
@@ -136,6 +136,19 @@
          stdDeviation="5.6795256"
          inkscape:collect="always" />
     </filter>
+    <filter
+       height="1.71286"
+       y="-0.35643"
+       width="1.71286"
+       x="-0.35643"
+       id="filter1771"
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur1773"
+         stdDeviation="17.968001"
+         inkscape:collect="always" />
+    </filter>
   </defs>
   <sodipodi:namedview
      inkscape:snap-grids="false"
@@ -148,9 +161,9 @@
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="282.19991"
-     inkscape:cx="293.5599"
-     inkscape:zoom="0.87931675"
+     inkscape:cy="425.19685"
+     inkscape:cx="425.19685"
+     inkscape:zoom="1.2159074"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -184,6 +197,12 @@
      id="layer1"
      inkscape:groupmode="layer"
      inkscape:label="Calque 1">
+    <circle
+       r="60.493229"
+       cy="111.19439"
+       cx="105.50709"
+       id="path1721"
+       style="mix-blend-mode:normal;fill:#ffffff;fill-opacity:0.80487806;fill-rule:nonzero;stroke:none;stroke-width:1.23831;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter1771)" />
     <path
        d="M 39.158221,32.320619 98.689472,118.3102 39.158221,204.29977 h 52.916662 l 33.072917,-47.77175 33.07292,47.77175 h 52.91666 L 151.60614,118.3102 211.13738,32.320619 H 158.22072 L 125.1478,80.09238 92.074883,32.320619 Z"
        style="fill:#000000;fill-opacity:0.23;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1717)"

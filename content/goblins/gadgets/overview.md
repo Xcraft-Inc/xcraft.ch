@@ -7,7 +7,7 @@ draft: true
 
 ## Easily build your UI
 
-![smile](/img/smile2.png?width=250px)
+![gadget](/img/gadgets.1.svg?width=450px)
 
 `Goblin-gadgets` contains a large collection of standard `widgets`, allowing to
 build complex UI easily and quickly. The secret is in the boxing, each box can

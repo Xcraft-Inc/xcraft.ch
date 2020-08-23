@@ -7,7 +7,7 @@ draft: true
 
 ## WidgetDoc
 
-![smile](/img/smile1.png?width=250px)
+![gadget](/img/gadgets.2.svg?width=320px)
 
 `WidgetDoc` is a great tool for experimenting with most widgets. You choose the
 widget and then interactively define its properties. You immediately see the

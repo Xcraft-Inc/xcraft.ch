@@ -7,7 +7,7 @@ draft: true
 
 ## Make your own gadgets
 
-![smile](/img/smile5.png?width=250px)
+![gadget](/img/gadgets.4.svg?width=400px)
 
 We will create a `smiley` widget that displays a satisfaction rating from a
 value between 0 (unhappy) and 100 (happy). To do this, you have to create a new

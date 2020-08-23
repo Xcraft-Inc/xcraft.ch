@@ -7,6 +7,6 @@ draft: true
 
 ## Learn how to use gadgets
 
-![smile](/img/smile4.png?width=250px)
+![gadget](/img/gadgets.3.svg?width=270px)
 
 Coming soon...

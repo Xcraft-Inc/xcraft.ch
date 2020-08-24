@@ -230,7 +230,7 @@ export default function styles() {
 {{% notice info %}} We see here the ellipse bordered by a red line. Absolute
 positioning with `left`, `right`, `top` and `bottom` gives a circle. It is the
 transformation with `scaleX(1.5)` that gives an ellipse:
-![step 4](/img/gadgets.doit.step4b.png?width=200px) {{% /notice %}}
+![step 4](/img/gadgets.doit.step4b.svg?width=200px) {{% /notice %}}
 
 ![step 4](/img/gadgets.doit.step4.png?width=200px)
 
@@ -274,7 +274,7 @@ export default function styles() {
 {{% notice info %}} This element draws a semicircle, drawing a circle that has
 only the right (in red below) and bottom (in cyan below) borders, rotated 45
 degrees CW. We see here the element before the rotation:
-![step 5](/img/gadgets.doit.step5b.png?width=200px) In the final version drawn
+![step 5](/img/gadgets.doit.step5b.svg?width=200px) In the final version drawn
 in the smiley face, these two borders are white, of course. {{% /notice %}}
 
 ![step 5](/img/gadgets.doit.step5.png?width=200px)
@@ -370,6 +370,7 @@ render() {
 ```
 
 You will find the definitive widget in `goblin-gadgets/widgets/smiley`. It is
-possible to test it with [WidgetDoc](/goblins/gadgets/widgetdoc).
+possible to test it with [WidgetDoc](/goblins/gadgets/widgetdoc). The XCRAFT.CH
+section allows you to test the different steps (1 to 7) described above:
 
-![WidgetDoc](/img/gadgets.doit.widgetdoc.png)
+![WidgetDoc](/img/gadgets.doit.widgetdoc.svg)

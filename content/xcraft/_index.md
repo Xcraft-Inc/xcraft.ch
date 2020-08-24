@@ -14,7 +14,7 @@ Xcraft is a multiplatform infrastructure and toolchain which is intended to work
 with minimal dependencies and on all usual systems like GNU/Linux, macOS X and
 Windows.
 
-![Xcraft](/img/xcraft-halo-s.svg)
+![Xcraft](/img/xcraft-old.svg)
 
 > When my work is finished, I'm coming back for you.  
 > -- Death Knight of the Orcish Horde

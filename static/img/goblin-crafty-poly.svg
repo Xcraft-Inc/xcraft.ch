@@ -1132,15 +1132,16 @@
        style="fill:#000000;stroke-width:0.126358"
        id="path4646" />
     <text
+       transform="scale(0.95030333,1.0522956)"
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:5.27397px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.131849"
-       x="140.90031"
-       y="35.875679"
+       style="font-style:normal;font-weight:normal;font-size:5.01187px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.125297"
+       x="153.19183"
+       y="34.208977"
        id="text4665"><tspan
          sodipodi:role="line"
          id="tspan4663"
-         x="140.90031"
-         y="35.875679"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.131849">quest.goblin.getX('Walhalla');</tspan></text>
+         x="153.19183"
+         y="34.208977"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.125297">quest.goblin.getX('Walhalla');</tspan></text>
   </g>
 </svg>

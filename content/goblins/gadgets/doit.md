@@ -150,7 +150,7 @@ export default function styles() {
     left: '30px',
     right: '30px',
     height: '60px',
-    borderRadius: '0 0 150px 150px / 0 0 150px 150px',
+    borderRadius: '0 0 150px 150px',
     border: '10px solid black',
     borderTop: 0,
   };

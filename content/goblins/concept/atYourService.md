@@ -29,6 +29,6 @@ So insteed of asking yourself hard questions, try with funny question:
 - Translations ?
 - Search ?
 
-![Logo](/img/goblin-crafty.svg?width=600px)
+![Logo](/img/goblin-blupi.svg?width=500px)
 
 We already have theses goblins, and they can respond, at your service!

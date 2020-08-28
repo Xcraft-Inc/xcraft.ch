@@ -8,7 +8,7 @@ pre: '<b>2. </b>'
 
 ### Chapter 2
 
-![Logo](/img/goblin-crafty-poly.svg)
+![Logo](/img/goblin-blupi-poly.svg)
 
 Goblins are small, green (or yellow-green) creatures with pointy features and
 high intelligence (though often little common sense). Goblins speak Goblin,

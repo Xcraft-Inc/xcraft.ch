@@ -12,6 +12,8 @@ pre: '<b>2.4 </b>'
 
 A wide variety of widgets
 
+![Logo](/img/goblin-blupi-gadgets.svg)
+
 ![various gadgets](/img/gadgets.various.svg?width=800px)
 
 > The fool on the sand has built his app, (3x)  

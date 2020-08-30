@@ -11,3 +11,5 @@ pre: '<b>2.2 </b>'
 # Workshop
 
 ...
+
+![Logo](/img/goblin-blupi-workshop.svg)

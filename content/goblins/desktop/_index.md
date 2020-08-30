@@ -12,4 +12,6 @@ pre: '<b>2.3 </b>'
 
 It is not for gnomes...
 
+![Logo](/img/goblin-blupi-desktop.svg)
+
 ![Logo](/img/desktop.png)

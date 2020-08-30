@@ -8,12 +8,14 @@ pre: '<b>2. </b>'
 
 ### Chapter 2
 
-![Logo](/img/goblin-blupi-poly.svg)
+# Goblins
 
 Goblins are small, green (or yellow-green) creatures with pointy features and
 high intelligence (though often little common sense). Goblins speak Goblin,
 Orcish, and Common. Goblins know myriad languages in order to trade with as many
 races as possible.
+
+![Logo](/img/goblin-blupi-poly.svg)
 
 ## You wanna start crafting with goblins?
 

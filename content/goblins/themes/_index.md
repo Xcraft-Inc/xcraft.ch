@@ -1,12 +1,12 @@
 ---
 title: 'Themes'
 date: 2020-08-07
-weight: 50
+weight: 60
 chapter: true
-pre: '<b>2.5 </b>'
+pre: '<b>2.6 </b>'
 ---
 
-### Chapter 2.5
+### Chapter 2.6
 
 # Themes
 

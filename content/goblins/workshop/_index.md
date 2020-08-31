@@ -12,4 +12,4 @@ pre: '<b>2.2 </b>'
 
 ...
 
-![Logo](/img/goblin-blupi-workshop.svg)
+![Logo](/img/goblin-blupi-workshop.svg?width=600px)

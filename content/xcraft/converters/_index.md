@@ -12,6 +12,8 @@ pre: '<b>3.5 </b>'
 
 A wide variety of converters for all uses
 
+![blupi](/img/goblin-to-blupi.png)
+
 > The dream of alchemists has always been to [transmute][1] lead into gold. With
 > converters, this is possible. Well almost...  
 > -- Albert le Grand, 1193 - 1280

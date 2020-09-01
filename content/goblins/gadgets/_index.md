@@ -12,9 +12,7 @@ pre: '<b>2.4 </b>'
 
 A wide variety of widgets
 
-![Logo](/img/goblin-blupi-gadgets.svg?width=600px)
-
-![various gadgets](/img/gadgets.various.svg?width=800px)
+![various gadgets](/img/gadgets.various.png?width=800px)
 
 > The fool on the sand has built his app, (3x)  
 > And the storm came.  

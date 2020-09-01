@@ -238,11 +238,35 @@ quest is executed.
 
 ### Send commands
 
+It's really simple to send a command to a service since the `quest` context
+wraps `busClient` in an high level API.
+
 ```js
-quest.cmd(); /* send a command (use bus client in push mode) */
+Goblin.registerQuest(goblinName, 'engage', function* (quest) {
+  /* send a command (use bus client in push mode) */
+  const result = yield quest.cmd(
+    'peon.work',
+    {ressources: ['or', 'wood', 'rock']} /* payload */
+  );
+});
 ```
 
-...
+In this example, we send a command to a singleton (because no `id` is
+specified). Then there is an other way which is more object oriented and can
+improve the readability.
+
+```js
+Goblin.registerQuest(goblinName, 'engage', function* (quest) {
+  const peon = quest.getAPI('peon');
+  const result = yield peon.work(
+    {ressources: ['or', 'wood', 'rock']} /* payload */
+  );
+});
+```
+
+If possible, prefer the `getAPI` way because it's more high level. You should
+use `quest.cmd` only when you want to create dynamic calls (where the service
+and/or the command names are not already known).
 
 ### Send events
 

@@ -12,4 +12,4 @@ pre: '<b>2.5 </b>'
 
 Polyglot
 
-![Logo](/img/goblin-blupi-nabu.svg?width=600px)
+![Logo](/img/goblin-blupi-nabu.png?width=600px)

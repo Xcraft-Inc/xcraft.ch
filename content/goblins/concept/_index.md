@@ -15,7 +15,7 @@ in 1973. We don't know this model before designing this framework, after some
 search on wikipedia we discover that our work match the following definition
 perfectly.
 
-![Logo](/img/goblin-blupi-concept.svg?width=600px)
+![Logo](/img/goblin-blupi-concept.png?width=600px)
 
 > The actor model in computer science is a mathematical model of concurrent
 > computation that treats actor as the universal primitive of concurrent

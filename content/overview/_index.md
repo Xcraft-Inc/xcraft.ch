@@ -12,4 +12,4 @@ pre: '<b>1. </b>'
 
 The basics
 
-![Xcraft](/img/xcraft-old.svg)
+![Xcraft](/img/x-logo.png)

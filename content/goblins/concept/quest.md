@@ -12,7 +12,7 @@ draft: true
 For defining goblin capabilities, we register a quest to the central agency of
 all goblins, that finish in the chief Orc xcraft bus commands registry.
 
-![Logo](/img/goblin-evil.svg?width=600px)
+![Logo](/img/goblin-evil.png?width=600px)
 
 A goblin with a quest named `killJohnFitzgeraldKennedy` can certainly make a
 killer feature...

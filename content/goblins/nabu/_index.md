@@ -13,3 +13,6 @@ pre: '<b>2.5 </b>'
 Polyglot
 
 ![Logo](/img/goblin-blupi-nabu.png?width=600px)
+
+> Toute la terre avait une seule langue et les mêmes mots.  
+> -- La bible

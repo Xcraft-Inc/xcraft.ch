@@ -1,7 +1,7 @@
 ---
 title: 'Client'
 date: 2020-08-05
-weight: 5
+weight: 10
 tags: ['devel', 'bus']
 draft: true
 ---
@@ -273,7 +273,7 @@ and/or the command names are not already known).
 When you send an event, your `goblinName` (namespace) is automatically added to
 the event. Of course, you can send an event without payload. For more
 informations about the command namespaces, please look
-[here TODO](/xcraft/infrastructure/commands).
+[here](/xcraft/infrastructure/commands).
 
 ```js
 Goblin.registerQuest(goblinName, 'engage', function* (quest) {
@@ -292,7 +292,7 @@ just `return`.
 {{% notice info %}}It's forbidden (in the case of the Goblin API) to send events
 with the `.finished` or the `.error` suffixes because it's reserved to the
 commands. These events are always using the
-[unicast routing TODO](/xcraft/infrastructure/routing).{{% /notice %}}
+[unicast routing](/xcraft/infrastructure/routing).{{% /notice %}}
 
 ### Subscribe to events
 

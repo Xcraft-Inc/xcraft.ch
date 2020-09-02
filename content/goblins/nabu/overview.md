@@ -18,7 +18,7 @@ des appels à la fonction `T`:
 
 L'application contient un dictionnaire de traduction. Dans l'exemple ci-dessous,
 le dictionnaire contient les traductions pour la locale `english`, mais il peut
-contenir aurant de traductions que souhaité (`french`, `german`, `italian`,
+contenir autant de traductions que souhaité (`french`, `german`, `italian`,
 etc.).
 
 ![Concept](/img/nabu.concept2.png)

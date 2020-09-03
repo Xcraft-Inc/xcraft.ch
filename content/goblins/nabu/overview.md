@@ -7,12 +7,15 @@ draft: true
 
 ## Polyglotify your app
 
+> Toute la terre avait une seule langue et les mêmes mots.  
+> -- La bible
+
 Nabu permet de développer une application pour plusieurs langues (ou cultures,
 ou encore "locales"). L'application n'est pas compilée pour une langue donnée.
 Elle peut changer de langue "à la volée".
 
 Le principe est très simple. Il suffit de remplacer les `string` constantes par
-des appels à la fonction `T`:
+des appels à la fonction `T( )`:
 
 ![Concept](/img/nabu.concept1.png)
 

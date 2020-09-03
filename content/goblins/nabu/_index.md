@@ -14,5 +14,8 @@ Polyglot
 
 ![Logo](/img/goblin-blupi-nabu.png?width=600px)
 
-> Toute la terre avait une seule langue et les mêmes mots.  
-> -- La bible
+> Nabu is the ancient Mesopotamian patron god of literacy, the rational arts,
+> scribes and wisdom.  
+> -- [Wikipedia][1]
+
+[1]: https://en.wikipedia.org/wiki/Nabu

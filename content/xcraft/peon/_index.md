@@ -10,4 +10,4 @@ pre: '<b>3.4 </b>'
 
 # Peon
 
-...
+![Coming soon](/img/coming-soon.png)

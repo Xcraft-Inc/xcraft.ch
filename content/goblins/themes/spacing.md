@@ -7,4 +7,4 @@ draft: true
 
 ## Spacing
 
-Coming soon...
+![Coming soon](/img/coming-soon.png)

@@ -6,4 +6,4 @@ tags: ['devel', 'bus']
 draft: true
 ---
 
-a
+![Coming soon](/img/coming-soon.png)

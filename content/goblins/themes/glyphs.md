@@ -7,4 +7,4 @@ draft: true
 
 ## Glyphs
 
-Coming soon...
+![Coming soon](/img/coming-soon.png)

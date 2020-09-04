@@ -26,7 +26,15 @@ etc.).
 
 ![Concept](/img/nabu.concept2.png)
 
-{{% notice info %}} Le développeur peut choisir l'écrire ses textes dans la
+{{% notice info %}} Le développeur peut choisir d'écrire ses textes dans la
 langue de son choix. Cela peut être le français, l'anglais, ou même du
 "franglais". Peu importe, puisque ces textes pourront toujours être traduits
 et/ou corrigés par le dictionnaire Nabu. {{% /notice %}}
+
+{{% notice note %}} Il faut considérer la `string` `'Bonjour'` donnée comme
+paramètre à la function `T( )` non pas comme un texte, mais comme une `key`
+d'entrée dans le dictionnaire des traductions. Lorsque la traduction n'existe
+pas, c'est cette `key` qui est affichée provisoirement dans la UI (_fallback_).
+Dans l'illustration ci-dessus, c'est le cas pour `Jaune`. Avec une `locale` en
+anglais, la UI affichera "Jaune" tant que la traduction "Yellow" ne sera pas
+effectuée. {{% /notice %}}

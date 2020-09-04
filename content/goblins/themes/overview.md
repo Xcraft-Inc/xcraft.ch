@@ -7,4 +7,4 @@ draft: true
 
 ## Theming your app
 
-Coming soon...
+![Coming soon](/img/coming-soon.png)

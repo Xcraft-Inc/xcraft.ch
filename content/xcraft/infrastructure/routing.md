@@ -6,4 +6,4 @@ tags: ['devel', 'bus', 'routing']
 draft: true
 ---
 
-...
+![Coming soon](/img/coming-soon.png)

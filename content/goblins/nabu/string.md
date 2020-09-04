@@ -68,18 +68,30 @@ function getName(firstName, lastName) {
 }
 ```
 
-La function `combine` appond les `string` sans ajouter d'espace. Il faut donc
-écrire:
+Cette function accepte également un tableau:
 
 ```jsx
-function getName(firstName, lastName) {
-  return StringBuilder.combine(firstName, ' ', lastName);
-}
-```
-
-Ces functions acceptent également des tableaux:
-
-```jsx
-const array = ["It's", 'magic'];
+const array = ["It's", 'magic!'];
 const text = StringBuilder.joinWords(array);
 ```
+
+{{% notice info %}} `joinWords` fonctionne bien entendu avec des `string` ou des
+fonctions `T( )`. {{% /notice %}}
+
+{{% notice info %}} Il existe plusieurs autres fonctions utiles pour appondre
+des textes. Citons `joinSentences`, `joinHyphen` et `joinLines`. Quant à lui,
+`join` permet de choisir le séparateur. {{% /notice %}}
+
+### Summary
+
+| Function        | Action                                                          |
+| --------------- | --------------------------------------------------------------- |
+| `joinWords`     | Appends several texts, separated by spaces.                     |
+| `joinSentences` | Appends several texts, separated by commas and spaces (`", "`). |
+| `joinHyphen`    | Appends several texts, separated by hyphens (U+2014).           |
+| `joinLines`     | Appends several lines.                                          |
+| `join`          | Appends several texts, with a separator of your choice.         |
+| `combine`       | Appends sevral texts as is.                                     |
+
+{{% notice note %}} `StringBuilder` est une classe statique. Il n'est donc pas
+nécessaire de l'instancier. {{% /notice %}}

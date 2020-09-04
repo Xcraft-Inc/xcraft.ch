@@ -5,3 +5,5 @@ weight: 10
 tags: ['toolchain', 'pacman']
 draft: true
 ---
+
+![Coming soon](/img/coming-soon.png)

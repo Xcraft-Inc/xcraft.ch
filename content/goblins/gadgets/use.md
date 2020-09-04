@@ -9,4 +9,4 @@ draft: true
 
 ![gadget](/img/gadgets.3.svg?width=270px)
 
-Coming soon...
+![Coming soon](/img/coming-soon.png)

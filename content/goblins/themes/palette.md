@@ -7,4 +7,4 @@ draft: true
 
 ## Palette
 
-Coming soon...
+![Coming soon](/img/coming-soon.png)

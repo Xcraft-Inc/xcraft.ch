@@ -3,10 +3,10 @@ title: 'Build'
 date: 2020-08-05
 weight: 70
 chapter: true
-pre: '<b>2.7 </b>'
+pre: '<b>2.8 </b>'
 ---
 
-### Chapter 2.7
+### Chapter 2.8
 
 # Build
 

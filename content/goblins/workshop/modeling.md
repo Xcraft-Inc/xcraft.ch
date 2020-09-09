@@ -8,11 +8,9 @@ weight: 11
 
 In the workshop we propose a kind of domain service factory. The domain driven
 design guidelines has been a good starting point when we started to define our
-first applications (see DDD
-[1](https://domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf)).
-But we have adpated the methodology and rules to fit a more natural way of
-designing things. We keep the good of DDD and we enlight the darkness of
-evasives points.
+first applications (see [DDD][1]). But we have adpated the methodology and rules
+to fit a more natural way of designing things. We keep the good of DDD and we
+enlight the darkness of evasives points.
 
 We don't pretend to be experts of DDD methodology shared by Eric Evans, we have
 read the book and experimented by ourself. The workshop entity builder is a
@@ -161,3 +159,6 @@ quest.evt('project-name-changed', {oldName: '007', newName: 'G1-007'});
 ```
 
 Then a email notification service can handle that kind of events (why not?)
+
+[1]:
+  https://domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf

@@ -5,7 +5,7 @@ weight: 10
 ---
 
 Will create a new value and add it into the collection. This method is generally
-called by workitems when you add a new element in CRUD.
+called by workitems when you add a new element in [CRUD][1].
 
 This method is generated only for collection of values, ex:
 
@@ -37,3 +37,5 @@ const payload = {
 yield projectAPI.addNewToTasks({payload})
 
 ```
+
+[1]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete

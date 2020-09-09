@@ -29,8 +29,10 @@ Provide task switching by context.
 
 Main container for working on something generaly opened in a tab. The goblin
 workshop provide a variety of configurable goblins to add as workitem, for
-searching or editing entities (CRUD).
+searching or editing entities ([CRUD][1]).
 
 ### Dialogs
 
 A modal dialog can be opened on top of the current workitem.
+
+[1]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete

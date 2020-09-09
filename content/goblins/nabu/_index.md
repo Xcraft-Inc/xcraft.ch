@@ -3,10 +3,10 @@ title: 'Nabu'
 date: 2020-08-31
 weight: 50
 chapter: true
-pre: '<b>2.5 </b>'
+pre: '<b>2.6 </b>'
 ---
 
-### Chapter 2.5
+### Chapter 2.6
 
 # Nabu
 

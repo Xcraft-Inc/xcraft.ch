@@ -14,3 +14,5 @@ Describe the auto-generated API for entities.
 
 Some call contains an contextual parts `<>` refering the destination property
 name.
+
+![Logo](/img/goblin-blupi-entity-api.png?width=600px)

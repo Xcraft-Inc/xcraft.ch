@@ -12,7 +12,7 @@ pre: '<b>2.3 </b>'
 
 Describe the auto-generated API for entities.
 
+![Logo](/img/goblin-blupi-entity-api.png?width=600px)
+
 Some call contains an contextual parts `<>` refering the destination property
 name.
-
-![Logo](/img/goblin-blupi-entity-api.png?width=600px)

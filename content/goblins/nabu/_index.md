@@ -12,7 +12,7 @@ pre: '<b>2.6 </b>'
 
 Polyglot
 
-![Logo](/img/goblin-blupi-nabu.png?width=600px)
+![Logo](/img/goblin-blupi-nabu.png?width=550px)
 
 > Nabu is the ancient Mesopotamian patron god of literacy, the rational arts,
 > scribes and wisdom.  

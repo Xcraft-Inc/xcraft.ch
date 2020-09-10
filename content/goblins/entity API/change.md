@@ -11,6 +11,6 @@ Change the state of an entity. The path arguments supports the **Shredder**
 
 ```js
 
-const entityState = yield entityAPI.change({path: 'score',newValue:110});
+yield entityAPI.change({path: 'score',newValue:110});
 
 ```

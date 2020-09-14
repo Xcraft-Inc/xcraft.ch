@@ -3,10 +3,10 @@ title: 'Gadgets'
 date: 2020-08-07
 weight: 40
 chapter: true
-pre: '<b>2.4 </b>'
+pre: '<b>2.5 </b>'
 ---
 
-### Chapter 2.4
+### Chapter 2.5
 
 # The Goblin gadgets UX
 

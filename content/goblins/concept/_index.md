@@ -23,4 +23,7 @@ perfectly.
 > decisions, create more actors, send more messages, and determine how to
 > respond to the next message received. Actors may modify their own private
 > state, but can only affect each other indirectly through messaging (removing
-> the need for lock-based synchronization). -- Wikipedia [source][1]
+> the need for lock-based synchronization).  
+> -- [Wikipedia][1]
+
+[1]: https://en.wikipedia.org/wiki/Actor_model

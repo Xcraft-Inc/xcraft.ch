@@ -22,7 +22,7 @@ topology chapters, for a better understanding.
 So insteed of asking yourself hard questions, try with funny question:
 
 - Entities ?
-- CRUD ?
+- [CRUD][1] ?
 - Libraries ?
 - Widgets ?
 - Theming ?
@@ -32,3 +32,5 @@ So insteed of asking yourself hard questions, try with funny question:
 ![Logo](/img/goblin-blupi-service.png?width=700px)
 
 We already have theses goblins, and they can respond, at your service!
+
+[1]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete

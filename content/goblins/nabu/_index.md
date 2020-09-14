@@ -3,16 +3,16 @@ title: 'Nabu'
 date: 2020-08-31
 weight: 50
 chapter: true
-pre: '<b>2.5 </b>'
+pre: '<b>2.6 </b>'
 ---
 
-### Chapter 2.5
+### Chapter 2.6
 
 # Nabu
 
 Polyglot
 
-![Logo](/img/goblin-blupi-nabu.png?width=600px)
+![Logo](/img/goblin-blupi-nabu.png?width=550px)
 
 > Nabu is the ancient Mesopotamian patron god of literacy, the rational arts,
 > scribes and wisdom.  

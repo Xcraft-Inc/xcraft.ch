@@ -4,9 +4,9 @@ date: 2020-07-04
 weight: 10
 ---
 
-The goblin workshop is made for crafting and modeling typical CRUD app domains.
-It's a rapid tools for iterate data models, bind a UI. For mastering this
-powerfull layer, you must understand the key concepts and best pratices.
+The goblin workshop is made for crafting and modeling typical [CRUD][1] app
+domains. It's a rapid tools for iterate data models, bind a UI. For mastering
+this powerfull layer, you must understand the key concepts and best pratices.
 
 Combined with some other modules provide a full framework of goblins. We hope
 that this crafting experience will make you gain a precious times.
@@ -38,3 +38,5 @@ childhood friends.
 Your modules will provide entities and workitems, don't hesite to split domains
 in separate goblins modules. We encourage composable and reusable domains.
 Overloading domains
+
+[1]: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete

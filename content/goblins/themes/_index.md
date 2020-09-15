@@ -1,7 +1,7 @@
 ---
 title: 'Themes'
 date: 2020-08-07
-weight: 60
+weight: 70
 chapter: true
 pre: '<b>2.7 </b>'
 ---

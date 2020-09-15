@@ -1,7 +1,7 @@
 ---
 title: 'Desktop'
 date: 2020-08-07
-weight: 30
+weight: 40
 chapter: true
 pre: '<b>2.4 </b>'
 ---

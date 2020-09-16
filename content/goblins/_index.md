@@ -20,3 +20,12 @@ races as possible.
 ## You wanna start crafting with goblins?
 
 `npx goblins <myAppId>`
+
+## Summary
+
+|     |                                                                    |                                                                      |                                                                            |
+| --- | ------------------------------------------------------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+|     | [![](/img/goblin-blupi-concept.png?width=250px)](/goblins/concept) | [![](/img/goblin-blupi-workshop.png?width=250px)](/goblins/workshop) | [![](/img/goblin-blupi-entity-api.png?width=300px)](/goblins/entityapi)    |
+|     | [![](/img/goblin-blupi-desktop.png?width=250px)](/goblins/desktop) | [![](/img/gadgets.various.png?width=300px) ](/goblins/gadgets)       | [![](/img/goblin-blupi-nabu.png?width=220px)](/goblins/nabu)               |
+|     | [![](/img/goblin-blupi-themes.png?width=280px)](/goblins/themes)   | [![](/img/goblin-blupi-build.png?width=250px)](/goblins/build)       | [![](/img/goblin-blupi-tradingpost.png?width=250px)](/goblins/tradingpost) |
+|     | [![](/img/goblin-blupi-postman.png?width=250px)](/goblins/postman) |                                                                      |                                                                            |

@@ -179,6 +179,16 @@ tr code {
   background-color: #1a2c12;
 }
 
+table img {
+  background-color: transparent;
+  transition: 1s ease-in-out;
+}
+
+td:hover img {
+  filter: hue-rotate(-30deg) contrast(150%);
+  transition: 0.5s ease-in-out;
+}
+
 #body .notices img {
   margin: 0.75rem auto;
   background-color: transparent;

@@ -12,4 +12,4 @@ pre: '<b>3.6 </b>'
 
 A wrapper around immutable JS
 
-![Hache](/img/goblin-blupi-hache.png?width=600px)
+![Shredder](/img/goblin-blupi-shredder.png?width=600px)

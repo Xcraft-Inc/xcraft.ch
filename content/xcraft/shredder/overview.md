@@ -14,8 +14,6 @@ Immutable data encourages pure functions (data-in, data-out) and lends itself to
 much simpler application development, enabling techniques from functional
 programming such as lazy evaluation.
 
-![Hache](/img/goblin-blupi-hache.png?width=600px)
-
 ## The shredder
 
 We created the Shredder wrapper to simplify the use of immutable.js in our

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:export-ydpi="119.81"
+   inkscape:export-xdpi="119.81"
+   inkscape:export-filename="D:\git\xcraft.ch\static\img\nabu.dico.png"
+   sodipodi:docname="nabu.dico.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg5753"
+   version="1.1"
+   viewBox="0 0 280 90"
+   height="90mm"
+   width="280mm">
+  <defs
+     id="defs5747">
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker6765"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path6763"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         style="fill:#4da0ff;fill-opacity:1;fill-rule:evenodd;stroke:#4da0ff;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4)" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="TriangleOutL"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutL">
+      <path
+         transform="scale(0.8)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path6507" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path6368" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-global="true"
+     inkscape:window-maximized="0"
+     inkscape:window-y="416"
+     inkscape:window-x="416"
+     inkscape:window-height="1262"
+     inkscape:window-width="2537"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="170.07874"
+     inkscape:cx="529.13386"
+     inkscape:zoom="1.8379092"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       id="grid6316"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5750">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Calque 1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.05556px;line-height:1.25;font-family:sans-serif;fill:#599a3e;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="110.45405"
+       y="7.6932588"
+       id="text6963"><tspan
+         sodipodi:role="line"
+         id="tspan6961"
+         x="110.45405"
+         y="7.6932588"
+         style="font-size:7.05556px;fill:#599a3e;fill-opacity:1;stroke-width:0.264583">Dictionary</tspan></text>
+    <path
+       style="fill:#e8ffdf;fill-opacity:1;stroke:#000000;stroke-width:0.32892px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 111.125,10.583333 v 71.4375 c 32.71214,-13.22905 58.44888,10.58345 95.25,0 v -71.4375 z"
+       id="path1277"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="113.575"
+       y="27.424761"
+       id="text1281"><tspan
+         sodipodi:role="line"
+         id="tspan1279"
+         x="113.575"
+         y="27.424761"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Rouge</tspan></text>
+    <text
+       id="text1289"
+       y="32.716431"
+       x="113.575"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="32.716431"
+         x="113.575"
+         id="tspan1287"
+         sodipodi:role="line">Vert</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="113.575"
+       y="38.008106"
+       id="text1297"><tspan
+         sodipodi:role="line"
+         id="tspan1295"
+         x="113.575"
+         y="38.008106"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Bleu</tspan></text>
+    <text
+       id="text1305"
+       y="43.299778"
+       x="113.575"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="43.299778"
+         x="113.575"
+         id="tspan1303"
+         sodipodi:role="line">Jaune</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="113.575"
+       y="48.59145"
+       id="text1313"><tspan
+         sodipodi:role="line"
+         id="tspan1311"
+         x="113.575"
+         y="48.59145"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Bonjour</tspan></text>
+    <text
+       id="text1317"
+       y="48.59145"
+       x="142.892"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="48.59145"
+         x="142.892"
+         id="tspan1315"
+         sodipodi:role="line">Coucou</tspan></text>
+    <text
+       id="text1321"
+       y="53.883121"
+       x="113.575"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="53.883121"
+         x="113.575"
+         id="tspan1319"
+         sodipodi:role="line">Lundi</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="113.575"
+       y="59.174793"
+       id="text1329"><tspan
+         sodipodi:role="line"
+         id="tspan1327"
+         x="113.575"
+         y="59.174793"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Mardi</tspan></text>
+    <text
+       id="text1337"
+       y="64.466476"
+       x="113.575"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="64.466476"
+         x="113.575"
+         id="tspan1335"
+         sodipodi:role="line">Mercredi</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="113.575"
+       y="69.758148"
+       id="text1345"><tspan
+         sodipodi:role="line"
+         id="tspan1343"
+         x="113.575"
+         y="69.758148"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Jeudi</tspan></text>
+    <text
+       id="text1353"
+       y="75.049782"
+       x="113.575"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="75.049782"
+         x="113.575"
+         id="tspan1351"
+         sodipodi:role="line">Vendredi</tspan></text>
+    <path
+       style="fill:#599a3e;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.54166,44.979167 v 5.291666 h 5.29167 v 2.645834 l 5.29166,-5.291667 -5.29166,-5.291667 v 2.645834 z"
+       id="path1359"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="174.64157"
+       y="27.424761"
+       id="text1616"><tspan
+         sodipodi:role="line"
+         id="tspan1614"
+         x="174.64157"
+         y="27.424761"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Red</tspan></text>
+    <text
+       id="text1620"
+       y="32.716431"
+       x="174.64157"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="32.716431"
+         x="174.64157"
+         id="tspan1618"
+         sodipodi:role="line">Green</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="174.64157"
+       y="38.008106"
+       id="text1624"><tspan
+         sodipodi:role="line"
+         id="tspan1622"
+         x="174.64157"
+         y="38.008106"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Blue</tspan></text>
+    <text
+       id="text1628"
+       y="43.299778"
+       x="174.64157"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="43.299778"
+         x="174.64157"
+         id="tspan1626"
+         sodipodi:role="line">Yellow</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="174.64157"
+       y="48.59145"
+       id="text1632"><tspan
+         sodipodi:role="line"
+         id="tspan1630"
+         x="174.64157"
+         y="48.59145"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Hello</tspan></text>
+    <text
+       id="text1636"
+       y="53.883121"
+       x="174.64157"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="53.883121"
+         x="174.64157"
+         id="tspan1634"
+         sodipodi:role="line">Monday</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="174.64157"
+       y="59.174793"
+       id="text1640"><tspan
+         sodipodi:role="line"
+         id="tspan1638"
+         x="174.64157"
+         y="59.174793"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Thuesday</tspan></text>
+    <text
+       id="text1644"
+       y="64.466476"
+       x="174.64157"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="64.466476"
+         x="174.64157"
+         id="tspan1642"
+         sodipodi:role="line">Wednesday</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="174.64157"
+       y="69.758148"
+       id="text1648"><tspan
+         sodipodi:role="line"
+         id="tspan1646"
+         x="174.64157"
+         y="69.758148"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">Thursday</tspan></text>
+    <text
+       id="text1652"
+       y="75.049782"
+       x="174.64157"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="75.049782"
+         x="174.64157"
+         id="tspan1650"
+         sodipodi:role="line">Friday</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="174.64157"
+       y="80.341454"
+       id="text1656"><tspan
+         sodipodi:role="line"
+         id="tspan1654"
+         x="174.64157"
+         y="80.341454"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">...</tspan></text>
+    <text
+       id="text1660"
+       y="17.899752"
+       x="113.575"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="17.899752"
+         x="113.575"
+         id="tspan1658"
+         sodipodi:role="line">Key</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="142.892"
+       y="17.899752"
+       id="text1664"><tspan
+         sodipodi:role="line"
+         id="tspan1662"
+         x="142.892"
+         y="17.899752"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583">French</tspan></text>
+    <text
+       id="text1668"
+       y="17.899752"
+       x="174.64157"
+       style="font-style:normal;font-weight:normal;font-size:4.93889px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'Courier New';-inkscape-font-specification:'Courier New';stroke-width:0.264583"
+         y="17.899752"
+         x="174.64157"
+         id="tspan1666"
+         sodipodi:role="line">English</tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1670"
+       d="m 111.125,21.166666 95.25,1e-6"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path1672"
+       d="m 140.22916,21.166666 0,57.089414"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 171.97936,21.166666 v 62.33182"
+       id="path1674" />
+  </g>
+</svg>

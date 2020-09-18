@@ -10,6 +10,8 @@ draft: true
 
 > Unchanging over time or unable to be changed.
 
+![Shredder](/img/goblin-blupi-shredder.png?width=600px)
+
 Immutable data encourages pure functions (data-in, data-out) and lends itself to
 much simpler application development, enabling techniques from functional
 programming such as lazy evaluation.

@@ -17,17 +17,21 @@ shouldn't be too long ;)
 does the same kind of job (report only error and hazardous behavior). Maybe in
 further version it will support more features.{{% /notice %}}
 
-To use the goblin overwatch you have to set up two things :
+To use the goblin overwatch you have to set up three things :
 
+- Mode = "debounce" to receive error at regular interval via channels you
+  defined or "manual" but you have to implement by yourself the way you report
+  your errors.
 - Channels = mail adresse(s) and/or discord channel(s)
 - (optional) Agent = a cool character from overwatch that show up in discord.
   It's Ana by default but you can customize it for each app :)
 
-First of all, you need to set up channels and an agent in your `app.json` for
-the app you want to monitor :
+In debounce mode (default), you need to set up channels and an agent in your
+`app.json` for the app you want to monitor :
 
 ```js
 "goblin-overwatch": {
+    "mode": "debounce",
     "channels": {
         "discord": ["xxxxxxxxxxxxxx9768/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-HF2aj85YGklWeTZWGeouGiIBueiM4m4Hyuc8"],
         "mail": ["goblin-overwatch@my-domain.ch"]
@@ -43,4 +47,14 @@ init quest of overwatch and enable log via the buslog :
     const owAPI = quest.getAPI('overwatch');
     yield owAPI.init();
     yield quest.cmd('buslog.enable', {modes: ['overwatch']});
+```
+
+In manual mode, you have to retrieve errors from overwatch by using the quest
+`getAllErrors` :
+
+```js
+    const owAPI = quest.getAPI('overwatch');
+    const errors = yield owAPI.getAllErrors();
+    // errors = {exception:[...], hazard:[...]};
+    // Do something with your errors, log in a file for example...
 ```

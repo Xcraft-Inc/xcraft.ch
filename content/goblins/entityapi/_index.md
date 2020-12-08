@@ -16,3 +16,11 @@ Describe the auto-generated API for entities.
 
 Some call contains an contextual parts `<>` refering the destination property
 name.
+
+- addTo<propName>
+- addNewTo<propName>
+- addCopyTo<propName>
+- moveInto<propName>
+- removeFrom<propName>
+- set<propName>
+- clear<propName>

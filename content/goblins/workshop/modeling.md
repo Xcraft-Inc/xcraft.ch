@@ -66,7 +66,7 @@ Has you can see, we simply use **createNew** to instanciate a new entity
 service.
 
 {{% notice info %}} The **desktopId** is mandatory, the main reason here is that
-the entity service will use it te retreive the current storage {{% /notice %}}
+the entity service will use it to retrieve the current storage {{% /notice %}}
 
 We can also choose the service identifier yourself:
 
@@ -82,7 +82,7 @@ const projectAPI = yield quest.create('project', {
 });
 ```
 
-With this kind of human readable identifier you can retreive the **template**
+With this kind of human readable identifier you can retrieve the **template**
 project using this kind of create, in a further process, the "name" argument is
 useless and can be omitted if the entity service as already persisted the
 template.

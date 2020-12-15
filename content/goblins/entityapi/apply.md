@@ -6,7 +6,7 @@ weight: 10
 
 Apply a new state to an entity.
 
-# Examples
+# Example
 
 ```js
 const patch = {

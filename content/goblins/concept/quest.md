@@ -3,7 +3,6 @@ title: 'The quest'
 date: 2020-08-05
 weight: 15
 tags: ['devel', 'goblin']
-draft: true
 ---
 
 > Every app has a beginning and an end. What lies between those two points is
@@ -25,11 +24,11 @@ killer feature...
   work
 
 ```js
-Goblin.registerQuest('goblin-oswald', 'killJohnFitzgeraldKennedy', function* (
-  quest,
-  place,
-  date
-) {
-  //todo: kill the president
-});
+Goblin.registerQuest(
+  'goblin-oswald',
+  'killJohnFitzgeraldKennedy',
+  function* (quest, place, date) {
+    //todo: kill the president
+  }
+);
 ```

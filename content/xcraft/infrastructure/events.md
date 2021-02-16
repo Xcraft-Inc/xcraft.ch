@@ -3,7 +3,6 @@ title: 'Events'
 date: 2020-08-05
 weight: 40
 tags: ['devel', 'bus']
-draft: true
 ---
 
 ## How to use

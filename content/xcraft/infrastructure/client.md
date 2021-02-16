@@ -3,7 +3,6 @@ title: 'Client'
 date: 2020-08-05
 weight: 10
 tags: ['devel', 'bus']
-draft: true
 ---
 
 There are two levels of accesses to the buses of an Xcraft server. There is the

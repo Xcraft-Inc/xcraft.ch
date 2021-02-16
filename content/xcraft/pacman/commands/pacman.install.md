@@ -3,7 +3,6 @@ title: 'pacman.install'
 date: 2020-07-24
 weight: 30
 tags: ['toolchain', 'pacman']
-draft: true
 ---
 
 If the package is already installed, nothing happens. If the currently installed

@@ -2,7 +2,6 @@
 title: 'Commands'
 date: 2020-07-24
 weight: 20
-draft: true
 ---
 
 Primary module that drives the `wpkg` command in order to make, build, install,

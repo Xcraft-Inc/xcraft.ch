@@ -2,7 +2,6 @@
 title: 'Markdown Builder'
 date: 2020-07-24
 weight: 40
-draft: true
 ---
 
 ## Rich texts with MarkdownBuilder

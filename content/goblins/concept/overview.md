@@ -2,7 +2,6 @@
 title: 'Overview'
 date: 2020-08-14
 weight: 1
-draft: true
 ---
 
 Goblins use xcraft messages to send command's and event's to others, example:

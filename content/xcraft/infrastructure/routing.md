@@ -83,7 +83,7 @@ appropriate but it's not used (WIP).
 With the ARP Table, it's easy to have the relationship between a command socket
 and an event port for a specific client (`orcName`). Now that you have a better
 idea about the topologies and the links between the nodes, we can study the
-lines which are used by the multi casting.
+lines which are used by the multicasting.
 
 ### The lines
 

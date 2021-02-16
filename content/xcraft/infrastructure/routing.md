@@ -13,12 +13,12 @@ By multicasting we talk about the ways where the events must follow from a
 sender to one (unicast) or multiple (multicast) receivers. The original
 implementation was using only the broadcast. For performances and security
 reasons, the multicast was necessary. In order to achieve this goal, we have
-implemented a complete mechanic in the router stuff (see
-`xcraft-core- transport` module). To multicast we must know which are the
-clients and where they are. For that it uses a table "ARP" where a socket is
-mapped with a client (`orcName`). Then we know that by sending the message to
-this socket, it should be possible to reach the client. But in order to
-understand this stuff, a diagram will be (for sure) very useful.
+implemented a complete mechanic in the router stuff (see `xcraft-core-transport`
+module). To multicast we must know which are the clients and where they are. For
+that it uses a table "ARP" where a socket is mapped with a client (`orcName`).
+Then we know that by sending the message to this socket, it should be possible
+to reach the client. But in order to understand this stuff, a diagram will be
+(for sure) very useful.
 
 ![infrastructure.multicast.0](/img/infrastructure.multicast.0.png)
 

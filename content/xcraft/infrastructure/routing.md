@@ -43,6 +43,8 @@ multicast is necessary and must be implemented a bit like for an usual network.
 
 ![infrastructure.multicast.2](/img/infrastructure.multicast.2.png)
 
+### ARP
+
 Each node has an ARP table. In these tables the clients are mapped with a
 socket. The tables of P1 and P2 are empty because nobody is connected on these
 nodes. T knows two clients (P1 and P2) with a direct connection (it's directly
@@ -69,13 +71,21 @@ for receiving the commands.
 About the nice value, it's avalaible in the tables and it's propagated where
 appropriate but it's not used (WIP).
 
-![infrastructure.multicast.arp](/img/infrastructure.multicast.arp.png)
+### ARP Table in T
+
+| Backend | orcName | token | socket | port | horde | nice | lines |
+| ------- | ------- | ----- | ------ | ---- | ----- | ---- | ----- |
+| Axon    | orcP1   | P1    | s1     | p1   | T     | -4   | -     |
+|         | orcP2   | P2    | s2     | p2   | T     | -4   | -     |
+
 ![infrastructure.multicast.4](/img/infrastructure.multicast.4.png)
 
 With the ARP Table, it's easy to have the relationship between a command socket
 and an event port for a specific client (orcName). Now that you have a better
 idea about the topologies and the links between the nodes, we can study the
 lines which are used by the multi casting.
+
+### The lines
 
 A line is an ID used to create relationships between the nodes in order to send
 events with the "most" efficient way. Without lines, the events are sent in
@@ -100,6 +110,8 @@ A more interesting example will be the changes sent by warehouse to the wm
 (window manager) which has subscribed.
 
 ![infrastructure.multicast.7](/img/infrastructure.multicast.7.png)
+
+### Delete the route
 
 As previously explained, the `:conn-line` internal command is sent when
 subscribing to events with a lineId. Of course, when the subscriber calls

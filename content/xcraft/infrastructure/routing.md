@@ -16,9 +16,9 @@ reasons, the multicast was necessary. In order to achieve this goal, we have
 implemented a complete mechanic in the router stuff (see
 `xcraft-core- transport` module). To multicast we must know which are the
 clients and where they are. For that it uses a table "ARP" where a socket is
-mapped with a client (orcName). Then we know that by sending the message to this
-socket, it should be possible to reach the client. But in order to understand
-this stuff, a diagram will be (for sure) very useful.
+mapped with a client (`orcName`). Then we know that by sending the message to
+this socket, it should be possible to reach the client. But in order to
+understand this stuff, a diagram will be (for sure) very useful.
 
 ![infrastructure.multicast.0](/img/infrastructure.multicast.0.png)
 
@@ -60,7 +60,7 @@ push/pull.
 When a command is received by a node, the router can update it's ARP table with
 some informations . The table has two types of routers, then a client can be in
 the Event Emitter type, in the Axon type or in both. For each type we can see
-the same structure. The key is the client id (orcName) and the value is the
+the same structure. The key is the client id (`orcName`) and the value is the
 server token (direct destination for this client), the socket (`net.Socket` for
 Axon or an id for `EventEmitter`), the port where we can send the events (this
 port is used in order to retrieve the appropriate socket), the list of hordes
@@ -81,7 +81,7 @@ appropriate but it's not used (WIP).
 ![infrastructure.multicast.4](/img/infrastructure.multicast.4.png)
 
 With the ARP Table, it's easy to have the relationship between a command socket
-and an event port for a specific client (orcName). Now that you have a better
+and an event port for a specific client (`orcName`). Now that you have a better
 idea about the topologies and the links between the nodes, we can study the
 lines which are used by the multi casting.
 
@@ -101,8 +101,9 @@ for this ID, etc....
 
 The lines can be used for special links like B and C for example. As you can see
 in the diagram, C knows B and can sends events via a line, and this line is not
-visible for P1, P2, P3 and P4 The next diagram shows only one line with more
-details.
+visible for P1, P2, P3 and P4.
+
+The next diagram shows only one line with more details:
 
 ![infrastructure.multicast.6](/img/infrastructure.multicast.6.png)
 
@@ -114,11 +115,11 @@ A more interesting example will be the changes sent by warehouse to the wm
 ### Delete the route
 
 As previously explained, the `:conn-line` internal command is sent when
-subscribing to events with a lineId. Of course, when the subscriber calls
-theline i unsubscribe an other command is sent by the way `:disconn-line`. An
-other possibility exists. Instead of an unsubscribe, the whole client can be
-removed. In this case it sends an other internal command that is used in order
-to remove a route `:delete-route`. When a route entry is deleted, the whole
-orcName is removed from the ARP table (the lines are removed by the way).
+subscribing to events with a `lineId`. Of course, when the subscriber calls the
+unsubscribe an other command is sent by the way `:disconn-line`. An other
+possibility exists. Instead of an unsubscribe, the whole client can be removed.
+In this case it sends an other internal command that is used in order to remove
+a route `:delete-route`. When a route entry is deleted, the whole `orcName` is
+removed from the ARP table (the lines are removed by the way).
 
 ![infrastructure.multicast.del](/img/infrastructure.multicast.del.png?width=400px)

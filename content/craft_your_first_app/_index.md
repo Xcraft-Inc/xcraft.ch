@@ -10,18 +10,24 @@ pre: '<b>4. </b>'
 
 # Craft your first app
 
+Enfin! Te voilà fin prêt pour essayer de crafter une application, c'est plutôt
+interessé de ta part (frotte toi les mains), cependant il faudra vérifier ton
+matériel d'ingénieur goblin avant de démarrer.
+
 {{% notice warning %}} **avertissement:** ce tutoriel ne profite pas encore des
 outils finaux pour crafter une application et son infrastructure. Certains
 pré-requis devrons donc être installé hors Xcraft. Veuillez appliquer la
 procédure ad-hoc pour votre plateforme (eh capitaine!), avant de foncer dans le
 tutoriel. C'est la partie la plus pénible, merci de votre compréhension.
-**Gonald Trompe**, Responsable Goblin du Bureau Fédérale de la Dette Technique
+**Gonald Trompe**, Responsable Goblin du Bureau Fédéral de la Dette Technique
 (**BFDT**) {{% /notice %}}
 
 ## (BFDT-21.10-WIN10) Infrastructure pour window10
 
 Si vous rejoingnez ce tutoriel depuis windows10, il vous faudra appliquer cette
 procédure administrative les yeux bandés, comme a vos habitudes...
+
+### nodejs 14.x et git
 
 ### docker
 
@@ -63,32 +69,41 @@ kernelCommandLine = "sysctl.vm.max_map_count=262144"
 Celà permettra à l'indexeur de document **elasticsearch** de démarrer dans de
 bonnes conditions.
 
-### une fois docker installé
-
-Demander à goblins d'appliquer la procédure suivante:
-
-`npx goblins apply BFDT-21.10-WIN10`
-
 ## (BFDT-21.10-NIX) Infrastructure pour Linux
+
+### nodejs 14.x et git
+
+### docker
 
 Installer docker pour votre distrib:
 
 https://docs.docker.com/engine/install/
 
-### une fois docker installé
-
-Demander à goblins d'appliquer la procédure suivante:
-
-`npx goblins apply BFDT-21.10-NIX`
-
 ## (BFDT-21.10-OSX) Infrastructure pour MacOS
 
-Installer docker pour sur votre mac:
+### nodejs 14.x et git
+
+### docker
+
+Installer docker sur son mac:
 
 https://docs.docker.com/desktop/mac/install/
 
-### une fois docker installé
+## Une fois que tu es bien posé
 
-Demander à goblins d'appliquer la procédure suivante:
+Tu peux créer ton application comme ceci:
 
-`npx goblins apply BFDT-21.10-OSX`
+`npx goblins init bazaar`
+
+Demande à goblins d'appliquer la procédure suivante:
+
+`npx goblins apply BFDT-21.10-*`
+
+elle va vérifier ton installation docker, préparer une composition et essayer de
+monter tout celà dans docker.
+
+Si tout ce passe bien tu devrais trouver ceci dans docker:
+
+[img]
+
+Tu peux (enfin) passer à la page suivante, pour entrer dans le vif du sujet

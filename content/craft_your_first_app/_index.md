@@ -88,22 +88,3 @@ https://docs.docker.com/engine/install/
 Installer docker sur son mac:
 
 https://docs.docker.com/desktop/mac/install/
-
-## Une fois que tu es bien posé
-
-Tu peux créer ton application comme ceci:
-
-`npx goblins init bazaar`
-
-Demande à goblins d'appliquer la procédure suivante:
-
-`npx goblins apply BFDT-21.10-*`
-
-elle va vérifier ton installation docker, préparer une composition et essayer de
-monter tout celà dans docker.
-
-Si tout ce passe bien tu devrais trouver ceci dans docker:
-
-[img]
-
-Tu peux (enfin) passer à la page suivante, pour entrer dans le vif du sujet

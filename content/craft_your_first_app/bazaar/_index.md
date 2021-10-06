@@ -38,8 +38,7 @@ Arme toi de patience, car la commande **goblins init** s'occupe de tout!
 ## Retour au Bureau Fédéral de la Dette Technique
 
 {{% notice warning %}} Vous devez avoir remplis les pré-requis pour votre
-plateforme en suivant la procédure BFDT-21.10 avant de poursuivre. **Gonald
-Trompe**, Responsable Goblin du Bureau Fédéral de la Dette Technique (**BFDT**)
+plateforme en suivant la procédure BFDT-21.10 avant de poursuivre.
 {{% /notice %}}
 
 Si tout est en ordre avec docker, vous pouvez _appliquer_ la procédure à l'aide
@@ -52,3 +51,15 @@ monter tout celà dans docker. Un contrôle visuel dans docker permet de verifie
 si tout c'est bien passé:
 
 ![Docker](/img/bazaar_docker.png?width=600px)
+
+## Moteur!
+
+Avec un peu de chance, on arrive à démarrer notre application en un coup de
+tournevis:
+
+`npm start`
+
+La premier allumage est lent, mais il devrait déboucher sur un environnement
+_goblin-desktop_ tout vide et prêt à acceuillir notre code métier!
+
+![Start](/img/bazaar_start.png?width=600px)

@@ -19,15 +19,15 @@ application minimale et fonctionnelle.
 Nous allons travailler depuis un shell de type _bash_. (_powershell_ fera
 l'affaire sous windows)
 
-Les première commande à lancer la production de notre application sont les
+Les premières commandes pour lancer la production de notre application sont les
 suivantes:
 
 `mkdir bazaar-dev`
 
 `cd bazaar-dev`
 
-Nous allons ensuite utiliser _npx_ pour executer l'outils goblins et initialiser
-notre application bazaar:
+Nous allons ensuite utiliser _npx_ pour executer l'outils **goblins** et
+initialiser notre application bazaar:
 
 `npx goblins init bazaar`
 

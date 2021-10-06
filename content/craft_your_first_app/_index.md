@@ -22,12 +22,27 @@ tutoriel. C'est la partie la plus pénible, merci de votre compréhension.
 **Gonald Trompe**, Responsable Goblin du Bureau Fédéral de la Dette Technique
 (**BFDT**) {{% /notice %}}
 
+## Avant de commencer
+
+Il faut un système équipé pour du developpement JavaScript:
+
+NodeJS
+
+- [14.x LTS](https://nodejs.org/en/download/)
+
+La commande **npm** livrée avec nodejs devrais être en version **7.x**
+
+Un IDE pour le javascript, par exemple:
+
+- [vscodium](https://vscodium.com/)
+
+On espère que **git** n'est pas étrangé pour vous, car il pourrait être utile
+pour la suite.
+
 ## (BFDT-21.10-WIN10) Infrastructure pour window10
 
 Si vous rejoingnez ce tutoriel depuis windows10, il vous faudra appliquer cette
 procédure administrative les yeux bandés, comme a vos habitudes...
-
-### nodejs 14.x et git
 
 ### docker
 
@@ -71,8 +86,6 @@ bonnes conditions.
 
 ## (BFDT-21.10-NIX) Infrastructure pour Linux
 
-### nodejs 14.x et git
-
 ### docker
 
 Installer docker pour votre distrib:
@@ -80,8 +93,6 @@ Installer docker pour votre distrib:
 https://docs.docker.com/engine/install/
 
 ## (BFDT-21.10-OSX) Infrastructure pour MacOS
-
-### nodejs 14.x et git
 
 ### docker
 

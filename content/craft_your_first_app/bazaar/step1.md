@@ -1,14 +1,14 @@
 ---
-title: 'Le Bazaar Goblin'
-date: 2020-08-05
-weight: 80
+title: 'Le Bazaar Goblin - Etape 1'
+date: 2020-10-06
+weight: 10
 chapter: true
 pre: '<b>4.1 </b>'
 ---
 
 ### Chapter 4.1
 
-# Le Bazaar Goblin
+# Le Bazaar Goblin - Etape 1
 
 Hoy! Le cartel nous demande de coder une application pour gérer sa boutique de
 gadgets. Nous allons utiliser la commande **goblins** afin de préparer une

@@ -36,7 +36,7 @@ Un IDE pour le javascript, par exemple:
 
 - [vscodium](https://vscodium.com/)
 
-On espère que **git** n'est pas étrangé pour vous, car il pourrait être utile
+On espère que **git** n'est pas étrangé pour toi, car il pourrait être utile
 pour la suite.
 
 ## (BFDT-21.10-WIN10) Infrastructure pour window10

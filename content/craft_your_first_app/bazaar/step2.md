@@ -18,8 +18,10 @@ Il faudra ouvrir **bazaar-dev** dans ton IDE, et lancer un terminal.
 Nous allons commencer par représenter les différents contenus qui seront stocké
 dans notre bazaar d'informations. Le plus simple c'est de demander à notre
 commande **goblins** de **crafter** un **workbench** (établis) pour travailler
-sur l'entité **bazaarContent**:
+autours de l'entité **bazaarContent**.
 
 `npx goblins craft workbench bazaarContent`
 
-Cette commande va préparer (_crafter_) tout les fichiers nécessaires.
+Cette commande va crafter tout les fichiers nécessaires:
+
+![Workbench](/img/bazaar_workbench.png?width=600px)

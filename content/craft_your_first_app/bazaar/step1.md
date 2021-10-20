@@ -10,9 +10,13 @@ pre: '<b>4.1 </b>'
 
 # Le Bazaar Goblin - Etape 1
 
-Hoy! Le cartel nous demande de coder une application pour gérer sa boutique de
-gadgets. Nous allons utiliser la commande **goblins** afin de préparer une
-application minimale et fonctionnelle.
+Hoy! Le cartel nous demande de coder une application pour partager les
+connaissances entres les différents postes de travail de la confédération.
+
+Un simple gestionnaire de contenu, avec des articles des étiquettes.
+
+Nous allons utiliser la commande **goblins** afin de préparer une application
+minimale et fonctionnelle.
 
 ## Au boulot!
 

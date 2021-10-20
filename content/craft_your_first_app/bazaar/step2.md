@@ -13,11 +13,13 @@ pre: '<b>4.2 </b>'
 Yeah! Après avoir connecté quelques tuyaux et fait exploser la moitié du
 laboratoire, on arrive à la deuxième étape!
 
-Nous allons commencer par représenter les différents bidules qu'on vend dans
-notre bazaar. Le plus simple c'est de demander à notre commande **goblins** de
-**crafter** une **entité bazaarItem**:
+Il faudra ouvrir **bazaar-dev** dans ton IDE, et lancer un terminal.
 
-`npx goblins craft entity bazaarItem`
+Nous allons commencer par représenter les différents contenus qui seront stocké
+dans notre bazaar d'informations. Le plus simple c'est de demander à notre
+commande **goblins** de **crafter** un **workbench** (établis) pour travailler
+sur l'entité **bazaarContent**:
 
-Une entité **bazaarItem** est maintenant configurable dans
-`/bazaar-dev/lib/goblin-bazaar/entities/bazaarItem.js`
+`npx goblins craft workbench bazaarContent`
+
+Cette commande va préparer (_crafter_) tout les fichiers nécessaires.

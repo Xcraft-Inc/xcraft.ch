@@ -1,7 +1,7 @@
 ---
 title: 'Quest'
 date: 2020-07-24
-weight: 60
+weight: 70
 chapter: true
 pre: '<b>3.7 </b>'
 ---

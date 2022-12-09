@@ -1,12 +1,12 @@
 ---
 title: 'Xcraft'
 date: 2020-07-24
-weight: 25
+weight: 40
 chapter: true
-pre: '<b>3. </b>'
+pre: '<b>4. </b>'
 ---
 
-### Chapter 3
+### Chapter 4
 
 # Xcraft
 

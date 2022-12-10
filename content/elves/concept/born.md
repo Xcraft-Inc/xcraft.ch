@@ -1,5 +1,5 @@
 ---
-title: 'Born'
+title: 'La naissance'
 date: 2022-12-09
 weight: 10
 tags: ['devel', 'goblin', 'elf']

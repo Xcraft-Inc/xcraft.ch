@@ -1,13 +1,13 @@
 ---
-title: 'Elves'
+title: 'Elfes'
 date: 2022-12-09
 weight: 30
 chapter: true
 pre: '<b>3. </b>'
 ---
 
-### Chapter 3
+### Chapitre 3
 
-# Elves
+# Elfes
 
-Les Elfs et les Goblins ...
+Les Elfes et les Goblins ...

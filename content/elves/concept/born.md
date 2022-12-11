@@ -43,6 +43,6 @@ class Elrone extends Elf {
 module.exports = Elrone;
 ```
 
-Il est fortement recommendé de toujours utiliser des quêtes de `delete` 100% synchrones. Des effets de bords indésirables peuvent survenir si vous effectuez du code asynchrone dans une quête de type `delete`. En effet, le scheduler Goblin ne s'attend pas à devoir gérer de l'asynchrone dans un `delete` quand un Goblin de même ID doit être instancié au même moment.
+Il est fortement recommandé de toujours utiliser des quêtes de `delete` 100% synchrones. Des effets de bords indésirables peuvent survenir si vous effectuez du code asynchrone dans une quête de type `delete`. En effet, le scheduler Goblin ne s'attend pas à devoir gérer de l'asynchrone dans un `delete` quand un Goblin de même ID doit être instancié au même moment.
 
 > Ici on parle de Goblin, car ce comportement est généralisé.

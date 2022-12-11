@@ -13,7 +13,7 @@ L'écriture devient plus naturelle et plus concise. Il est alors possible d'expl
 
 Il est important de comprendre qu'une classe elfique n'est pas une classe javascript comme les autres. Ce type de classe abstrait la création de services et les communications à tel point qu'il suffit de réaliser un `await` sur une quête comme par exemple `await this.myQuest()` comme si on faisait un appel directement sur une méthode d'instance d'une classe. Bien entendu dans le cas d'une classe elfique, un appel de ce genre provoque la génération d'une commande sur le bus Xcraft et en aucun cas un appel direct sur la méthode en question.
 
-## Les Elfes sont immutables tout en étant mutables
+## Les Elfes sont immuables
 
 Les Goblins exploitent redux pour la gestion du state. Les Elfes font de même à une petite différence prêt. Les Elfes ont bien toujours des reducers associés à leurs quêtes respectivent, néanmoins le state reçu, ressemble bien à un state immutable mais celui-ci est paramétré comme étant mutable. Il suffit d'utiliser la méthode `.set()` de `Shredder` tout à fait comme d'habitude, par contre il est inutile de récupérer le résultat en retour, en effet, ce state est mutable. Et donc ne retournez pas le nouveau state avec le reducer, c'est complètement inutile.
 

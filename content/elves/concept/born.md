@@ -22,3 +22,27 @@ class Universe extends Elf.Alone {
 
 module.exports = Universe;
 ```
+
+## Une horde d'Elfes
+
+Les service d'instances sont un petit peu différents car il doivent dériver du type `Elf`. Les quêtes fonctionnent de la même manière que pour les Elfes seuls. Néanmoins deux quêtes remplacent la quête `init` présenté avec les singletons. La quête `create` doit être utilisé comme constructeur pour le service, et la quête `delete` comme "destructeur" ou dit autrement, comme quête de "dispose".
+
+```js
+const {Elf} = require('xcraft-core-goblin');
+
+class Elrone extends Elf {
+  async create() {
+    /* await something ... */
+  }
+  
+  delete() {
+    /* something ... */
+  }
+}
+
+module.exports = Elrone;
+```
+
+Il est fortement recommendé de toujours utiliser des quêtes de `delete` 100% synchrones. Des effets de bords indésirables peuvent survenir si vous effectuez du code asynchrone dans une quête de type `delete`. En effet, le scheduler Goblin ne s'attend pas à devoir gérer de l'asynchrone dans un `delete` quand un Goblin de même ID doit être instancié au même moment.
+
+> Ici on parle de Goblin, car ce comportement est généralisé.

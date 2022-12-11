@@ -14,13 +14,13 @@ Un service de ce type est très simple à créer car il suffit de dériver sa cl
 ```js
 const {Elf} = require('xcraft-core-goblin');
 
-class Universe extends Elf.Alone {
+class Valinor extends Elf.Alone {
   async init() {
     /* await something ... */
   }
 }
 
-module.exports = Universe;
+module.exports = Valinor;
 ```
 
 ## Une horde d'Elfes
@@ -46,3 +46,25 @@ module.exports = Elrone;
 Il est fortement recommandé de toujours utiliser des quêtes de `delete` 100% synchrones. Des effets de bords indésirables peuvent survenir si vous effectuez du code asynchrone dans une quête de type `delete`. En effet, le scheduler Goblin ne s'attend pas à devoir gérer de l'asynchrone dans un `delete` quand un Goblin de même ID doit être instancié au même moment.
 
 > Ici on parle de Goblin, car ce comportement est généralisé.
+
+## Mener votre Elfe au soleil
+
+Les Efles ne craignent pas le soleil, bien au contraire. N'oubliez pas de l'y mener en plaçant le fichiet de service Xcraft à la racine d'un des arbre de Valinor. Uhm, pardon, j'veux dire à la racine de votre module Goblin bien entendu. Vous constaterez qu'il n'y a aucune différence entre l'exportation Xcraft pour un Elfe de type `Elf.Alone` et un Elfe de type `Elf`.
+
+### L'Elfe seul
+
+```js
+const {Elf} = require('xcraft-core-goblin');
+const {Valinor} = require('./lib/valinor.js');
+
+exports.xcraftCommands = () => Elf.configure(Valinor);
+```
+
+### Les Elfes
+
+```js
+const {Elf} = require('xcraft-core-goblin');
+const {Elrone} = require('./lib/elrone.js');
+
+exports.xcraftCommands = () => Elf.configure(Elrone);
+```

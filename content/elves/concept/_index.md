@@ -10,4 +10,5 @@ pre: '<b>3.1 </b>'
 
 # Concepts
 
-Les Elfes ...
+> Let him not vow to walk in the dark, who has not seen the nightfall.
+> -- Elrond

@@ -30,7 +30,7 @@ Les service d'instances sont un petit peu différents car il doivent dériver du
 ```js
 const {Elf} = require('xcraft-core-goblin');
 
-class Elrone extends Elf {
+class Elrond extends Elf {
   async create() {
     /* await something ... */
   }
@@ -40,7 +40,7 @@ class Elrone extends Elf {
   }
 }
 
-module.exports = Elrone;
+module.exports = Elrond;
 ```
 
 Il est fortement recommandé de toujours utiliser des quêtes de `delete` 100% synchrones. Des effets de bords indésirables peuvent survenir si vous effectuez du code asynchrone dans une quête de type `delete`. En effet, le scheduler Goblin ne s'attend pas à devoir gérer de l'asynchrone dans un `delete` quand un Goblin de même ID doit être instancié au même moment.
@@ -64,7 +64,7 @@ exports.xcraftCommands = () => Elf.configure(Valinor);
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
-const {Elrone} = require('./lib/elrone.js');
+const {Elrond} = require('./lib/Elrond.js');
 
-exports.xcraftCommands = () => Elf.configure(Elrone);
+exports.xcraftCommands = () => Elf.configure(Elrond);
 ```

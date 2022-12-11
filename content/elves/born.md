@@ -6,7 +6,7 @@ tags: ['devel', 'goblin', 'elf']
 pre: '<b>3.2 </b>'
 ---
 
-### Chapitre 3.2
+## Chapitre 3.2
 
 La naissance d'un Elfe peut mener à deux choix distincts. Soit votre Elfe vivra seul pour toujours, soit il se multipliera pour prospérer et dominer le m.... Soyons sérieux, ici il est question de singletons et des autres.
 

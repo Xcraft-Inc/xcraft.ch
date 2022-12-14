@@ -69,8 +69,8 @@ consultant la définition typescript, on ne voit plus les implémentations. Et e
 consultant les implémentations, on ne peut voir les définitions qu'à travers
 l'auto-complétion.
 
-Pour que le typescript soit une vraie solution, il faut écrire les Elfe
-directement en typescript et mettre en place la passe de build pour l'ES2015.
+Pour que le typescript soit une vraie solution, il faut écrire les Elfes
+directement en typescript et mettre en place une passe de build pour l'ES2015.
 Ceci n'est pas implémenté.
 
 [1]: https://jsdoc.app/

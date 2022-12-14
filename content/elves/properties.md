@@ -1,7 +1,7 @@
 ---
 title: 'Les caractéristiques'
 date: 2022-12-09
-weight: 10
+weight: 20
 tags: ['devel', 'goblin', 'elf']
 pre: '<b>3.3 </b>'
 ---

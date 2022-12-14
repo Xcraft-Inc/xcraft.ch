@@ -84,7 +84,7 @@ c'est exactement la même chose. Au lieu de créer l'Elfe (ou de s'attacher à
 celui-ci), on essaie de directement l'appeler tout en acceptant de recevoir une
 exception s'il n'existe pas.
 
-Le deuxième point important dans cette exemple et la manière de récupérer
+Le deuxième point important dans cette exemple, est la manière de récupérer
 l'interface d'Elrond. C'est très simple, il n'y a qu'à importer sa classe et le
 tour est joué. Cela signifie que le module Goblin qui contient l'Elfe doit
 exporter proprement les classes des Elfes que l'on considère comme étant

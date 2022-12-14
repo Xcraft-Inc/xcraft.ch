@@ -23,10 +23,15 @@ efficacement sur les `states` sans faire intervenir les effets de bords qui
 doivent être produits **uniquement par les quêtes**. De plus, les `states` sont
 immutables par nature, ce qui donne de nombreux avantages pour le fonctionnement
 du framework. Néanmoins, concernant les Elfes, les `states` sont mutables
-contrairement au Goblins. Dans l'exemple ci-dessous vous pouvez voir un
-`state.set()` où la valeur de retour n'est pas récupérée. En effet, ici, vous
-avez bien un `state` de type `Shredder` mais celui-ci est mutable. Bien entendu,
-en dehors du reducer, le `state` est toujours immutable.
+contrairement au Goblins.
+
+> Les `states` doivent également être utilisé pour la persistance des données
+> contrairement aux propriétés.
+
+Dans l'exemple ci-dessous vous pouvez voir un `state.set()` où la valeur de
+retour n'est pas récupérée. En effet, ici, vous avez bien un `state` de type
+`Shredder` mais celui-ci est mutable. Bien entendu, en dehors du reducer, le
+`state` est toujours immutable.
 
 ```js
 class Elrond extends Elf {
@@ -54,7 +59,7 @@ Regardez bien l'exemple ci-dessus. Le reducer correspond à la quête car il a l
 **même nom**. La différence fondamentale vient du fait que le reducer `nextYear`
 est une fonction `static` et non une méthode d'instance comme pour la quête.
 Contrairement aux Goblins, vous pouvez ainsi écrire les reducers directement
-avant ou après la définition de la quête; ce qui peu être un plus non
+avant ou après la définition de la quête; ce qui peut être un plus non
 négligeable pour la lecture du code.
 
 Etant donné que le `state` vu depuis le reducer est mutable, parfois il est

@@ -61,8 +61,8 @@ par [JSDoc][1].
 ## Pourquoi ne pas exploiter typescript à la place de [JSDoc][1] ?
 
 Un chapitre traitera de typescript, mais il faut garder en tête un élément
-important. Les classes Elfes sont décritent en ES2015, et non en typescript. De
-ce fait, il n'est pas possible de documenter le code directement avec
+important. Les classes elfiques sont décritent en ES2015, et non en typescript.
+De ce fait, il n'est pas possible de documenter le code directement avec
 typescript, mais il faut utiliser une définition dans un fichier annexe. Le fait
 de créer un fichier externe fait perdre la vision globale de l'Elfe. En
 consultant la définition typescript, on ne voit plus les implémentations. Et en

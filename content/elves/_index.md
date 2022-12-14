@@ -10,5 +10,7 @@ pre: '<b>3. </b>'
 
 # Elfes
 
+![Galadriel](/img/galadriel.png)
+
 > Sometimes to find the light, we must first touch the darkness.  
 > -- Galadriel

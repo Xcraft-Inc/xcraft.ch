@@ -30,7 +30,7 @@ sur le bus Xcraft et en aucun cas un appel direct sur la méthode en question.
 ## Les Elfes sont immuables
 
 Les Goblins exploitent redux pour la gestion du state. Les Elfes font de même à
-une petite différence prêt. Les Elfes ont bien toujours des reducers associés à
+une petite différence près. Les Elfes ont bien toujours des reducers associés à
 leurs quêtes respectivent, néanmoins le state reçu, ressemble bien à un state
 immutable mais celui-ci est paramétré comme étant mutable. Il suffit d'utiliser
 la méthode `.set()` de `Shredder` tout à fait comme d'habitude, par contre il

@@ -63,13 +63,12 @@ Goblin de même ID doit être instancié au même moment.
 
 > Ici on parle de Goblin, car ce comportement est généralisé.
 
-## Mener votre Elfe au soleil
+## Mener votre Elfe aux Terres Immortelles
 
-Les Efles ne craignent pas le soleil, bien au contraire. N'oubliez pas de les y
-mener en plaçant le fichier de service Xcraft à la racine d'un des arbre de
-Valinor. Uhm, pardon, j'veux dire à la racine de votre module Goblin bien
-entendu. Il n'y a aucune différence entre l'exportation Xcraft pour un Elfe de
-type `Elf.Alone` et un Elfe de type `Elf`.
+N'oubliez pas de les y enmener en plaçant le fichier de service Xcraft à la
+racine d'un des arbre de Valinor. Uhm, pardon, j'veux dire à la racine de votre
+module Goblin bien entendu. Il n'y a aucune différence entre l'exportation
+Xcraft pour un Elfe de type `Elf.Alone` et un Elfe de type `Elf`.
 
 ```js
 const {Elf} = require('xcraft-core-goblin');

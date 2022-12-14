@@ -72,9 +72,7 @@ présenté ci-dessous :
 
 ```js
   /* ... */
-
   static nextYear(state, action, immState) {}
-
   /* ... */
 ```
 

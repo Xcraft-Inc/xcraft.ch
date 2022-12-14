@@ -20,6 +20,6 @@ Les Goblins exploitent redux pour la gestion du state. Les Elfes font de même �
 
 Il est possible que vous devez effectuer des comparaisons avec le state initial (entrant dans le reducer). Pas de problème car tous les reducers elfiques reçoivent aussi le state immutable en 3ème arguments.
 
-## Les états des Elfes ne connaissent pas de schémas
+## Les états des Elfes ne connaissent pas de schéma
 
 La problématique est en cours d'étude.

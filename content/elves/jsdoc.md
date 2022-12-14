@@ -55,7 +55,7 @@ Les possibilités sont très larges et la documentation officielle de [JSDoc][1]
 pourra beaucoup vous aider. Dans l'exemple ci-dessus, des types `SmartId`,
 `Weapon` et `Health` sont utilisés. Bien entendu pour que cela fonctionne
 correctement, il faut les avoir déclaré quelque part par exemple sous forme de
-classe. Mais il est aussi possible de le faire avec des objets javascript, typé
+classe. Mais il est aussi possible de le faire avec des objets javascript, typés
 par [JSDoc][1].
 
 ## Pourquoi ne pas exploiter typescript à la place de [JSDoc][1] ?
@@ -70,7 +70,7 @@ consultant les implémentations, on ne peut voir les définitions qu'à travers
 l'auto-complétion.
 
 Pour que le typescript soit une vraie solution, il faut écrire les Elfe
-directement typescript et mettre en place la passe de build pour l'ES2015. Ceci
-n'est pas implémenté.
+directement en typescript et mettre en place la passe de build pour l'ES2015.
+Ceci n'est pas implémenté.
 
 [1]: https://jsdoc.app/

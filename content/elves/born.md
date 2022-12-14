@@ -63,7 +63,7 @@ Goblin de même ID doit être instancié au même moment.
 
 > Ici on parle de Goblin, car ce comportement est généralisé.
 
-## Mener votre Elfe aux Terres Immortelles
+## Menez votre Elfe aux Terres Immortelles
 
 N'oubliez pas de les y emmener en plaçant le fichier de service Xcraft à la
 racine d'un des arbre de Valinor. Uhm, pardon, j'veux dire à la racine de votre

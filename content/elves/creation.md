@@ -55,6 +55,9 @@ class Valinor extends Elf.Alone {
     } finally {
       await this.kill(elrond.id);
       await this.kill(galadriel.id);
+      /* Il est aussi possible de faire :
+       * await this.kill([elrond.id, galadriel.id]);
+       */
     }
   }
 }
@@ -87,6 +90,9 @@ class Galadriel extends Elf {
   }
 }
 ```
+
+La quête `awake()` va créer un Elfe qui sera automatiquement attaché à cette
+instance d'`Elrond` pour le feed `valinor@system`.
 
 ```js
 class Elrond extends Elf {
@@ -121,12 +127,12 @@ class Valinor extends Elf.Alone {
 }
 ```
 
-Dans cet exemple, `Elrond` va créer `Galadriel` puis communiquer avec cette
-Elfe. Mais cet exemple introduit également une autre particularité. Quand un
-Elfe souhaite exécuter ses propres quêtes, il peut simplement les appeler via
-`this` comme dans cet exemple avec `await this.hello()`.
+Dans cet exemple, `Elrond` créer `Galadriel` puis communique avec cette Elfe.
+Mais cet exemple introduit également une autre particularité. Quand un Elfe
+souhaite exécuter ses propres quêtes, il peut simplement les appeler via `this`
+comme dans cet exemple avec `await this.hello()`.
 
-> Attention, n'oubliez pas ce qui est expliqué dans le chapitre **Qui
-> sont'ils**. Les classes elfiques ne sont pas des classes javascript standards,
-> et les appels sur les méthodes ne sont pas directs mais passent par les bus
-> Xcraft.
+> Attention, n'oubliez pas ce qui est expliqué dans le chapitre
+> [Qui sont'il](/elves/overview). Les classes elfiques ne sont pas des classes
+> javascript standards, et les appels sur les méthodes ne sont pas directs mais
+> passent par les bus Xcraft.

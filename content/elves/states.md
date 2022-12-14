@@ -39,19 +39,22 @@ class Elrond extends Elf {
     yearsOfLife: 0,
   };
 
-  async create() {}
+  async create(id, desktopId = null) {
+    this.do();
+    return this;
+  }
 
+  /* Le reducer (pur) */
   static nextYear(state) {
     const previousYears = state.get('yearsOfLife');
     state.set('yearsOfLife', previousYears + 1);
   }
 
+  /* La quête (effets de bord) */
   async nextYear() {
     this.do();
     return this.state.get('yearsOfLife');
   }
-
-  delete() {}
 }
 ```
 

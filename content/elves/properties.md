@@ -26,14 +26,15 @@ pourraient permettre des les rendre accessibles depuis l'extérieur.
 class Elrond extends Elf {
   _yearsOfLife = 0;
 
-  async create() {}
+  async create(id, desktopId) {
+    this.do();
+    return this;
+  }
 
   async nextYear() {
     this._yearsOfLife++;
     return this._yearsOfLife;
   }
-
-  delete() {}
 }
 ```
 

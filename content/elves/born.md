@@ -24,7 +24,7 @@ const {Elf} = require('xcraft-core-goblin');
 
 class Valinor extends Elf.Alone {
   async init() {
-    /* await something ... */
+    /* await quelque chose ... */
   }
 }
 
@@ -44,11 +44,11 @@ const {Elf} = require('xcraft-core-goblin');
 
 class Elrond extends Elf {
   async create() {
-    /* await something ... */
+    /* await quelque chose ... */
   }
 
   delete() {
-    /* something ... */
+    /* quelque chose ... */
   }
 }
 

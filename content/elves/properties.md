@@ -112,7 +112,7 @@ En entrant dans le reducer, `state` et `immState` contiennent les mêmes valeurs
 Néanmoins les mutations sur `state` n'affectent pas `immState` qui peut alors
 être utilisé pour faire des comparaisons pendant l'exécution du reducer.
 
-## Oû est l'auto-complétion des `states` ?
+## Où est l'auto-complétion des `states` ?
 
 Pour gérer de la complétion avec les `states`, il faut créer des modèles et les
 mapper sur des classes ou alors sur des définitions typescripts. Cette

@@ -12,4 +12,3 @@ pre: '<b>3. </b>'
 
 > Let him not vow to walk in the dark, who has not seen the nightfall.  
 > -- Elrond
-

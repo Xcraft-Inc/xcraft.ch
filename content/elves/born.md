@@ -43,7 +43,7 @@ quête `delete` comme "destructeur" ou dit autrement, comme quête de "dispose".
 const {Elf} = require('xcraft-core-goblin');
 
 class Elrond extends Elf {
-  async create() {
+  async create(id, desktopId = null) {
     /* await quelque chose ... */
   }
 

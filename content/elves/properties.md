@@ -26,7 +26,7 @@ pourraient permettre des les rendre accessibles depuis l'extérieur.
 class Elrond extends Elf {
   _yearsOfLife = 0;
 
-  async create(id, desktopId) {
+  async create(id, desktopId = null) {
     this.do();
     return this;
   }

@@ -10,5 +10,5 @@ pre: '<b>3. </b>'
 
 # Elfes
 
-> Let him not vow to walk in the dark, who has not seen the nightfall.  
-> -- Elrond
+> Sometimes to find the light, we must first touch the darkness.  
+> -- Galadriel

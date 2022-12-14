@@ -18,12 +18,12 @@ valeurs sérialisables (il peut y avoir des exceptions non documentées ici). Le
 différences entre les propriétés et les `states` ne se limitent pas au
 `protected` / `public` mais à ce qu'on désire faire avec le service. Le `state`
 permet de gérer les mutations dans une fonction pure (sans effet de bord) que
-l'on nomme comme `reducer`. Il est possible ainsi de réaliser des tests
-efficacement sur les `states` sans faire intervenir les effets de bords qui
-doivent être produits **uniquement par les quêtes**. De plus, les `states` sont
-immutables par nature, ce qui donne de nombreux avantages pour le fonctionnement
-du framework. Néanmoins, concernant les Elfes, les `states` sont mutables
-contrairement au Goblins.
+l'on nomme `reducer`. Il est possible ainsi de réaliser des tests efficacement
+sur les `states` sans faire intervenir les effets de bords qui doivent être
+produits **uniquement par les quêtes**. De plus, les `states` sont immutables
+par nature, ce qui donne de nombreux avantages pour le fonctionnement du
+framework. Néanmoins, concernant les Elfes, les `states` sont mutables
+contrairement aux Goblins.
 
 > Les `states` doivent également être utilisé pour la persistance des données
 > contrairement aux propriétés.

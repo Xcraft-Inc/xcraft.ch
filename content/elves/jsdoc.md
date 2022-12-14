@@ -53,7 +53,7 @@ class Galadriel extends Elf {
 
 Les possibilités sont très larges et la documentation officielle de [JSDoc][1]
 pourra beaucoup vous aider. Dans l'exemple ci-dessus, des types `SmartId`,
-`Weapon` et `Health` sont utilisés. Bien entendu pour que celà fonctionne
+`Weapon` et `Health` sont utilisés. Bien entendu pour que cela fonctionne
 correctement, il faut les avoir déclaré quelque part par exemple sous forme de
 classe. Mais il est aussi possible de le faire avec des objets javascript, typé
 par [JSDoc][1].

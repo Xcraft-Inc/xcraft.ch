@@ -50,22 +50,11 @@ Il est fortement recommandé de toujours utiliser des quêtes de `delete` 100% s
 
 ## Mener votre Elfe au soleil
 
-Les Efles ne craignent pas le soleil, bien au contraire. N'oubliez pas de les y mener en plaçant le fichier de service Xcraft à la racine d'un des arbre de Valinor. Uhm, pardon, j'veux dire à la racine de votre module Goblin bien entendu. Vous constaterez qu'il n'y a aucune différence entre l'exportation Xcraft pour un Elfe de type `Elf.Alone` et un Elfe de type `Elf`.
-
-### L'Elfe seul
+Les Efles ne craignent pas le soleil, bien au contraire. N'oubliez pas de les y mener en plaçant le fichier de service Xcraft à la racine d'un des arbre de Valinor. Uhm, pardon, j'veux dire à la racine de votre module Goblin bien entendu. Il n'y a aucune différence entre l'exportation Xcraft pour un Elfe de type `Elf.Alone` et un Elfe de type `Elf`.
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
 const {Valinor} = require('./lib/valinor.js');
 
 exports.xcraftCommands = () => Elf.configure(Valinor);
-```
-
-### Les Elfes
-
-```js
-const {Elf} = require('xcraft-core-goblin');
-const {Elrond} = require('./lib/Elrond.js');
-
-exports.xcraftCommands = () => Elf.configure(Elrond);
 ```

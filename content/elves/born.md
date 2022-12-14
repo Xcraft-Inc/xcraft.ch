@@ -72,7 +72,7 @@ Xcraft pour un Elfe de type `Elf.Alone` et un Elfe de type `Elf`.
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
-const Valinor = require('./lib/elrond.js');
+const Elrond = require('./lib/elrond.js');
 
 exports.xcraftCommands = Elf.birth(Elrond);
 ```

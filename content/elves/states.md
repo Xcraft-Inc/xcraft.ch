@@ -62,6 +62,9 @@ Contrairement aux Goblins, vous pouvez ainsi écrire les reducers directement
 avant ou après la définition de la quête; ce qui peut être un plus non
 négligeable pour la lecture du code.
 
+A propos de l'état initial, vous devez simplement rajouter une propriété static
+`initialState` à votre Elfe.
+
 Etant donné que le `state` vu depuis le reducer est mutable, parfois il est
 nécessaire d'avoir accès au state immutable pour réaliser (par exemple) des
 comparaisons. Tous les reducers elfiques recoivent alors trois arguments comme

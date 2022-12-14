@@ -19,3 +19,7 @@ Il est important de comprendre qu'une classe elfique n'est pas une classe javasc
 Les Goblins exploitent redux pour la gestion du state. Les Elfes font de même à une petite différence prêt. Les Elfes ont bien toujours des reducers associés à leurs quêtes respectivent, néanmoins le state reçu, ressemble bien à un state immutable mais celui-ci est paramétré comme étant mutable. Il suffit d'utiliser la méthode `.set()` de `Shredder` tout à fait comme d'habitude, par contre il est inutile de récupérer le résultat en retour, en effet, ce state est mutable. Et donc ne retournez pas le nouveau state avec le reducer, c'est complètement inutile.
 
 Il est possible que vous devez effectuer des comparaisons avec le state initial (entrant dans le reducer). Pas de problème car tous les reducers elfiques reçoivent aussi le state immutable en 3ème arguments.
+
+## Les états des Elfes ne connaissent pas de schémas
+
+Ceci n'est pas encore implémenté mais la problématique est en cours d'étude.

@@ -65,7 +65,7 @@ Goblin de même ID doit être instancié au même moment.
 
 ## Mener votre Elfe aux Terres Immortelles
 
-N'oubliez pas de les y enmener en plaçant le fichier de service Xcraft à la
+N'oubliez pas de les y emmener en plaçant le fichier de service Xcraft à la
 racine d'un des arbre de Valinor. Uhm, pardon, j'veux dire à la racine de votre
 module Goblin bien entendu. Il n'y a aucune différence entre l'exportation
 Xcraft pour un Elfe de type `Elf.Alone` et un Elfe de type `Elf`.

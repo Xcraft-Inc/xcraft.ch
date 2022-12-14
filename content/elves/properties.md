@@ -16,11 +16,11 @@ registres Goblins ne sont plus directement utilisés; mais l'idée est la même.
 Il est vivement recommandé de déclarer ces propriétés avec la convention du
 préfixe `_` pour indiquer qu'elles sont `protected`. En effet, inutile d'essayer
 d'utiliser la syntaxe `#` pour espérer créer des propriétés `private` car le
-fonctionnement des Goblins ne le **permet pas**. De même, il n'est pas judicieux
+fonctionnement des Elfes ne le **permet pas**. De même, il n'est pas judicieux
 de les déclarer comme publiques (sans le préfixe `_`) afin de ne pas être tenté
-de les appeler depuis un autre Goblin faisant référence à celui-ci. En effet,
-ces propriétés sont exclusivement `protected` et uniquement des quêtes
-pourraient permettre des les rendre accessibles depuis l'extérieur.
+de les appeler depuis un autre Elfe faisant référence à celui-ci. En effet, ces
+propriétés sont exclusivement `protected` et uniquement des quêtes pourraient
+permettre de les rendre accessibles depuis l'extérieur.
 
 ```js
 class Elrond extends Elf {

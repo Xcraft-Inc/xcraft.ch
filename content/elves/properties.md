@@ -29,7 +29,7 @@ class Elrond extends Elf {
 
 Il n'est pas possible de réaliser un `delX` comme avec les Goblins. Les Elfes sont plus proches des classes habituelles. Oubliez le `delX` et contentez-vous de garder vos propriétés cohérentes dans votre Elfe. Il est toujours possible d'assigner la valeure `null` à une propriéter au lieu de la supprimer comme le fait `delX` des Goblins.
 
-{{% notice info %}}Les Elfes sont une abstraction sur les Goblins, mais les propriétés elfiques ne sont en aucun cas simulées par des `setX` et `getX` Goblins.{{% /notice %}}
+{{% notice info %}} Les Elfes sont une abstraction sur les Goblins, mais les propriétés elfiques ne sont en aucun cas simulées par des `setX` et `getX` Goblins. {{% /notice %}}
 
 ## Donner un état à votre Elfe
 

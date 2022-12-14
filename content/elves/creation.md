@@ -25,7 +25,9 @@ class Galadriel extends Elf {
     this.log.dbg(`Hi ${who}`);
   }
 }
+```
 
+```js
 class Elrond extends Elf {
   async create(id, desktopId = null) {
     this.do();
@@ -36,7 +38,9 @@ class Elrond extends Elf {
     this.log.dbg(`Hello ${who}`);
   }
 }
+```
 
+```js
 class Valinor extends Elf.Alone {
   async init() {
     const desktopId = 'valinor@system';
@@ -62,7 +66,7 @@ deux Elfes d'instance, ainsi qu'un Elfe de type singleton. Le singleton
 dispose. Ce mécanisme se nomme le `create`/ `kill` pattern et n'a rien de bien
 sorcier. Il faut néanmoins bien comprendre que le `kill` est explicite avec un
 singleton, car justement, personne ne tue un singleton et nous ne désirons pas
-avec une fuite d'Elfes.
+avoir une fuite d'Elfes.
 
 ## Et si un Elfe d'instance créait un autre Elfe
 
@@ -82,7 +86,9 @@ class Galadriel extends Elf {
     this.log.dbg(`Hi ${who}`);
   }
 }
+```
 
+```js
 class Elrond extends Elf {
   async create(id, desktopId = null) {
     this.do();
@@ -99,7 +105,9 @@ class Elrond extends Elf {
     await this.hello('Galadriel');
   }
 }
+```
 
+```js
 class Valinor extends Elf.Alone {
   async init() {
     const desktopId = 'valinor@system';

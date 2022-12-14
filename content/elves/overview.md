@@ -22,4 +22,4 @@ Il est possible que vous devez effectuer des comparaisons avec le state initial 
 
 ## Les états des Elfes ne connaissent pas de schémas
 
-Ceci n'est pas encore implémenté mais la problématique est en cours d'étude.
+La problématique est en cours d'étude.

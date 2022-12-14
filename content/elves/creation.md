@@ -136,3 +136,37 @@ comme dans cet exemple avec `await this.hello()`.
 > [Qui sont'il](/elves/overview). Les classes elfiques ne sont pas des classes
 > javascript standards, et les appels sur les méthodes ne sont pas directs mais
 > passent par les bus Xcraft.
+
+## Un Elfe qui se recréer lui-même
+
+Cela peut paraître étrange dis ainsi mais rien n'empêche qu'un certain type
+d'Efle créer un autre Elfe de même type. Il est possible de le faire comme dans
+les exemples ci-dessus, mais un chemin plus directe peut être utilisé, voyez
+ci-dessous.
+
+```js
+class Galadriel extends Elf {
+  async create(id, desktopId = null) {
+    this.do();
+    const galadrielBis = await this.create(`${id}@bis`);
+    await galadrielBis.hi('Galadriel');
+    return this;
+  }
+
+  async hi(who) {
+    this.log.dbg(`Hi ${who}`);
+  }
+}
+```
+
+La différence avec les `create()` précédents est d'avoir écrit :
+
+```js
+const galadrielBis = await this.create(`${id}@bis`);
+```
+
+au lieu de :
+
+```js
+const galadrielBis = await new Galadriel(this).create(`${id}@bis`);
+```

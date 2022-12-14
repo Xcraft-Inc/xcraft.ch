@@ -29,7 +29,7 @@ class Galadriel extends Elf {
    * Créer une nouvelle Galadriel prête à se battre.
    *
    * @param {SmartId} id - ID de la nouvelle Galadriel
-   * @param {SmartId} desktopId - ID du feed
+   * @param {SmartId} [desktopId] - ID du feed
    * @returns {Galadriel} la nouvelle Galadriel
    */
   async create(id, desktopId = null) {

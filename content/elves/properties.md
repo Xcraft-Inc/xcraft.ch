@@ -27,13 +27,13 @@ class Elrond extends Elf {
 }
 ```
 
-Il n'est pas possible de réaliser un `delX` comme avec les Goblins. Les Elfes sont plus proches des classes habituelles. Oubliez le `delX` et contentez-vous de garder vos propriétés cohérentes dans votre Elfe. Il est toujours possible d'assigner la valeure `null` à une propriéter au lieu de la supprimer comme le fait `delX` des Goblins.
+Il n'est pas possible de réaliser un `delX` comme avec les Goblins. Les Elfes sont plus proches des classes habituelles. Oubliez le `delX` et contentez-vous de garder vos propriétés cohérentes dans votre Elfe. Il est toujours possible d'assigner la valeure `null` à une propriété au lieu de la supprimer comme le fait `delX` des Goblins.
 
 {{% notice info %}} Les Elfes sont une abstraction sur les Goblins, mais les propriétés elfiques ne sont en aucun cas simulées par des `setX` et `getX` Goblins. {{% /notice %}}
 
 ## Donner un état à votre Elfe
 
-Maintenant que vous avez vu à quoi ressemblent les propriétés, qui sont l'équivalent des `setX` Goblins, voyons comment faire pour donner un état (`state`) à un Elfe. Pour rappel, le `state` doit contenir uniquement des valeurs sérialisables (il peut y avoir des exceptions non documentées ici). Les différences entre les propriétés et les `states` ne se limitent pas au `protected` / `public` mais à ce qu'on désire faire avec le service. Le `state` permet de gérer les mutations dans une fonction pure (sans effets de bord) que l'on nomme comme `reducer`. Il est possible ainsi de réaliser des tests efficacement sur les `states` sans faire intervenir les effets de bords qui doivent être produits **uniquement par les quêtes**. De plus, les `states` sont immutables par nature, ce qui donne de nombreux avantages pour le fonctionnement du framework. Néanmoins, concernant les Elfes, les `states` sont mutables contrairement au Goblins. Dans l'exemple ci-dessous vous pouvez voir un `state.set` où la valeur de retour n'est pas récupérées. En effet, ici, vous avez bien un `state` de type `Shredder` mais celui-ci est mutable. Bien entendu, en dehors du reducer, le state est toujours immutable.
+Maintenant que vous avez vu à quoi ressemblent les propriétés, qui sont l'équivalent des `setX` Goblins, voyons comment faire pour donner un état (`state`) à un Elfe. Pour rappel, le `state` doit contenir uniquement des valeurs sérialisables (il peut y avoir des exceptions non documentées ici). Les différences entre les propriétés et les `states` ne se limitent pas au `protected` / `public` mais à ce qu'on désire faire avec le service. Le `state` permet de gérer les mutations dans une fonction pure (sans effet de bord) que l'on nomme comme `reducer`. Il est possible ainsi de réaliser des tests efficacement sur les `states` sans faire intervenir les effets de bords qui doivent être produits **uniquement par les quêtes**. De plus, les `states` sont immutables par nature, ce qui donne de nombreux avantages pour le fonctionnement du framework. Néanmoins, concernant les Elfes, les `states` sont mutables contrairement au Goblins. Dans l'exemple ci-dessous vous pouvez voir un `state.set()` où la valeur de retour n'est pas récupérée. En effet, ici, vous avez bien un `state` de type `Shredder` mais celui-ci est mutable. Bien entendu, en dehors du reducer, le `state` est toujours immutable.
 
 ```js
 class Elrond extends Elf {
@@ -44,7 +44,8 @@ class Elrond extends Elf {
   async create() {}
 
   static nextYear(state) {
-    state.set('yearsOfLife', state.get('yearsOfLife') + 1);
+    const previousYears = state.get('yearsOfLife');
+    state.set('yearsOfLife', previousYears + 1);
   }
 
   async nextYear() {
@@ -58,7 +59,7 @@ class Elrond extends Elf {
 
 Regardez bien l'exemple ci-dessus. Le reducer correspond à la quête car il a le **même nom**. La différence fondamentale vient du fait que le reducer `nextYear` est une fonction `static` et non une méthode d'instance comme pour la quête. Contrairement aux Goblins, vous pouvez ainsi écrire les reducers directement avant ou après la définition de la quête; ce qui peu être un plus non négligeable pour la lecture du code.
 
-Etant donné que le `state` vu depuis le reducer est mutable, parfois il est nécessaire d'avoir accès au state immutable pour réaliser (par exemple) des comparaisons.Tous les reducers elfiques recoivent alors trois arguments comme présenté ci-dessous :
+Etant donné que le `state` vu depuis le reducer est mutable, parfois il est nécessaire d'avoir accès au state immutable pour réaliser (par exemple) des comparaisons. Tous les reducers elfiques recoivent alors trois arguments comme présenté ci-dessous :
 
 ```js
   /* ... */

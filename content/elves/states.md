@@ -72,7 +72,7 @@ négligeable pour la lecture du code.
 
 > Si vous avez bien observé, le `create` fait un appel sur `this.do()`. Sachez
 > que les quêtes `create` ont un reducer par défaut qui sert uniquement à
-> insérer l`id` dans le `state` de l'Elfe, si aucun reducer n'est défini dans la
+> insérer `id` dans le `state` de l'Elfe, si aucun reducer n'est défini dans la
 > classe dérivée.
 
 A propos de l'état initial, vous devez simplement rajouter une propriété static
@@ -116,7 +116,7 @@ class Elrond extends Elf {
 }
 ```
 
-> Si on avait aussi spécifiez `desktopId` dans le prototype de la méthode static
+> Si on avait aussi spécifié `desktopId` dans le prototype de la méthode static
 > `create`, on aurait également pu le récupérer directement sans le spécifier
 > avec l'appel `this.do()`.
 

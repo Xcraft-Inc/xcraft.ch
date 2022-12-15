@@ -18,7 +18,7 @@ classe devrait utiliser son propre fichier source. En effet, il devrait toujours
 Goblin contient les Elfes Galadriel et Elrond. Chacun existe dans son propre
 fichier source.
 
-`goblin-valinor/lib/galadriel.js`
+> `goblin-valinor/lib/galadriel.js`
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
@@ -33,7 +33,7 @@ class Galadriel extends Elf {
 module.exports = Galadriel;
 ```
 
-`goblin-valinor/lib/elrond.js`
+> `goblin-valinor/lib/elrond.js`
 
 ```js
 const {Elf} = require('xcraft-core-goblin');

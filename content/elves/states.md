@@ -28,10 +28,15 @@ contrairement aux Goblins.
 > Les `states` doivent également être utilisé pour la persistance des données
 > contrairement aux propriétés.
 
-Dans l'exemple ci-dessous vous pouvez voir un `state.set()` où la valeur de
-retour n'est pas récupérée. En effet, ici, vous avez bien un `state` de type
-`Shredder` mais celui-ci est mutable. Bien entendu, en dehors du reducer, le
-`state` est toujours immutable.
+Bien qu'on parle toujours de reducer, les Elfes n'utilisent pas le même
+prototype qu'un reducer habituel. Vous connaissez bien le reducer
+`(state, action) => state.set()`. Avec les Elfes, l'action est décomposé en
+arguments et le `state` devient le `this` de la fonction pour ressembler à
+`(val1, val2, ..., valN) => this.set()`.
+
+Dans l'exemple ci-dessous vous pouvez voir `this.set()`. En effet, ici, vous
+avez bien un `state` de type `Shredder` mais celui-ci est mutable. Bien entendu,
+en dehors du reducer, le `state` est toujours immutable.
 
 ```js
 class Elrond extends Elf {
@@ -45,9 +50,9 @@ class Elrond extends Elf {
   }
 
   /* Le reducer (pur) */
-  static nextYear(state) {
-    const previousYears = state.get('yearsOfLife');
-    state.set('yearsOfLife', previousYears + 1);
+  static nextYear() {
+    const previousYears = this.get('yearsOfLife');
+    this.set('yearsOfLife', previousYears + 1);
   }
 
   /* La quête (effets de bord) */
@@ -70,18 +75,47 @@ A propos de l'état initial, vous devez simplement rajouter une propriété stat
 
 Etant donné que le `state` vu depuis le reducer est mutable, parfois il est
 nécessaire d'avoir accès au state immutable pour réaliser (par exemple) des
-comparaisons. Tous les reducers elfiques recoivent alors trois arguments comme
-présenté ci-dessous :
+comparaisons. Tous les reducers elfiques recoivent le `state` immutable comme
+dernier argument du reducer :
 
 ```js
   /* ... */
-  static nextYear(state, action, immState) {}
+  static nextYear(val1, val2, ..., valN, immState) {}
   /* ... */
 ```
 
-En entrant dans le reducer, `state` et `immState` contiennent les mêmes valeurs.
-Néanmoins les mutations sur `state` n'affectent pas `immState` qui peut alors
+En entrant dans le reducer, `this` et `immState` contiennent les mêmes valeurs.
+Néanmoins les mutations sur `this` n'affectent pas `immState` qui peut alors
 être utilisé pour faire des comparaisons pendant l'exécution du reducer.
+
+## Comment injecter des propriétés supplémentaires dans le reducer ?
+
+Comme vous le savez bien avec les Goblins, tous les paramètres donnés à une
+quête sont forcément disponibles dans l'`action` passé au reducer. Pour ce qui
+est des Elfes, c'est exactement la même chose, et comme avec les Goblins, il est
+possible d'en donner d'autres.
+
+L'exemple ci-dessous permet de montrer que l'on peut récupérer directement `id`
+depuis le reducer, mais àgalement `age` qui ne fait pas partie du prototype de
+la quête `create`. Ce n'est pas un problème car `age` est donné explicitement
+avec l'appel sur le `do()`.
+
+```js
+class Elrond extends Elf {
+  static create(id, age) {
+    this.set('id', id).set('age', age);
+  }
+
+  async create(id, desktopId = null) {
+    this.do({age: 143});
+    return this;
+  }
+}
+```
+
+> Si on avait aussi spécifiez `desktopId` dans le prototype de la méthode static
+> `create`, on aurait également pu le récupérer directement sans le spécifier
+> avec l'appe `this.do()`.
 
 ## Où est l'auto-complétion des states ?
 

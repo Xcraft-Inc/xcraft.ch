@@ -70,8 +70,8 @@ Contrairement aux Goblins, vous pouvez ainsi écrire les reducers directement
 avant ou après la définition de la quête; ce qui peut être un plus non
 négligeable pour la lecture du code.
 
-> Si vous avez bien observé, tous le `create` fait un appel sur `this.do()`.
-> Sachez que les quêtes `create` ont un reducer par défaut qui sert uniquement à
+> Si vous avez bien observé, le `create` fait un appel sur `this.do()`. Sachez
+> que les quêtes `create` ont un reducer par défaut qui sert uniquement à
 > insérer l`id` dans le `state` de l'Elfe, si aucun reducer n'est défini dans la
 > classe dérivée.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Languages'
+title: 'Langages'
 date: 2022-12-14
 weight: 60
 tags: ['devel', 'goblin', 'elf', 'jsdoc']

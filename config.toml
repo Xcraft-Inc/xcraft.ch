@@ -39,16 +39,13 @@ theme = "hugo-theme-learn"
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
   custom_css = ["css/custom.css"]
 
+  disableLandingPageButton = true
+
 [[menu.shortcuts]] 
   name = "<i class='fab fa-github'></i> GitHub"
   identifier = "ds"
   url = "https://github.com/Xcraft-Inc"
   weight = 10
-
-[[menu.shortcuts]]
-  name = "<i class='fas fa-bullhorn'></i> Credits"
-  url = "/credits"
-  weight = 30
 
 [[menu.shortcuts]]
   name = "<i class='fas fa-tags'></i> Tags"

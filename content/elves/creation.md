@@ -166,13 +166,3 @@ const galadrielBis = await this.create(`${id}@bis`);
 /* au lieu de */
 const galadrielBis = await new Galadriel(this).create(`${id}@bis`);
 ```
-
-## Qu'est-ce que le `this.do()` ?
-
-Si vous avez bien observé, tous les `create` font un appel sur `this.do()`, bien
-que dans ce chapitre nous n'avons pas encore étudié les reducers. Sachez que les
-quêtes `create` ont un reducer par défaut qui sert uniquement à insérer l`id`
-dans le `state` de l'Elfe, si aucun reducer n'est défini dans la classe dérivée.
-
-Plus d'informations sont disponibles dans le chapitre [Son état](/elves/states)
-qui se concentre sur la problématique des `states`.

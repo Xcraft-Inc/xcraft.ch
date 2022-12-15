@@ -70,6 +70,11 @@ Contrairement aux Goblins, vous pouvez ainsi écrire les reducers directement
 avant ou après la définition de la quête; ce qui peut être un plus non
 négligeable pour la lecture du code.
 
+> Si vous avez bien observé, tous le `create` fait un appel sur `this.do()`.
+> Sachez que les quêtes `create` ont un reducer par défaut qui sert uniquement à
+> insérer l`id` dans le `state` de l'Elfe, si aucun reducer n'est défini dans la
+> classe dérivée.
+
 A propos de l'état initial, vous devez simplement rajouter une propriété static
 `initialState` à votre Elfe.
 
@@ -79,9 +84,7 @@ comparaisons. Tous les reducers elfiques recoivent le `state` immutable comme
 dernier argument du reducer :
 
 ```js
-  /* ... */
-  static nextYear(val1, val2, ..., valN, immState) {}
-  /* ... */
+static nextYear(val1, val2, ..., valN, immState) {}
 ```
 
 En entrant dans le reducer, `this` et `immState` contiennent les mêmes valeurs.
@@ -96,7 +99,7 @@ est des Elfes, c'est exactement la même chose, et comme avec les Goblins, il es
 possible d'en donner d'autres.
 
 L'exemple ci-dessous permet de montrer que l'on peut récupérer directement `id`
-depuis le reducer, mais àgalement `age` qui ne fait pas partie du prototype de
+depuis le reducer, mais également `age` qui ne fait pas partie du prototype de
 la quête `create`. Ce n'est pas un problème car `age` est donné explicitement
 avec l'appel sur le `do()`.
 
@@ -115,7 +118,7 @@ class Elrond extends Elf {
 
 > Si on avait aussi spécifiez `desktopId` dans le prototype de la méthode static
 > `create`, on aurait également pu le récupérer directement sans le spécifier
-> avec l'appe `this.do()`.
+> avec l'appel `this.do()`.
 
 ## Où est l'auto-complétion des states ?
 

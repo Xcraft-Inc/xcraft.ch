@@ -65,7 +65,7 @@ class Valinor extends Elf.Alone {
 
 Cet exemple présente plusieurs caractéristiques importantes. Ici nous voyons
 deux Elfes d'instance, ainsi qu'un Elfe de type singleton. Le singleton
-`Valinor` créer les deux Elfes `Elrond` et `Galadriel`, les utilise puis les
+`Valinor` créé les deux Elfes `Elrond` et `Galadriel`, les utilise puis les
 dispose. Ce mécanisme se nomme le `create`/ `kill` pattern et n'a rien de bien
 sorcier. Il faut néanmoins bien comprendre que le `kill` est explicite avec un
 singleton, car justement, personne ne tue un singleton et nous ne désirons pas
@@ -73,8 +73,8 @@ avoir une fuite d'Elfes.
 
 ## Et si un Elfe d'instance créait un autre Elfe
 
-Quand une instance créer un Elfe, il n'est pas nécessaire d'appliquer le
-`create` / `kill` pattern car dans ce cas, le fait de tuer le premier Elfe va
+Quand une instance créé un Elfe, il n'est pas nécessaire d'appliquer le `create`
+/ `kill` pattern car dans ce cas, le fait de tuer le premier Elfe va
 automatiquement tuer les Elfes sous-jacents (bien entendu, pour autant qu'aucun
 autre Elfe en dépende également).
 
@@ -127,10 +127,10 @@ class Valinor extends Elf.Alone {
 }
 ```
 
-Dans cet exemple, `Elrond` créer `Galadriel` puis communique avec cette Elfe.
-Mais cet exemple introduit également une autre particularité. Quand un Elfe
-souhaite exécuter ses propres quêtes, il peut simplement les appeler via `this`
-comme dans cet exemple avec `await this.hello()`.
+Dans cet exemple, `Elrond` créer `Galadriel` puis communique avec cette Elfe. Ce
+cas introduit également une autre particularité. Quand un Elfe souhaite exécuter
+ses propres quêtes, il peut simplement les appeler via `this` comme dans
+l'exemple avec `await this.hello()`.
 
 > Attention, n'oubliez pas ce qui est expliqué dans le chapitre
 > [Qui sont'il](/elves/overview). Les classes elfiques ne sont pas des classes
@@ -141,7 +141,7 @@ comme dans cet exemple avec `await this.hello()`.
 
 Cela peut paraître étrange dis ainsi mais rien n'empêche qu'un certain type
 d'Efle créer un autre Elfe de même type. Il est possible de le faire comme dans
-les exemples ci-dessus, mais un chemin plus directe peut être utilisé, voyez
+les exemples ci-dessus; un chemin plus directe peut être utilisé, voyez
 ci-dessous.
 
 ```js
@@ -163,6 +163,10 @@ La différence avec les `create()` précédents est d'avoir écrit :
 
 ```js
 const galadrielBis = await this.create(`${id}@bis`);
-/* au lieu de */
+```
+
+Au lieu de :
+
+```js
 const galadrielBis = await new Galadriel(this).create(`${id}@bis`);
 ```

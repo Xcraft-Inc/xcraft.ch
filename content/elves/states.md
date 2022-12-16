@@ -30,17 +30,17 @@ contrairement aux propriétés.
 
 > Bien qu'on parle toujours de reducer, les Elfes n'utilisent pas le même
 > prototype qu'un reducer habituel. Vous connaissez bien le reducer :
->
-> ```js
-> (state, action) => state.set();
-> ```
->
+
+```js
+(state, action) => state.set();
+```
+
 > Avec les Elfes, l'action est décomposée en arguments et le `state` devient le
 > `this` de la fonction pour ressembler à :
->
-> ```js
-> (val1, val2, ..., valN) => this.set()
-> ```
+
+```js
+(val1, val2, ..., valN) => this.set()
+```
 
 Dans l'exemple ci-dessous vous pouvez voir `this.set()`. En effet, ici, vous
 avez bien un `state` de type `Shredder` mais celui-ci est mutable. Bien entendu,

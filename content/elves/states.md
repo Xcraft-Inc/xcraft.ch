@@ -25,14 +25,22 @@ par nature, ce qui donne de nombreux avantages pour le fonctionnement du
 framework. Néanmoins, concernant les Elfes, les `states` sont mutables
 contrairement aux Goblins.
 
-> Les `states` doivent également être utilisé pour la persistance des données
-> contrairement aux propriétés.
+Les `states` doivent également être utilisé pour la persistance des données
+contrairement aux propriétés.
 
-Bien qu'on parle toujours de reducer, les Elfes n'utilisent pas le même
-prototype qu'un reducer habituel. Vous connaissez bien le reducer
-`(state, action) => state.set()`. Avec les Elfes, l'action est décomposé en
-arguments et le `state` devient le `this` de la fonction pour ressembler à
-`(val1, val2, ..., valN) => this.set()`.
+> Bien qu'on parle toujours de reducer, les Elfes n'utilisent pas le même
+> prototype qu'un reducer habituel. Vous connaissez bien le reducer :
+>
+> ```js
+> (state, action) => state.set();
+> ```
+>
+> Avec les Elfes, l'action est décomposée en arguments et le `state` devient le
+> `this` de la fonction pour ressembler à :
+>
+> ```js
+> (val1, val2, ..., valN) => this.set()
+> ```
 
 Dans l'exemple ci-dessous vous pouvez voir `this.set()`. En effet, ici, vous
 avez bien un `state` de type `Shredder` mais celui-ci est mutable. Bien entendu,

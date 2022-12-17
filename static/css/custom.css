@@ -114,7 +114,7 @@ li::marker {
 
 code {
   font-family: 'Ubuntu Mono';
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(35, 35, 35);
   border: 0;
   color: var(--MAIN-TEXT-color);
   padding: 2px;
@@ -201,7 +201,7 @@ td:hover img {
 blockquote code,
 blockquote p {
   color: #aaa;
-  font-size: 1rem;
+  font-size: 100%;
 }
 
 blockquote {
@@ -275,8 +275,12 @@ hr {
   padding: 0;
 }
 
+.highlight {
+  background-color: rgb(30, 30, 30);
+}
+
 .hljs {
-  padding: 1rem;
+  padding: 1.2rem;
   background-color: rgb(30, 30, 30);
 }
 

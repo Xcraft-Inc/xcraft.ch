@@ -12,4 +12,4 @@ pre: '<b>1. </b>'
 
 The basics
 
-![Xcraft](/img/x-logo.png)
+![Xcraft](/img/x-logo.png?width=600)

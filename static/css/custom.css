@@ -275,10 +275,6 @@ hr {
   padding: 0;
 }
 
-.highlight {
-  background-color: rgb(30, 30, 30);
-}
-
 .hljs {
   padding: 1.2rem;
   background-color: rgb(30, 30, 30);

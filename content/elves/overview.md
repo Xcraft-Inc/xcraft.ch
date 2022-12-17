@@ -40,7 +40,7 @@ inutile.
 
 Il est possible que vous devez effectuer des comparaisons avec le state initial
 (entrant dans le reducer). Pas de problème car tous les reducers elfiques
-reçoivent aussi le state immutable en 3ème arguments.
+reçoivent aussi le state immutable en dernier argument.
 
 ## Les états des Elfes ne connaissent pas de schéma
 

@@ -72,7 +72,10 @@ Xcraft pour un Elfe de type `Elf.Alone` et un Elfe de type `Elf`.
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
-const Elrond = require('./lib/elrond.js');
+const Elrond = require('./lib/elrond/service.js');
 
 exports.xcraftCommands = Elf.birth(Elrond);
 ```
+
+> Attention, cet exemple est le plus simple, avec un Elfe dans état (sans
+> state).

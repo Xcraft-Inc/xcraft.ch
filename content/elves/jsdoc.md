@@ -25,11 +25,13 @@ cette rigueur dans le langage. Si c'est le cas, vous avez tord, alors apprennez
  * la Terre du Milieu est connu.
  */
 class Galadriel extends Elf {
+  state = new GaladrielState();
+
   /**
    * Créer une nouvelle Galadriel prête à se battre.
    *
-   * @param {SmartId} id - ID de la nouvelle Galadriel
-   * @param {SmartId} [desktopId] - ID du feed
+   * @param {string} id ID de la nouvelle Galadriel
+   * @param {string} [desktopId] ID du feed
    * @returns {Galadriel} la nouvelle Galadriel
    */
   async create(id, desktopId = null) {
@@ -40,8 +42,8 @@ class Galadriel extends Elf {
   /**
    * Engage un combat contre un opposant.
    *
-   * @param {SmartId} opposantId - ID de l'opposant à combattre
-   * @param {Weapon} weapon - Arme utilisée pour le combat
+   * @param {string} opposantId ID de l'opposant à combattre
+   * @param {Weapon} weapon Arme utilisée pour le combat
    * @returns {Health} l'état de santé de Galadriel
    */
   async fight(opposantId, weapon) {
@@ -52,25 +54,15 @@ class Galadriel extends Elf {
 ```
 
 Les possibilités sont très larges et la documentation officielle de [JSDoc][1]
-pourra beaucoup vous aider. Dans l'exemple ci-dessus, des types `SmartId`,
-`Weapon` et `Health` sont utilisés. Bien entendu pour que cela fonctionne
-correctement, il faut les avoir déclaré quelque part par exemple sous forme de
-classe. Mais il est aussi possible de le faire avec des objets javascript, typés
-par [JSDoc][1].
+pourra beaucoup vous aider. Dans l'exemple ci-dessus, des types `Weapon` et
+`Health` sont utilisés. Bien entendu pour que cela fonctionne correctement, il
+faut les avoir déclaré quelque part par exemple sous forme de classe. Mais il
+est aussi possible de le faire avec des objets javascript, typés par [JSDoc][1].
 
 ## Pourquoi ne pas exploiter typescript à la place de [JSDoc][1] ?
 
 Un chapitre traitera de typescript, mais il faut garder en tête un élément
 important. Les classes elfiques sont décritent en ES2015, et non en typescript.
-De ce fait, il n'est pas possible de documenter le code directement avec
-typescript, mais il faut utiliser une définition dans un fichier annexe. Le fait
-de créer un fichier externe fait perdre la vision globale de l'Elfe. En
-consultant la définition typescript, on ne voit plus les implémentations. Et en
-consultant les implémentations, on ne peut voir les définitions qu'à travers
-l'auto-complétion.
-
-Pour que le typescript soit une vraie solution, il faut écrire les Elfes
-directement en typescript et mettre en place une passe de build pour l'ES2015.
-Ceci n'est pas implémenté.
+De ce fait, pour exploiter typescript, il faut le faire à travers le JSDoc.
 
 [1]: https://jsdoc.app/

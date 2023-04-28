@@ -45,4 +45,6 @@ d'assigner la valeure `null` à une propriété au lieu de la supprimer comme le
 fait `delX` des Goblins.
 
 > Les Elfes sont une abstraction sur les Goblins, mais les propriétés elfiques
-> ne sont en aucun cas simulées par des `setX` et `getX` Goblins.
+> ne sont en aucun cas simulées par des `setX` et `getX` Goblins. Néanmoins il
+> est possible que certaines propriétés soient injectées, par le moteur Goblin,
+> dans votre Elfe via `setX`. C'est par exemple le cas avec le `desktopId`.

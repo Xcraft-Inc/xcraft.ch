@@ -20,12 +20,12 @@ différences entre les propriétés et les `states` ne se limitent pas au
 permet de gérer les mutations dans une fonction pure (sans effet de bord) que
 l'on nomme `reducer`. Il est possible ainsi de réaliser des tests efficacement
 sur les `states` sans faire intervenir les effets de bords qui doivent être
-produits **uniquement par les quêtes**. De plus, les `states` sont immutables
-par nature, ce qui donne de nombreux avantages pour le fonctionnement du
-framework. Néanmoins, concernant les Elfes, les `states` sont mutables
-contrairement aux Goblins.
+produits **uniquement par les quêtes**. De plus, les `states` sont immuables
+(immutables) par nature, ce qui donne de nombreux avantages pour le
+fonctionnement du framework. Néanmoins, concernant les Elfes, les `states` sont
+mutables (du point de vue du consomateur) contrairement aux Goblins.
 
-Les `states` doivent également être utilisé pour la persistance des données
+Les `states` doivent également être utilisés pour la persistance des données
 contrairement aux propriétés.
 
 > Bien qu'on parle toujours de reducer, les Elfes n'utilisent pas le même
@@ -35,69 +35,116 @@ contrairement aux propriétés.
 (state, action) => state.set();
 ```
 
-> Avec les Elfes, l'action est décomposée en arguments et le `state` devient le
-> `this` de la fonction pour ressembler à :
+> Avec les Elfes, l'action est décomposée en arguments et le `state` est injecté
+> dans le `this`. et devient `this.state` pour ressembler à :
 
 ```js
-(val1, val2, ..., valN) => this.set()
+(val1, val2, ..., valN) => this.state.valN = valN;
 ```
 
-Dans l'exemple ci-dessous vous pouvez voir `this.set()`. En effet, ici, vous
-avez bien un `state` de type `Shredder` mais celui-ci est mutable. Bien entendu,
-en dehors du reducer, le `state` est toujours immutable.
+Dans l'exemple ci-dessous vous pouvez voir `this.state.valN = valN`. Connaissant
+bien les Goblins, vous devriez être surpris. Il n'y a plus besoin d'effectuer un
+`.set()` pour assigner une valeur. De même avec la lecture, le `.get()` n'existe
+plus.
+
+Bien entendu, en dehors du reducer, le `state` est toujours immutable. Voici un
+exemple complet.
+
+### Les Elfes se doivent d'être beau
+
+Un Elfe est un être typé. Il connait son état dans ses moindres détails.
+
+```js
+const {string, number} = require('xcraft-core-stones');
+
+class ElrondShape {
+  id = string;
+  name = string;
+  yearsOfLife = number;
+}
+
+class ElrondState extends Elf.Sculpt(ElrondShape) {}
+```
+
+L'exemple ci-dessus est un _shape_. Ce _shape_ permet de décrire précisément à
+quoi doit ressembler un _state_. Une fonction elfique particulière,
+`Elf.Scult()`, permet de sculpter un _state_ elfique à partir d'un _shape_.
+
+Pour bien comprendre les termes, voyez la classe _shape_ comme une définition,
+et la classe _state_ comme un type. C'est ce type qui va permettre d'instancier
+un _state_ à notre Elfe.
+
+### Les Elfes ont de la logique
+
+Quand un Elfe réfléchit, il se fie à sa mémoire structurée est bien définie.
+Cette mémoire est une instance du type décrit précédemment.
+
+```js
+class ElrondLogic extends Elf.Spirit {
+  /* Instance du state Elrond avec des valeurs initiales */
+  state = new ElrondState({
+    name: 'Elrond',
+    yearsOfLife: 0,
+  });
+
+  /* Reducer pour la quête create */
+  create(id, desktopId) {
+    this.state.id = id;
+  }
+
+  /* Reducer pour la quête nextYear */
+  nextYear() {
+    this.state.yearsOfLife++;
+  }
+}
+```
+
+La logique de l'Efle doit dérivé de l'esprit Elfe `Elf.Spirit`. En effet, tous
+les Elfes partagent les mêmes fondamentaux.
+
+Nous sommes ici dans la définitions des reducers et de l'état initial. La
+propriété `state` est réservée à ce but et doit **toujours** se nommer ainsi. Le
+`this` des reducers est un peu particulier. Comprennez bien que le `this` ne
+représente pas le `this` de la classe Elfe. Les reducers n'ont pas vraiment
+changé par rapport aux Goblins. Vous êtes ici dans le résultat d'un _dispatch_
+Redux où tout est pure. C'est depuis ce `this` que vous pouvez récupérer (si
+vous le souhaitez) le _state_ immutable via `this.immutable`.
+
+### Les Elfes partent en quêtes
+
+La classe de l'Elfe ...
 
 ```js
 class Elrond extends Elf {
-  static initialState = {
-    yearsOfLife: 0,
-  };
+  state = new ElrondState();
 
+  /* La quête (constructeur) */
   async create(id, desktopId = null) {
     this.do();
     return this;
   }
 
-  /* Le reducer (pur) */
-  static nextYear() {
-    const previousYears = this.get('yearsOfLife');
-    this.set('yearsOfLife', previousYears + 1);
-  }
-
   /* La quête (effets de bord) */
   async nextYear() {
     this.do();
-    return this.state.get('yearsOfLife');
+    return this.state.yearsOfLife;
   }
 }
 ```
 
-Regardez bien l'exemple ci-dessus. Le reducer correspond à la quête car il a le
-**même nom**. La différence fondamentale vient du fait que le reducer `nextYear`
-est une fonction `static` et non une méthode d'instance comme pour la quête.
-Contrairement aux Goblins, vous pouvez ainsi écrire les reducers directement
-avant ou après la définition de la quête; ce qui peut être un plus non
-négligeable pour la lecture du code.
+L'Elfe décrit dans sa classe, en plus des propriétés, ses quêtes. Les reducers
+sont séparés volontairement et peuvent alors être testés indépendamment de
+l'Elfe.
 
-> Si vous avez bien observé, le `create` fait un appel sur `this.do()`. Sachez
-> que les quêtes `create` ont un reducer par défaut qui sert uniquement à
-> insérer `id` dans le `state` de l'Elfe, si aucun reducer n'est défini dans la
-> classe dérivée.
+Pour atteindre l'état de l'Elfe, il suffit d'utiliser la propriété `this.state`.
+Notez bien que pour y avoir accès, vous devez la déclarer comme propriété de
+l'Elfe.
 
-A propos de l'état initial, vous devez simplement rajouter une propriété static
-`initialState` à votre Elfe.
-
-Etant donné que le `state` vu depuis le reducer est mutable, parfois il est
-nécessaire d'avoir accès au state immutable pour réaliser (par exemple) des
-comparaisons. Tous les reducers elfiques recoivent le `state` immutable comme
-dernier argument du reducer :
-
-```js
-static nextYear(val1, val2, ..., valN, immState) {}
-```
-
-En entrant dans le reducer, `this` et `immState` contiennent les mêmes valeurs.
-Néanmoins les mutations sur `this` n'affectent pas `immState` qui peut alors
-être utilisé pour faire des comparaisons pendant l'exécution du reducer.
+> Peut-être que vous trouvez celà étrange car vous avez aussi déclaré une
+> propriété `state` dans la classe `ElrondLogic`. Je vous propose qu'on garde un
+> peu de magie. Faites comme expliqué dans cette documentation et tout ira bien.
+> N'utilisez pas l'instance de `state` dans l'Elfe pour y passer les valeurs
+> initiales (ça ne fonctionnera pas).
 
 ## Comment injecter des propriétés supplémentaires dans le reducer ?
 
@@ -112,10 +159,17 @@ la quête `create`. Ce n'est pas un problème car `age` est donné explicitement
 avec l'appel sur le `do()`.
 
 ```js
-class Elrond extends Elf {
-  static create(id, age) {
-    this.set('id', id).set('age', age);
+class ElrondLogic extends Elf.Spirit {
+  /* ... */
+
+  create(id, age) {
+    this.state.id = id;
+    this.state.age = age;
   }
+}
+
+class Elrond extends Elf {
+  /* ... */
 
   async create(id, desktopId = null) {
     this.do({age: 143});
@@ -124,12 +178,21 @@ class Elrond extends Elf {
 }
 ```
 
-> Si on avait aussi spécifié `desktopId` dans le prototype de la méthode static
-> `create`, on aurait également pu le récupérer directement sans le spécifier
-> avec l'appel `this.do()`.
+> Si on avait aussi spécifié `desktopId` dans le prototype de la méthode
+> `create` de la logique, on aurait également pu le récupérer directement sans
+> le spécifier avec l'appel `this.do()`.
 
-## Où est l'auto-complétion des states ?
+## Exporter la logique, sinon votre Elfe va rester stupide
 
-Pour gérer de la complétion avec les `states`, il faut créer des modèles et les
-mapper sur des classes ou alors sur des définitions typescripts. Cette
-problématique est en cours d'étude mais rien n'est encore implémenté.
+C'est à la naissance de l'Elfe que sa logique est construite. Les bébé Elfes ne
+sont pas comme les autres espèces.
+
+```js
+const {Elf} = require('xcraft-core-goblin');
+const Elrond = require('./lib/elrond/service.js');
+const ElrondLogic = require('./lib/elrond/logic.js');
+
+exports.xcraftCommands = Elf.birth(Elrond, ElrondLogic);
+```
+
+Voir aussi : [](/elves/born)

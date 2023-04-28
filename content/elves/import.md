@@ -22,8 +22,11 @@ fichier source.
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
+const GaladrielState = require('./logic.js');
 
 class Galadriel extends Elf {
+  state = new GaladrielState();
+
   async create(id, desktopId = null) {
     this.do();
     return this;
@@ -37,8 +40,11 @@ module.exports = Galadriel;
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
+const ElrondState = require('./logic.js');
 
 class Elrond extends Elf {
+  state = new ElrondState();
+
   async create(id, desktopId = null) {
     this.do();
     return this;
@@ -60,9 +66,12 @@ appellerait Elrond pour lui donner son propre ID.
 
 ```js
 const {Elf} = require('xcraft-core-goblin');
-const Elrond = require('./elrond.js');
+const GaladrielState = require('./logic.js');
+const Elrond = require('../elrond/service.js');
 
 class Galadriel extends Elf {
+  state = new GaladrielState();
+
   async create(id, desktopId = null) {
     this.do();
     return this;

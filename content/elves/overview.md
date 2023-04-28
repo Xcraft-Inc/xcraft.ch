@@ -31,17 +31,17 @@ sur le bus Xcraft et en aucun cas un appel direct sur la méthode en question.
 
 Les Goblins exploitent redux pour la gestion du state. Les Elfes font de même à
 une petite différence près. Les Elfes ont bien toujours des reducers associés à
-leurs quêtes respectivent, néanmoins le state reçu, ressemble bien à un state
-immutable mais celui-ci est paramétré comme étant mutable. Il suffit d'utiliser
-la méthode `.set()` de `Shredder` tout à fait comme d'habitude, par contre il
-est inutile de récupérer le résultat en retour, en effet, ce state est mutable.
-Et donc ne retournez pas le nouveau state avec le reducer, c'est complètement
-inutile.
+leurs quêtes respectivent, néanmoins le state reçu, est un state `Shredder` mais
+paramétré comme étant mutable.
 
 Il est possible que vous devez effectuer des comparaisons avec le state initial
 (entrant dans le reducer). Pas de problème car tous les reducers elfiques
-reçoivent aussi le state immutable en dernier argument.
+peuvent accéder au state immutable (en entrée de reducer) via
+`this.immutable()`.
 
-## Les états des Elfes ne connaissent pas de schéma
+## Les états des Elfes suivent des schémas
 
-La problématique est en cours d'étude.
+Contrairement aux Goblins, les Elfes utilisent des schémas pour définir leur
+state. Ces schémas permettent alors une validation avec le linter TypeScript the
+VS (Code, Codium) mais aussi de la validation au runtime. De plus, il est
+possible d'avoir de l'autocomplétion à l'édition du code concernant les states.

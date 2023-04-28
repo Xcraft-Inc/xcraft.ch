@@ -16,6 +16,8 @@ les Elfes (`Elrond` et `Galadriel`) sous la forme d'instances.
 
 ```js
 class Galadriel extends Elf {
+  state = new GaladrielState();
+
   async create(id, desktopId = null) {
     this.do();
     return this;
@@ -29,6 +31,8 @@ class Galadriel extends Elf {
 
 ```js
 class Elrond extends Elf {
+  state = new ElrondState();
+
   async create(id, desktopId = null) {
     this.do();
     return this;
@@ -44,19 +48,19 @@ class Elrond extends Elf {
 class Valinor extends Elf.Alone {
   async init() {
     const desktopId = 'valinor@system';
+    const elrondId = 'elrond@valinor';
+    const galadrId = 'galadriel@valinor';
+
     try {
-      const elrond = await new Elrond(this).create('elrond@valinor', desktopId);
-      const galadriel = await new Galadriel(this).create(
-        'galadriel@valinor',
-        desktopId
-      );
+      const elrond = await new Elrond(this).create(elrondId, desktopId);
+      const galadriel = await new Galadriel(this).create(galadrId, desktopId);
       await elrond.hello('Galadriel');
       await galadriel.hi('Elrond');
     } finally {
-      await this.kill(elrond.id);
-      await this.kill(galadriel.id);
+      await this.kill(elrondId);
+      await this.kill(galadrId);
       /* Il est aussi possible de faire :
-       * await this.kill([elrond.id, galadriel.id]);
+       * await this.kill([elrondId, galadrId]);
        */
     }
   }
@@ -80,6 +84,8 @@ autre Elfe en dépende également).
 
 ```js
 class Galadriel extends Elf {
+  state = new GaladrielState();
+
   async create(id, desktopId = null) {
     this.do();
     return this;
@@ -96,6 +102,8 @@ instance d'`Elrond` pour le feed `valinor@system`.
 
 ```js
 class Elrond extends Elf {
+  state = new ElrondState();
+
   async create(id, desktopId = null) {
     this.do();
     return this;
@@ -117,11 +125,13 @@ class Elrond extends Elf {
 class Valinor extends Elf.Alone {
   async init() {
     const desktopId = 'valinor@system';
+    const elrondId = 'elrond@valinor';
+
     try {
-      const elrond = await new Elrond(this).create('elrond@valinor', desktopId);
+      const elrond = await new Elrond(this).create(elrondId, desktopId);
       await elrond.awake();
     } finally {
-      await this.kill(elrond.id);
+      await this.kill(elrondId);
     }
   }
 }
@@ -139,13 +149,15 @@ l'exemple avec `await this.hello()`.
 
 ## Un Elfe qui se recréer lui-même
 
-Cela peut paraître étrange dis ainsi mais rien n'empêche qu'un certain type
+Cela peut paraître étrange dit ainsi mais rien n'empêche qu'un certain type
 d'Efle créer un autre Elfe de même type. Il est possible de le faire comme dans
 les exemples ci-dessus; un chemin plus directe peut être utilisé, voyez
 ci-dessous.
 
 ```js
 class Galadriel extends Elf {
+  state = new GaladrielState();
+
   async create(id, desktopId = null) {
     this.do();
     const galadrielBis = await this.create(`${id}@bis`);

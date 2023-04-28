@@ -195,4 +195,4 @@ const ElrondLogic = require('./lib/elrond/logic.js');
 exports.xcraftCommands = Elf.birth(Elrond, ElrondLogic);
 ```
 
-Voir aussi : [](/elves/born)
+Voir aussi : [La naissance](/elves/born)

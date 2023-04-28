@@ -68,7 +68,7 @@ class ElrondState extends Elf.Sculpt(ElrondShape) {}
 
 L'exemple ci-dessus est un _shape_. Ce _shape_ permet de décrire précisément à
 quoi doit ressembler un _state_. Une fonction elfique particulière,
-`Elf.Scult()`, permet de sculpter un _state_ elfique à partir d'un _shape_.
+`Elf.Sculpt()`, permet de sculpter un _state_ elfique à partir d'un _shape_.
 
 Pour bien comprendre les termes, voyez la classe _shape_ comme une définition,
 et la classe _state_ comme un type. C'est ce type qui va permettre d'instancier
@@ -76,7 +76,7 @@ un _state_ à notre Elfe.
 
 ### Les Elfes ont de la logique
 
-Quand un Elfe réfléchit, il se fie à sa mémoire structurée est bien définie.
+Quand un Elfe réfléchit, il se fie à sa mémoire structurée et bien définie.
 Cette mémoire est une instance du type décrit précédemment.
 
 ```js

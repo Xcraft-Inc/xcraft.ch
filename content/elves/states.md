@@ -29,26 +29,25 @@ Les `states` doivent également être utilisés pour la persistance des données
 contrairement aux propriétés.
 
 > Bien qu'on parle toujours de reducer, les Elfes n'utilisent pas le même
-> prototype qu'un reducer habituel. Vous connaissez bien le reducer :
+> prototype qu'un reducer habituel. Voici celui que vous connaissez bien :
 
 ```js
 (state, action) => state.set();
 ```
 
 > Avec les Elfes, l'action est décomposée en arguments et le `state` est injecté
-> dans le `this`. et devient `this.state` pour ressembler à :
+> dans le `this` pour devenir `this.state` :
 
 ```js
 (val1, val2, ..., valN) => this.state.valN = valN;
 ```
 
-Dans l'exemple ci-dessous vous pouvez voir `this.state.valN = valN`. Connaissant
+Dans l'exemple ci-dessus vous pouvez voir `this.state.valN = valN`. Connaissant
 bien les Goblins, vous devriez être surpris. Il n'y a plus besoin d'effectuer un
 `.set()` pour assigner une valeur. De même avec la lecture, le `.get()` n'existe
 plus.
 
-Bien entendu, en dehors du reducer, le `state` est toujours immutable. Voici un
-exemple complet.
+Bien entendu, en dehors du reducer, le `state` est toujours immutable.
 
 ### Les Elfes se doivent d'être beau
 
@@ -70,9 +69,9 @@ L'exemple ci-dessus est un _shape_. Ce _shape_ permet de décrire précisément 
 quoi doit ressembler un _state_. Une fonction elfique particulière,
 `Elf.Sculpt()`, permet de sculpter un _state_ elfique à partir d'un _shape_.
 
-Pour bien comprendre les termes, voyez la classe _shape_ comme une définition,
-et la classe _state_ comme un type. C'est ce type qui va permettre d'instancier
-un _state_ à notre Elfe.
+Pour bien comprendre les termes, voyez la classe _shape_ comme une
+**définition**, et la classe _state_ comme un **type**. C'est ce type qui va
+permettre d'instancier un _state_ à notre Elfe.
 
 ### Les Elfes ont de la logique
 
@@ -99,7 +98,7 @@ class ElrondLogic extends Elf.Spirit {
 }
 ```
 
-La logique de l'Efle doit dérivé de l'esprit Elfe `Elf.Spirit`. En effet, tous
+La logique de l'Efle doit dériver de l'esprit Elfe `Elf.Spirit`. En effet, tous
 les Elfes partagent les mêmes fondamentaux.
 
 Nous sommes ici dans la définitions des reducers et de l'état initial. La
@@ -132,7 +131,7 @@ class Elrond extends Elf {
 }
 ```
 
-L'Elfe décrit dans sa classe, en plus des propriétés, ses quêtes. Les reducers
+L'Elfe décrit ses quêtes dans sa classe, en plus des propriétés. Les reducers
 sont séparés volontairement et peuvent alors être testés indépendamment de
 l'Elfe.
 
@@ -140,11 +139,11 @@ Pour atteindre l'état de l'Elfe, il suffit d'utiliser la propriété `this.stat
 Notez bien que pour y avoir accès, vous devez la déclarer comme propriété de
 l'Elfe.
 
-> Peut-être que vous trouvez celà étrange car vous avez aussi déclaré une
+> Peut-être que vous trouvez cela étrange car vous avez aussi déclaré une
 > propriété `state` dans la classe `ElrondLogic`. Je vous propose qu'on garde un
-> peu de magie. Faites comme expliqué dans cette documentation et tout ira bien.
-> N'utilisez pas l'instance de `state` dans l'Elfe pour y passer les valeurs
-> initiales (ça ne fonctionnera pas).
+> peu de mystère. Faites comme expliqué dans cette documentation et tout ira
+> bien. N'utilisez pas l'instance de `state` dans l'Elfe pour y passer les
+> valeurs initiales (ça ne fonctionnera pas).
 
 ## Comment injecter des propriétés supplémentaires dans le reducer ?
 
@@ -153,10 +152,10 @@ quête sont forcément disponibles dans l'`action` passé au reducer. Pour ce qu
 est des Elfes, c'est exactement la même chose, et comme avec les Goblins, il est
 possible d'en donner d'autres.
 
-L'exemple ci-dessous permet de montrer que l'on peut récupérer directement `id`
-depuis le reducer, mais également `age` qui ne fait pas partie du prototype de
-la quête `create`. Ce n'est pas un problème car `age` est donné explicitement
-avec l'appel sur le `do()`.
+L'exemple ci-dessous permet de montrer que l'on peut récupérer directement
+l'`id` depuis le reducer, mais également l'`age` qui ne fait pas partie du
+prototype de la quête `create`. Ce n'est pas un problème car l'`age` est donné
+explicitement avec l'appel sur le `do()`.
 
 ```js
 class ElrondLogic extends Elf.Spirit {
@@ -185,7 +184,7 @@ class Elrond extends Elf {
 ## Exporter la logique, sinon votre Elfe va rester stupide
 
 C'est à la naissance de l'Elfe que sa logique est construite. Les bébé Elfes ne
-sont pas comme les autres espèces.
+sont pas comme les autres.
 
 ```js
 const {Elf} = require('xcraft-core-goblin');

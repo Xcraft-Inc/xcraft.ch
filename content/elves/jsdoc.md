@@ -59,10 +59,4 @@ pourra beaucoup vous aider. Dans l'exemple ci-dessus, des types `Weapon` et
 faut les avoir déclaré quelque part par exemple sous forme de classe. Mais il
 est aussi possible de le faire avec des objets javascript, typés par [JSDoc][1].
 
-## Pourquoi ne pas exploiter typescript à la place de [JSDoc][1] ?
-
-Un chapitre traitera de typescript, mais il faut garder en tête un élément
-important. Les classes elfiques sont décritent en ES2015, et non en typescript.
-De ce fait, pour exploiter typescript, il faut le faire à travers le JSDoc.
-
 [1]: https://jsdoc.app/

@@ -77,5 +77,4 @@ const Elrond = require('./lib/elrond/service.js');
 exports.xcraftCommands = Elf.birth(Elrond);
 ```
 
-> Attention, cet exemple est le plus simple, avec un Elfe sans état (sans
-> state).
+> Ceci est un exemple avec un Elfe sans état (sans state).

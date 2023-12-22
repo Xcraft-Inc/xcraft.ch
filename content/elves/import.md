@@ -78,7 +78,7 @@ class Galadriel extends Elf {
   }
 
   async speakTo(elrondId) {
-    const elrond = new Elrond(this).api(elrondId);
+    const elrond = await new Elrond(this).api(elrondId);
     await elrond.helloFrom(this.id);
   }
 }

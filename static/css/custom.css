@@ -204,6 +204,11 @@ blockquote p {
   font-size: 100%;
 }
 
+strong {
+  font-family: 'Ubuntu Bold';
+  font-weight: 400;
+}
+
 blockquote {
   color: #aaa;
   font-family: 'Ubuntu';

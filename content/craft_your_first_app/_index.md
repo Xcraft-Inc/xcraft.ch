@@ -1,12 +1,12 @@
 ---
 title: 'Craft your first app'
 date: 2021-10-5
-weight: 50
+weight: 60
 chapter: true
-pre: '<b>5. </b>'
+pre: '<b>6. </b>'
 ---
 
-### Chapter 5
+### Chapter 6
 
 # Craft your first app
 

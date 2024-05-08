@@ -10,10 +10,12 @@ pre: '<b>5. </b>'
 
 # Chest
 
+Il est fort et il a du coffre...
+
 Le Chest est un coffre pouvant contenir n'importe quel document. Son API se
 limite à ce que tout coffre devrait permettre à un consommateur. On peut y
-insérer des documents avec la requête `supply`, récupérer des documents avec la
-requête `retrieve` et supprimer des documents avec la requête `trash`.
+insérer des documents avec la quête `supply`, récupérer des documents avec la
+quête `retrieve` et supprimer des documents avec la quête `trash`.
 
 Dans un monde centralisé, on pourrait s'en contenter car `supply` est en quelque
 sorte un "upload" et `retrieve` un "download". Tout ceci paraît vraiment très
@@ -30,16 +32,16 @@ le monde centralisé et on bascule dans le monde fabuleux d'Alice aux Pays des
 Merveilles. Ou plutôt, on bascule dans le monde du décentralisé.
 
 Oubliez un instant internet. Vous avez le Chest et il est chez vous. Quand vous
-utilisez la requête `supply`, vous remplissez votre coffre. Quand vous utilisez
-la requête `retrieve`, vous récupérez un stream du document qui est dans votre
-coffre. Il existe d'autres requêtes que je n'ai pas présentées tout à l'heure.
-Ce sont les requêtes `location` et `locationTry`. Arrêtons-nous un instant sur
-la requête `location`. Son implémentation est extrêmement simple. Au lieu de
-vous rendre un stream comme `retrieve`, elle vous rend le chemin absolu qui
-permet d'atteindre le document. Dit autrement, cette requête n'aurait aucun sens
-dans un monde centralisé, car qui souhaite avoir le chemin d'un document côté
-serveur ? Mais chez nous, c'est ce qu'on souhaite. Nous sommes au Pays des
-Merveilles et tout est à portée de main.
+utilisez la quête `supply`, vous remplissez votre coffre. Quand vous utilisez la
+quête `retrieve`, vous récupérez un stream du document qui est dans votre
+coffre. Il existe d'autres quêtes que je n'ai pas présentées tout à l'heure. Ce
+sont les quêtes `location` et `locationTry`. Arrêtons-nous un instant sur la
+quête `location`. Son implémentation est extrêmement simple. Au lieu de vous
+rendre un stream comme `retrieve`, elle vous rend le chemin absolu qui permet
+d'atteindre le document. Dit autrement, cette quête n'aurait aucun sens dans un
+monde centralisé, car qui souhaite avoir le chemin d'un document côté serveur ?
+Mais chez nous, c'est ce qu'on souhaite. Nous sommes au Pays des Merveilles et
+tout est à portée de main.
 
 ## Mais j'veux pas être tout seul, moi ?!
 
@@ -66,7 +68,7 @@ stocké dans le coffre. L'ensemble de ces entités représente l'index de tout c
 que peut contenir un coffre. Alors oui, j'ai dit **peut contenir** et pas juste
 **contient**. C'est là que la magie va opérer.
 
-### Remplir le coffre depuis chez soit
+### Remplir le coffre depuis chez soi
 
 Quand on remplit le coffre, `supply`, on stocke simplement un fichier dans le
 storage local du coffre avec une entité `chestObject` qui le décrit. Si un
@@ -87,16 +89,16 @@ aucun client actuellement connecté ne connaît ce document, ce n'est pas trop
 grave. Le Chest de référence va redemander périodiquement à tout le monde
 jusqu'à ce qu'un client finisse par le lui envoyer.
 
-### Récupérer un document depuis chez soit
+### Récupérer un document depuis chez soi
 
-Je vous ai présenté les requêtes tout à l'heure et j'ai parlé de la requête
+Je vous ai présenté les quêtes tout à l'heure et j'ai parlé de la quête
 `retrieve`. Mais est-ce que vous devriez l'utiliser ? En principe non. Même si
 elle est publique, finalement elle n'est pas adaptée à un modèle distribué. Il
 faut comprendre qu'elle va vous retourner un stream uniquement si le document
 existe dans votre coffre. Dans le cas contraire, c'est une exception que vous
 allez recevoir.
 
-Oh mince alors, que faire ? Facile, la magie va opérer avec la requête
+Oh mince alors, que faire ? Facile, la magie va opérer avec la quête
 `locationTry`. Étant donné que votre coffre fonctionne localement, il est tout à
 fait censé de travailler avec des chemins absolus pour récupérer des documents.
 Vous pouvez alors facilement copier ce document ou créer un stream en lecture
@@ -129,8 +131,8 @@ en tant qu'entités `chestObject`. Tant qu'une entité n'est pas détruite, et q
 le document n'existe pas dans son stockage, il va le demander, et le redemander,
 ... C'est le principe de l'upload expliqué précédemment.
 
-Maintenant, il est possible que du côté de ce serveur, il y ait une requête qui
-va réclamer un document et que ce document n'existe peut-être pas encore dans
+Maintenant, il est possible que du côté de ce serveur, il y ait une quête qui va
+réclamer un document et que ce document n'existe peut-être pas encore dans
 l'index du serveur ou pas encore dans le stockage. Si c'est le cas, au moment du
 `locationTry`, le serveur va demander avec plus d'insistance qu'on lui donne ce
 document avec un timeout afin de ne pas bloquer l'appel pour toujours.

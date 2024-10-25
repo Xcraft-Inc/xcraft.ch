@@ -3,7 +3,7 @@ title: 'Craft your first app'
 date: 2021-10-5
 weight: 60
 chapter: true
-pre: '<b>6. </b>'
+pre: '<b>5. </b>'
 ---
 
 ### Chapter 6

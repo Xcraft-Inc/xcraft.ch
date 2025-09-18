@@ -11,7 +11,7 @@ this powerfull layer, you must understand the key concepts and best pratices.
 Combined with some other modules provide a full framework of goblins. We hope
 that this crafting experience will make you gain a precious times.
 
-# Key concepts
+## Key concepts
 
 - workshop contains **services factories** for building, searching and editing
   entities graphs
@@ -20,7 +20,7 @@ that this crafting experience will make you gain a precious times.
 - entities has **auto-generated** [quests] for CRUD operations
 - entities has aggregation functions for summaries, computing and indexing
 
-# Dependencies and side modules
+## Dependencies and side modules
 
 The workshop module cover a mid-level data layer and he gets along well with his
 childhood friends.

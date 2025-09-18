@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>2.1 </b>'
 ---
 
-### Chapter 2.1
-
-# Concept
-
 The goblin idea match perfectly with the actor model of Carl Hewitt designed
 in 1973. We don't know this model before designing this framework, after some
 search on wikipedia we discover that our work match the following definition

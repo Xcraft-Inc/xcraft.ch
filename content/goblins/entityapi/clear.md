@@ -6,7 +6,7 @@ weight: 10
 
 Clear a collection
 
-# Example
+## Example
 
 Remove all `tasks` in collection.
 

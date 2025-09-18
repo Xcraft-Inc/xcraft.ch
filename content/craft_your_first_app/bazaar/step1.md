@@ -3,12 +3,8 @@ title: 'Le Bazaar Goblin - Etape 1'
 date: 2020-10-06
 weight: 10
 chapter: true
-pre: '<b>5.1 </b>'
+pre: '<b>6.1 </b>'
 ---
-
-### Chapter 5.1
-
-# Le Bazaar Goblin - Etape 1
 
 Hoy! Le cartel nous demande de coder une application pour partager les
 connaissances entres les différents postes de travail de la confédération.

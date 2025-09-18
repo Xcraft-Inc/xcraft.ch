@@ -6,8 +6,4 @@ chapter: true
 pre: '<b>4.4 </b>'
 ---
 
-### Chapter 4.4
-
-# Peon
-
 ![Coming soon](/img/coming-soon.png)

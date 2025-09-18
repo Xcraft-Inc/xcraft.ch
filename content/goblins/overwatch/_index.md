@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>2.11 </b>'
 ---
 
-### Chapter 2.11
-
-# Overwatch
-
 Montior Error or hazardous behavior in your app.
 
 ![Logo](/img/goblin-blupi-spy.png?width=600px)

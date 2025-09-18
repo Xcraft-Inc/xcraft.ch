@@ -7,7 +7,7 @@ weight: 10
 Return the full entity state or a sub path. The path arguments supports the
 **Shredder** `get` syntax
 
-# Examples
+## Example
 
 ```js
 

@@ -5,7 +5,3 @@ weight: 70
 chapter: true
 pre: '<b>4.7 </b>'
 ---
-
-### Chapter 4.7
-
-# Async / await / watt

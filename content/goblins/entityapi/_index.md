@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>2.3 </b>'
 ---
 
-### Chapter 2.3
-
-# Entity API
-
 Describe the auto-generated API for entities.
 
 ![Logo](/img/goblin-blupi-entity-api.png?width=700px)

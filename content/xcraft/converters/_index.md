@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>4.5 </b>'
 ---
 
-### Chapter 4.5
-
-# Converters
-
 A wide variety of converters for all uses
 
 ![blupi](/img/goblin-to-blupi.png)

@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>4.1 </b>'
 ---
 
-### Chapter 4.1
-
-# Infrastructure
-
 A land needs chiefs, roads, horses, dialects and more in order to trade between
 species
 

@@ -3,12 +3,8 @@ title: 'Le Bazaar Goblin - Etape 3'
 date: 2020-10-06
 weight: 20
 chapter: true
-pre: '<b>5.3 </b>'
+pre: '<b>6.3 </b>'
 ---
-
-### Chapter 5.3
-
-# Le Bazaar Goblin - Etape 3
 
 Il est temps d'essayer quelques mécaniques bien huilées et prête à démarrer.
 Nous allons simuler le comportement multi-utilisateurs de notre application à

@@ -5,13 +5,11 @@ weight: 5
 tags: ['general', 'goblin', 'build', 'icon']
 ---
 
-# Introduction
-
 We reccommend you to use a professional vector drawing software to create your
 icon like Inkscape (open source) or Adobe Illustrator. Create a new document
 with a size of 512x512 pixels and unleash your creativity :)
 
-# Libraries to convert your icon
+## Libraries to convert your icon
 
 We are going to use some linux libraries to transform and convert our icon from
 `png` to the good extensions allowed by the goblin builder.
@@ -39,7 +37,7 @@ sudo apt install icnsutils imagemagick
 {{% notice info %}}If you are on windows, you can use the linux subsystem to
 install and use these libraries.{{% /notice %}}
 
-# Convert png to icns
+## Convert png to icns
 
 A simple way to convert your icon from `.png` to `.icns` is to use the command
 `png2icns` from library icnsutils :
@@ -48,7 +46,7 @@ A simple way to convert your icon from `.png` to `.icns` is to use the command
 png2icns icon.icns your-icon.png
 ```
 
-# Convert png to ico
+## Convert png to ico
 
 You can also convert your icon from `.png` to `.ico` by using the command
 `convert` from imagemagick. Small detail here, we specify all intermediate sizes

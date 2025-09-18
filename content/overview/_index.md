@@ -6,10 +6,4 @@ chapter: true
 pre: '<b>1. </b>'
 ---
 
-### Chapter 1
-
-# Overview
-
-The basics
-
-![Xcraft](/img/x-logo.png?width=600)
+![Xcraft](/img/x-logo.png?width=600px)

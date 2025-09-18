@@ -18,7 +18,7 @@ This method is generated only for collection of values, ex:
 }
 ```
 
-# Examples
+## Example
 
 Add a new `task` entity into the `tasks` collection, using default values
 

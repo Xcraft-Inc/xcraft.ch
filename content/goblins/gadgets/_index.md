@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>2.5 </b>'
 ---
 
-### Chapter 2.5
-
-# The Goblin gadgets UX
-
 A wide variety of widgets
 
 ![various gadgets](/img/gadgets.various.png?width=800px)

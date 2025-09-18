@@ -6,8 +6,4 @@ chapter: true
 pre: '<b>4.3 </b>'
 ---
 
-### Chapter 4.3
-
-# Pacman
-
 The `Pac`kage `Man`ager

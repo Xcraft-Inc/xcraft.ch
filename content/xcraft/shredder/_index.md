@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>4.6 </b>'
 ---
 
-### Chapter 4.6
-
-# Shredder
-
 A wrapper around immutable JS
 
 ![Shredder](/img/goblin-blupi-statue.png?width=500px)

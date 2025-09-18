@@ -42,14 +42,21 @@
 
 :root {
   --MAIN-TEXT-color: #e6e6e6;
+  --X-MAIN-TEXT-color: #e6e6e6;
+  --INTERNAL-MAIN-TEXT-color: #e6e6e6;
   --MAIN-LINK-color: #599a3e;
-  --MAIN-LINK-HOVER-color: #74b559;
+  --X-MAIN-LINK-color: #599a3e;
+  --MAIN-LINK-HOVER-color: none;
+  --X-MAIN-LINK-HOVER-color: #74b559;
   --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #ddd;
+  --X-MENU-SECTION-ACTIVE-CATEGORY-BG-color: #ddd;
+  --INTERNAL-CODE-BLOCK-BG-color: rgb(30, 30, 30);
+  --INTERNAL-MAIN-LINK-HOVER-color: none;
 }
 
 html {
   --scrollbarBG: black;
-  --thumbBG: var(--MAIN-LINK-color);
+  --thumbBG: var(--X-MAIN-LINK-color);
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
@@ -71,7 +78,12 @@ html {
 body {
   font-size: 90% !important;
   font-family: 'Ubuntu';
+  color: var(--X-MAIN-TEXT-color);
   background-color: rgb(50, 50, 50);
+}
+
+.nav-title {
+  font-size: 1.2rem !important;
 }
 
 h1 {
@@ -116,7 +128,7 @@ code {
   font-family: 'Ubuntu Mono';
   background-color: rgb(35, 35, 35);
   border: 0;
-  color: var(--MAIN-TEXT-color);
+  color: var(--X-MAIN-TEXT-color);
   padding: 2px;
   font-size: 100%;
   vertical-align: baseline;
@@ -147,8 +159,6 @@ div.notices p {
 }
 
 img {
-  background-color: rgb(50, 50, 50);
-  color-adjust: exact;
   page-break-inside: avoid;
 }
 
@@ -184,9 +194,14 @@ table img {
   transition: 1s ease-in-out;
 }
 
+img:hover {
+  outline: none !important;
+}
+
 td:hover img {
   filter: hue-rotate(-30deg) contrast(150%);
   transition: 0.5s ease-in-out;
+  outline: none !important;
 }
 
 #body .notices img {
@@ -213,76 +228,36 @@ blockquote {
   color: #aaa;
   font-family: 'Ubuntu';
   font-style: italic;
-  border-left: 2px solid var(--MAIN-LINK-color);
+  border-left: 2px solid var(--X-MAIN-LINK-color);
 }
 
 hr {
-  border-bottom: 2px solid var(--MAIN-LINK-color);
+  border-bottom: 2px solid var(--X-MAIN-LINK-color);
 }
 
-#sidebar ul li a:hover {
+#R-sidebar ul li a:hover {
   text-shadow: 0px 0px 5px #ccc;
 }
 
-#chapter h1 {
-  border-bottom: 2px solid transparent;
-  border-image: linear-gradient(
-    to left,
-    transparent 0%,
-    #aaa 20%,
-    #aaa 80%,
-    transparent 100%
-  );
-  border-image-slice: 1;
-}
-
-#chapter h2,
-#chapter h3,
-#chapter h4,
-#chapter h5,
-#chapter h6 {
+.default h2,
+.default h3,
+.default h4,
+.default h5,
+.default h6 {
   text-align: left;
 }
 
-#chapter p:nth-child(3) {
-  text-align: center;
-  font-size: 1.4rem !important;
-}
-
-#chapter h3:nth-child(1) {
+.default h3:nth-child(1) {
   text-align: center;
 }
 
-#body-inner {
-  max-width: 1000px;
-  margin: auto;
-}
-
-#chapter {
-  max-width: 1000px;
-  margin: auto;
-}
-
-#chapter p {
+.default p {
   font-size: 100% !important;
   text-align: left;
 }
 
-#chapter blockquote {
+.default blockquote {
   font-size: 1rem;
-}
-
-#chapter #body-inner {
-  max-width: 1000px;
-}
-
-.highlight pre {
-  padding: 0;
-}
-
-.hljs {
-  padding: 1.2rem;
-  background-color: rgb(30, 30, 30);
 }
 
 pre {
@@ -303,7 +278,7 @@ pre {
   border: solid 1px #666;
 }
 
-#header img {
+#R-header img {
   background-color: transparent;
   padding: 0;
   border-radius: 0;
@@ -313,8 +288,8 @@ pre {
   filter: drop-shadow(0px 0px 50px white);
 }
 
-#header a,
-#header a:hover {
+#R-header span,
+#R-header span:hover {
   font-family: 'Ubuntu Bold';
   color: #3b6628;
   font-size: 2.2rem;
@@ -325,8 +300,8 @@ pre {
   background-color: #26411a;
 }
 
-#top-bar {
-  background-color: #222;
+#R-topbar {
+  background-color: #222 !important;
 }
 
 .fab,
@@ -345,13 +320,11 @@ pre {
   }
 
   table {
-    color-adjust: exact !important;
     background: transparent;
   }
 
   td,
   tr {
-    color-adjust: exact !important;
     background: #f0f0f0;
     border: solid 2px white;
   }
@@ -362,7 +335,6 @@ pre {
   }
 
   th {
-    color-adjust: exact !important;
     background: white;
     color: black;
     border: solid 2px white;
@@ -375,12 +347,11 @@ pre {
   }
 
   td:first-child {
-    color-adjust: exact !important;
     color: black;
     background: #e0e0e0;
   }
 
-  #sidebar {
+  #R-sidebar {
     display: none !important;
   }
 
@@ -399,7 +370,7 @@ pre {
     max-width: none;
   }
 
-  #top-bar,
+  .topbar-wrapper,
   #top-bar-sticky-wrapper {
     display: none !important;
   }

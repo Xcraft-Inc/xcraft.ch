@@ -6,10 +6,6 @@ chapter: true
 pre: '<b>2.6 </b>'
 ---
 
-### Chapter 2.6
-
-# Nabu
-
 Polyglot
 
 ![Logo](/img/goblin-blupi-nabu.png?width=550px)

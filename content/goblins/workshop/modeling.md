@@ -29,7 +29,7 @@ modeling with others, take care of naming. Don't hesite to trash your plan's and
 retry with a new iterated model. Continuous delivery of data models is the key
 to affine and approach a production ready schema{{% /notice %}}
 
-# example 1
+## example 1
 
 The basic entity, easy to define, hard to name:
 
@@ -91,7 +91,7 @@ template.
 identifier, using something else will produce unexpected results and
 errors.{{% /notice %}}
 
-# onNew
+## onNew
 
 The entity is new, and will initialise his state by executing the **onNew:**
 function. This function simply return the intial properties value. You will
@@ -134,7 +134,7 @@ scheduler ensure the transaction. If two goblins try to create the same service
 identifier (aka entity), only one create (and only one onNew) will be called,
 the second caller will work with the same instance after yielding the create.
 
-# change
+## change
 
 ```js
 yield projectAPI.change({path: 'name', newValue: 'G1-007'});

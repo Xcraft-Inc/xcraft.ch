@@ -6,4 +6,6 @@ chapter: true
 pre: '<b>5. </b>'
 ---
 
+A votre santé !
+
 ![Xcraft](/img/carnotzet.png)

@@ -51,6 +51,7 @@
   --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #ddd;
   --X-MENU-SECTION-ACTIVE-CATEGORY-BG-color: #ddd;
   --INTERNAL-CODE-BLOCK-BG-color: rgb(30, 30, 30);
+  --INTERNAL-MAIN-LINK-color: #74b559;
   --INTERNAL-MAIN-LINK-HOVER-color: none;
 }
 
@@ -170,9 +171,13 @@ th {
   border: solid 2px rgb(30, 30, 30);
 }
 
-td:first-child {
+td {
   color: #70e83a;
-  background: #1a2c12;
+  background: #203616;
+}
+
+td code {
+  background: none
 }
 
 tr {
@@ -185,9 +190,6 @@ th {
   font-family: 'Ubuntu Thin';
 }
 
-tr code {
-  background-color: #1a2c12;
-}
 
 table img {
   background-color: transparent;

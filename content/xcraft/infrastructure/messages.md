@@ -1,6 +1,5 @@
 ---
 title: 'Messages'
-date: 2020-08-05
 weight: 20
 tags: ['devel', 'bus']
 ---

@@ -1,6 +1,5 @@
 ---
 title: 'Routing'
-date: 2021-02-16
 weight: 60
 tags: ['devel', 'bus', 'routing']
 ---

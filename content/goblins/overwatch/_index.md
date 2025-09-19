@@ -1,6 +1,5 @@
 ---
 title: 'Overwatch'
-date: 2020-08-05
 weight: 110
 chapter: true
 pre: '<b>2.11 </b>'

@@ -1,6 +1,5 @@
 ---
 title: 'Concept'
-date: 2020-08-05
 weight: 10
 chapter: true
 pre: '<b>2.1 </b>'

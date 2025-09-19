@@ -1,6 +1,5 @@
 ---
 title: 'Commands'
-date: 2020-07-24
 weight: 20
 ---
 

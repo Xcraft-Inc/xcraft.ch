@@ -1,6 +1,5 @@
 ---
 title: 'Entity API'
-date: 2020-07-04
 weight: 30
 chapter: true
 pre: '<b>2.3 </b>'

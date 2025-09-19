@@ -1,6 +1,5 @@
 ---
 title: 'Postman'
-date: 2020-08-05
 weight: 100
 chapter: true
 pre: '<b>2.10 </b>'

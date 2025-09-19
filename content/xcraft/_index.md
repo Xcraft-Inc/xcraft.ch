@@ -1,6 +1,5 @@
 ---
 title: 'Xcraft'
-date: 2020-07-24
 weight: 40
 chapter: true
 pre: '<b>4. </b>'

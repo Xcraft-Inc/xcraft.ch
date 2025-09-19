@@ -1,6 +1,5 @@
 ---
 title: 'The goblin at your service'
-date: 2020-08-05
 weight: 5
 tags: ['general', 'goblin']
 ---

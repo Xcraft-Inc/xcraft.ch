@@ -1,6 +1,5 @@
 ---
 title: 'Le Bazaar Goblin - Etape 3'
-date: 2020-10-06
 weight: 20
 chapter: true
 pre: '<b>6.3 </b>'

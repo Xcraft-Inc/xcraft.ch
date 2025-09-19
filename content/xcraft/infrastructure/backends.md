@@ -1,6 +1,5 @@
 ---
 title: 'Backends'
-date: 2020-08-05
 weight: 50
 tags: ['devel', 'bus']
 ---

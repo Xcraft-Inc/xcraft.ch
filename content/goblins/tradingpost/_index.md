@@ -1,6 +1,5 @@
 ---
 title: 'Tradingpost'
-date: 2020-09-14
 weight: 90
 chapter: true
 pre: '<b>2.9 </b>'

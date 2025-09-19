@@ -1,6 +1,5 @@
 ---
 title: 'Shredder'
-date: 2020-07-24
 weight: 60
 chapter: true
 pre: '<b>4.6 </b>'

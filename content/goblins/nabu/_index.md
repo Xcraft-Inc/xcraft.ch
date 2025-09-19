@@ -1,6 +1,5 @@
 ---
 title: 'Nabu'
-date: 2020-08-31
 weight: 60
 chapter: true
 pre: '<b>2.6 </b>'

@@ -1,6 +1,5 @@
 ---
 title: 'Overview'
-date: 2020-08-14
 weight: 5
 ---
 

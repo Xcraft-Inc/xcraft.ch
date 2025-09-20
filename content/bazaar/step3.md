@@ -1,5 +1,5 @@
 ---
-title: 'Le Bazaar Goblin - Etape 3'
+title: 'Etape 3'
 weight: 20
 chapter: true
 pre: '<b>6.3 </b>'

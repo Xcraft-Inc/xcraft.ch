@@ -4,7 +4,7 @@ tags: ['general']
 weight: 10
 ---
 
-![oldmanbook](/img/overview.glossary.png?width=256px)
+![oldmanbook](/img/overview.glossary.png?width=256px&lightbox=false)
 
 > Books are for people who wish they were somewhere else. -- Mark Twain
 

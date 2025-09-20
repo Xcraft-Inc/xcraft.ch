@@ -5,7 +5,7 @@ weight: 20
 
 ## Magic with T
 
-![T](/img/nabu.t.png)
+![T](/img/nabu.t.png?lightbox=false)
 
 `T( )` est une fonction. Lorsqu'un [widget](/goblins/gadgets) contenant un texte
 est affiché (par la fonction `render`), la fonction `T( )` est appelée et Nabu
@@ -237,6 +237,6 @@ ainsi:
 }
 ```
 
-![Dico](/img/nabu.dico.icu.png?width=700px)
+![Dico](/img/nabu.dico.icu.png?width=700px&lightbox=false)
 
 [1]: http://userguide.icu-project.org/

@@ -30,7 +30,7 @@ initialiser notre application bazaar:
 
 `npx goblins init bazaar`
 
-![Console](/img/bazaar_init.png?width=600px)
+![Console](/img/bazaar_init.png?width=600px&lightbox=false)
 
 Arme toi de patience, car la commande **goblins init** s'occupe de tout!
 
@@ -49,7 +49,7 @@ elle va vérifier ton installation docker, préparer une composition et essayer 
 monter tout celà dans docker. Un contrôle visuel dans docker permet de verifier
 si tout c'est bien passé:
 
-![Docker](/img/bazaar_docker.png?width=600px)
+![Docker](/img/bazaar_docker.png?width=600px&lightbox=false)
 
 ## Moteur!
 
@@ -61,4 +61,4 @@ tournevis:
 La premier allumage est lent, mais il devrait déboucher sur un environnement
 _goblin-desktop_ tout vide et prêt à acceuillir notre code métier!
 
-![Start](/img/bazaar_start.png?width=600px)
+![Start](/img/bazaar_start.png?width=600px&lightbox=false)

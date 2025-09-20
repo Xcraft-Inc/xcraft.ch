@@ -15,14 +15,14 @@ Elle peut changer de langue "à la volée".
 Le principe est très simple. Il suffit de remplacer les `string` constantes par
 des appels à la fonction `T( )`:
 
-![Concept](/img/nabu.concept1.png)
+![Concept](/img/nabu.concept1.png?lightbox=false)
 
 L'application contient un dictionnaire de traduction. Dans l'exemple ci-dessous,
 le dictionnaire contient les traductions pour la locale `english`, mais il peut
 contenir autant de traductions que souhaité (`french`, `german`, `italian`,
 etc.).
 
-![Concept](/img/nabu.concept2.png)
+![Concept](/img/nabu.concept2.png?lightbox=false)
 
 {{% notice info %}} Le développeur peut choisir d'écrire ses textes dans la
 langue de son choix. Cela peut être le français, l'anglais, ou même du

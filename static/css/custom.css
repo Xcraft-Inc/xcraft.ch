@@ -143,24 +143,6 @@ a code:hover {
   color: var(--INTERNAL-MAIN-LINK-HOVER-color);
 }
 
-div.notices.note p,
-div.notices.info p,
-div.notices.tip p,
-div.notices.warning p {
-  border-top-width: 27px;
-}
-
-div.notices p {
-  border-radius: 4px;
-  font-size: 100%;
-  padding: 10px;
-}
-
-.notices code {
-  background-color: #ccc;
-  color: #666;
-}
-
 .featherlight-image {
   min-width: 50vh;
   padding: 10px;

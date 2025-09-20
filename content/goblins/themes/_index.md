@@ -7,6 +7,6 @@ pre: '<b>2.7 </b>'
 
 A wide variety of themes
 
-![Logo](/img/goblin-blupi-themes.png?width=650px)
+![Logo](/img/goblin-blupi-themes.png?width=650px&lightbox=false)
 
-![various gadgets](/img/theme.samples.png)
+![various gadgets](/img/theme.samples.png?lightbox=false)

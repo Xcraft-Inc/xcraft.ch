@@ -7,7 +7,7 @@ pre: '<b>2.5 </b>'
 
 A wide variety of widgets
 
-![various gadgets](/img/gadgets.various.png?width=800px)
+![various gadgets](/img/gadgets.various.png?width=800px&lightbox=false)
 
 > The fool on the sand has built his app, (3x)  
 > And the storm came.  

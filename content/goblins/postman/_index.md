@@ -7,4 +7,4 @@ pre: '<b>2.10 </b>'
 
 Deliver your message just in time.
 
-![Logo](/img/goblin-blupi-postman.png?width=600px)
+![Logo](/img/goblin-blupi-postman.png?width=600px&lightbox=false)

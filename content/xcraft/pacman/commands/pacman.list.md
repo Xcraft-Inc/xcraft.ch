@@ -4,4 +4,4 @@ weight: 10
 tags: ['toolchain', 'pacman']
 ---
 
-![Coming soon](/img/coming-soon.png)
+![Coming soon](/img/coming-soon.png?lightbox=false)

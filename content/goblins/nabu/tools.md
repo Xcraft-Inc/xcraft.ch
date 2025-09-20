@@ -7,18 +7,18 @@ weight: 50
 
 Au lancement de l'application, choisisez NABUTEST:
 
-![Launch 1](/img/nabu.launch1.png?width=700px)
+![Launch 1](/img/nabu.launch1.png?width=700px&lightbox=false)
 
 ### Opening a Nabu session
 
 Le footer contient un nouveau bouton **Open a Nabu Session**. Dès qu'il est
 cliqué, 4 nouveaux boutons dédiés à Nabu apparaissent:
 
-![Launch 2](/img/nabu.launch2.png)
+![Launch 2](/img/nabu.launch2.png?lightbox=false)
 
 Le petit drapeau en haut à droite permet de changer de langue:
 
-![Choice](/img/nabu.choice.png)
+![Choice](/img/nabu.choice.png?lightbox=false)
 
 ### The marker
 
@@ -37,7 +37,7 @@ des traductions. On voit ici 3 colonnes:
 - Traductions en français (fr_CH)
 - Traductions en anglais (en_US)
 
-![Messages](/img/nabu.messages.png?width=800px)
+![Messages](/img/nabu.messages.png?width=800px&lightbox=false)
 
 {{% notice note %}} On voit que la plupart des textes anglais n'ont pas encore
 été traduits. Cela n'est pas un problème, ces textes seront remplacés
@@ -49,4 +49,4 @@ n'a pas fait de fautes d'orthographes, il n'est pas nécessaire de traduire le
 texte (_fallback_). Mais en cas de besoin, cela est toujours possible, comme
 dans l'exemple de la `key = Bonjour` ci dessous:
 
-![Dico](/img/nabu.dico.png?width=500px)
+![Dico](/img/nabu.dico.png?width=500px&lightbox=false)

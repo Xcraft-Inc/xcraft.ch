@@ -45,7 +45,7 @@ The server works as **pull** / **pub** and the client as **push** / **sub**.
 
 ### Connect
 
-![infrastructure.connect](/img/infrastructure.connect.png?width=300px)
+![infrastructure.connect](/img/infrastructure.connect.png?width=300px&lightbox=false)
 
 You can connect to your own server (in-process) by this way:
 
@@ -97,7 +97,7 @@ like explaind [here](#pure)) and receive data.
 
 ### Send commands
 
-![infrastructure.command](/img/infrastructure.command.png?width=200px)
+![infrastructure.command](/img/infrastructure.command.png?width=200px&lightbox=false)
 
 Once connected, you can send a command to a service in order to do something.
 
@@ -130,7 +130,7 @@ explain in details in [an other section // TODO](TODO).
 
 ### Send events
 
-![infrastructure.events](/img/infrastructure.events.png?width=256px)
+![infrastructure.events](/img/infrastructure.events.png?width=256px&lightbox=false)
 
 You can send events when your `busClient` is provided by an Xcraft server. It's
 always the case when your are implementing a command handler. From this handler

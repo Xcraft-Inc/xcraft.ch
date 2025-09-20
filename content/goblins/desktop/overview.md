@@ -5,7 +5,7 @@ weight: 5
 
 ## Zones
 
-![Logo](/img/desktop_zones.png?width=600px)
+![Logo](/img/desktop_zones.png?width=600px&lightbox=false)
 
 ### Contexts
 

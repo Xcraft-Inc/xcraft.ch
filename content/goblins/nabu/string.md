@@ -5,7 +5,7 @@ weight: 30
 
 ## Simple texts with StringBuilder
 
-![string](/img/nabu.string.png?width=600px)
+![string](/img/nabu.string.png?width=600px&lightbox=false)
 
 Si vous devez combiner 2 `string` dans un même texte, rien de plus simple:
 

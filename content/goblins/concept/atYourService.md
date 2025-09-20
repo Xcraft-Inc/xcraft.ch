@@ -27,7 +27,7 @@ So insteed of asking yourself hard questions, try with funny question:
 - Translations ?
 - Search ?
 
-![Logo](/img/goblin-blupi-service.png?width=700px)
+![Logo](/img/goblin-blupi-service.png?width=700px&lightbox=false)
 
 We already have theses goblins, and they can respond, at your service!
 

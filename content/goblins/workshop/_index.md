@@ -7,4 +7,4 @@ pre: '<b>2.2 </b>'
 
 ...
 
-![Logo](/img/goblin-blupi-workshop.png?width=600px)
+![Logo](/img/goblin-blupi-workshop.png?width=600px&lightbox=false)

@@ -5,4 +5,4 @@ weight: 20
 
 ## Palette
 
-![Coming soon](/img/coming-soon.png)
+![Coming soon](/img/coming-soon.png?lightbox=false)

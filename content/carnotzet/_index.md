@@ -7,4 +7,4 @@ pre: '<b>5. </b>'
 
 A votre santé !
 
-![Xcraft](/img/carnotzet.png)
+![Xcraft](/img/carnotzet.png?lightbox=false)

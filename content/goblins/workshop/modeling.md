@@ -3,7 +3,7 @@ title: 'Modeling'
 weight: 11
 ---
 
-![plan](/img/plan.png?width=256px)
+![plan](/img/plan.png?width=256px&lightbox=false)
 
 In the workshop we propose a kind of domain service factory. The domain driven
 design guidelines has been a good starting point when we started to define our

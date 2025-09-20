@@ -5,7 +5,7 @@ weight: 30
 
 ## WidgetDoc
 
-![gadget](/img/gadgets.2.svg?width=320px)
+![gadget](/img/gadgets.2.svg?width=320px&lightbox=false)
 
 `WidgetDoc` is a great tool for experimenting with most widgets. You choose the
 widget and then interactively define its properties. You immediately see the
@@ -14,7 +14,7 @@ graphical result and the code to write to obtain this result. Nice, isn't it?
 Most of the apps created have a [Desktop](/goblins/desktop) which contains a
 **WidgetDoc** button in the footer:
 
-![Call WidgetDoc](/img/widgetdoc.call.png?width=600px)
+![Call WidgetDoc](/img/widgetdoc.call.png?width=600px&lightbox=false)
 
 {{% notice info %}} `WidgetDoc` is itself a [widget](/goblins/gadgets).  
 If your app doesn't have a **WidgetDoc** button, you can create a
@@ -23,11 +23,11 @@ If your app doesn't have a **WidgetDoc** button, you can create a
 
 On the first run, the window looks like this:
 
-![Call WidgetDoc](/img/widgetdoc.run.png)
+![Call WidgetDoc](/img/widgetdoc.run.png?lightbox=false)
 
 After choosing the widget `Button`, the interface shows this 3 columns:
 
-![WidgetDoc and button](/img/widgetdoc.button.png)
+![WidgetDoc and button](/img/widgetdoc.button.png?lightbox=false)
 
 | Column     | Function                                                                                                                               |
 | ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -56,7 +56,7 @@ effect. Each widget has its own scenarios.
 
 Each property occupies a row:
 
-![One property](/img/widgetdoc.property.png?width=800px)
+![One property](/img/widgetdoc.property.png?width=800px&lightbox=false)
 
 | Rank | Function                             |
 | ---- | ------------------------------------ |
@@ -70,14 +70,14 @@ Each property occupies a row:
 Some properties can be of several different types. They have a small button
 **Ellipsis** which allows to choose the type:
 
-![Multi-types property](/img/widgetdoc.types.png?width=500px)
+![Multi-types property](/img/widgetdoc.types.png?width=500px&lightbox=false)
 
 ### Column **PREVIEW**
 
 This column has 3 blocks (CODE, SETTINGS and the name of the tested widget). The
 first shows the CODE to use to get a widget looking visible in the last block.
 
-![Preview](/img/widgetdoc.preview.png?width=500px)
+![Preview](/img/widgetdoc.preview.png?width=500px&lightbox=false)
 
 The SETTINGS block allows you to choose how the widget is displayed. It does not
 modify the properties of the widget, it acts on the parent widget which contains
@@ -86,4 +86,4 @@ the tested widget.
 The row "Container **resizable**" is useful for testing the behavior of the
 widget when the parent's dimensions change:
 
-![Resizable](/img/widgetdoc.resizable.png?width=500px)
+![Resizable](/img/widgetdoc.resizable.png?width=500px&lightbox=false)

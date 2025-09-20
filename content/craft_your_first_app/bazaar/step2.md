@@ -19,7 +19,7 @@ autours de l'entité **bazaarContent**.
 
 Cette commande va crafter tout les fichiers nécessaires:
 
-![Workbench](/img/bazaar_workbench.png?width=600px)
+![Workbench](/img/bazaar_workbench.png?width=600px&lightbox=false)
 
 ## Préparation du modèle de données
 
@@ -32,7 +32,7 @@ Ouvre l'entité **bazaarContent.js** qui se trouve dans le dossier
 
 ### Astuce: tu peux utiliser _ctrl+p_ pour rechercher un fichier!
 
-![Ctrl+p](/img/bazaar_ctrl_p.png?width=600px)
+![Ctrl+p](/img/bazaar_ctrl_p.png?width=600px&lightbox=false)
 
 ### Le sujet et le contenu
 
@@ -191,9 +191,9 @@ Il suffit maintenant de lancer notre **bazaar** avec la touche _F5_ et
 d'attendre que la packager (_webpack_) termine de constuire le nouveau bundle.
 Le **desktop** goblin devrais s'afficher avec un nouveau lanceur:
 
-![Launch](/img/bazaar_launch.png?width=600px)
+![Launch](/img/bazaar_launch.png?width=600px&lightbox=false)
 
-![Task](/img/bazaar_task.png?width=600px)
+![Task](/img/bazaar_task.png?width=600px&lightbox=false)
 
 {{% notice warning %}} **avertissement:** parfois le rechargement automatiques à
 chaud (**hot-reload**) des changements fait dans les fichiers UI se bloque, il

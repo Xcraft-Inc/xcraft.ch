@@ -4,7 +4,7 @@ weight: 60
 tags: ['devel', 'bus', 'routing']
 ---
 
-![infrastructure.multicast.cone](/img/infrastructure.multicast.cone.png)
+![infrastructure.multicast.cone](/img/infrastructure.multicast.cone.png?lightbox=false)
 
 ## Multicasting with Xcraft
 
@@ -19,7 +19,7 @@ Then we know that by sending the message to this socket, it should be possible
 to reach the client. But in order to understand this stuff, a diagram will be
 (for sure) very useful.
 
-![infrastructure.multicast.0](/img/infrastructure.multicast.0.png)
+![infrastructure.multicast.0](/img/infrastructure.multicast.0.png?lightbox=false)
 
 Here, P is the client. He sends a command to the server which is exposed on
 Internet via T. T doesn't know this command then it sends this one to B. When B
@@ -28,7 +28,7 @@ is very simple.
 
 Here the same idea but with two clients:
 
-![infrastructure.multicast.1](/img/infrastructure.multicast.1.png)
+![infrastructure.multicast.1](/img/infrastructure.multicast.1.png?lightbox=false)
 
 With this diagram, the multicast is still not implemented. It's not like the
 first diagram where it is impossible to tell if it's an uni, multi or a
@@ -40,7 +40,7 @@ begin. It's not safe, it's "slow" (it depends of how many clients are connected)
 but it's simple. No need to know the clients. Il's not acceptable then the
 multicast is necessary and must be implemented a bit like for an usual network.
 
-![infrastructure.multicast.2](/img/infrastructure.multicast.2.png)
+![infrastructure.multicast.2](/img/infrastructure.multicast.2.png?lightbox=false)
 
 ### ARP
 
@@ -54,7 +54,7 @@ Fine, but how are the tables populated? It uses the commands... because the
 commands use an other topology. Events are pub/sub and the commands are
 push/pull.
 
-![infrastructure.multicast.3](/img/infrastructure.multicast.3.png)
+![infrastructure.multicast.3](/img/infrastructure.multicast.3.png?lightbox=false)
 
 When a command is received by a node, the router can update it's ARP table with
 some informations . The table has two types of routers, then a client can be in
@@ -77,7 +77,7 @@ appropriate but it's not used (WIP).
 | Axon    | orcP1   | P1    | s1     | p1   | T     | -4   | -     |
 |         | orcP2   | P2    | s2     | p2   | T     | -4   | -     |
 
-![infrastructure.multicast.4](/img/infrastructure.multicast.4.png)
+![infrastructure.multicast.4](/img/infrastructure.multicast.4.png?lightbox=false)
 
 With the ARP Table, it's easy to have the relationship between a command socket
 and an event port for a specific client (`orcName`). Now that you have a better
@@ -91,7 +91,7 @@ events with the "most" efficient way. Without lines, the events are sent in
 broadcast or in unicast for some very specific events (which would be translated
 to lines in the future...).
 
-![infrastructure.multicast.5](/img/infrastructure.multicast.5.png)
+![infrastructure.multicast.5](/img/infrastructure.multicast.5.png?lightbox=false)
 
 The lines have a direction because it's used in order to know where is a client
 for a specific ID (subscription). When P1 sends its line to B, it tells to T
@@ -104,12 +104,12 @@ visible for P1, P2, P3 and P4.
 
 The next diagram shows only one line with more details:
 
-![infrastructure.multicast.6](/img/infrastructure.multicast.6.png)
+![infrastructure.multicast.6](/img/infrastructure.multicast.6.png?lightbox=false)
 
 A more interesting example will be the changes sent by warehouse to the wm
 (window manager) which has subscribed.
 
-![infrastructure.multicast.7](/img/infrastructure.multicast.7.png)
+![infrastructure.multicast.7](/img/infrastructure.multicast.7.png?lightbox=false)
 
 ### Delete the route
 
@@ -121,4 +121,4 @@ In this case it sends an other internal command that is used in order to remove
 a route `:delete-route`. When a route entry is deleted, the whole `orcName` is
 removed from the ARP table (the lines are removed by the way).
 
-![infrastructure.multicast.del](/img/infrastructure.multicast.del.png?width=400px)
+![infrastructure.multicast.del](/img/infrastructure.multicast.del.png?width=400px&lightbox=false)

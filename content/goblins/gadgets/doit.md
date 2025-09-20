@@ -5,7 +5,7 @@ weight: 40
 
 ## Make your own gadgets
 
-![gadget](/img/gadgets.4.svg?width=400px)
+![gadget](/img/gadgets.4.svg?width=400px&lightbox=false)
 
 We will create a `smiley` widget that displays a satisfaction rating from a
 value between 0 (unhappy) and 100 (happy). To do this, you have to create a new
@@ -90,7 +90,7 @@ render() {
 
 And unsurprisingly, we get the following result:
 
-![step 1](/img/gadgets.doit.step1.png?width=200px)
+![step 1](/img/gadgets.doit.step1.png?width=200px&lightbox=false)
 
 ## With eyes and a smile (step 2)
 
@@ -169,7 +169,7 @@ easier to find the widget when you inspect the DOM. The styles of the children
 
 We obtain the following magnificent result:
 
-![step 2](/img/gadgets.doit.step2.png?width=200px)
+![step 2](/img/gadgets.doit.step2.png?width=200px&lightbox=false)
 
 ## Nice gradient (step 3)
 
@@ -188,7 +188,7 @@ export default function styles() {
   };
 ```
 
-![step 3](/img/gadgets.doit.step3.png?width=200px)
+![step 3](/img/gadgets.doit.step3.png?width=200px&lightbox=false)
 
 ## Add reflexion (step 4)
 
@@ -228,9 +228,10 @@ export default function styles() {
 {{% notice info %}} We see here the ellipse bordered by a red line. Absolute
 positioning with `left`, `right`, `top` and `bottom` gives a circle. It is the
 transformation with `scaleX(1.5)` that gives an ellipse:
-![step 4](/img/gadgets.doit.step4b.svg?width=200px) {{% /notice %}}
+![step 4](/img/gadgets.doit.step4b.svg?width=200px&lightbox=false)
+{{% /notice %}}
 
-![step 4](/img/gadgets.doit.step4.png?width=200px)
+![step 4](/img/gadgets.doit.step4.png?width=200px&lightbox=false)
 
 ## One more reflexion (step 5)
 
@@ -272,10 +273,11 @@ export default function styles() {
 {{% notice info %}} This element draws a semicircle, drawing a circle that has
 only the right (in red below) and bottom (in cyan below) borders, rotated 45
 degrees CW. We see here the element before the rotation:
-![step 5](/img/gadgets.doit.step5b.svg?width=200px) In the final version drawn
-in the smiley face, these two borders are white, of course. {{% /notice %}}
+![step 5](/img/gadgets.doit.step5b.svg?width=200px&lightbox=false) In the final
+version drawn in the smiley face, these two borders are white, of course.
+{{% /notice %}}
 
-![step 5](/img/gadgets.doit.step5.png?width=200px)
+![step 5](/img/gadgets.doit.step5.png?width=200px&lightbox=false)
 
 ## The properties (step 6)
 
@@ -340,16 +342,16 @@ calculated from the diameter (property `size`), which takes a lot of work!
 
 With a little bit of work in the CSS, you can achieve this:
 
-![step 7](/img/gadgets.doit.step7.png?width=200px)
+![step 7](/img/gadgets.doit.step7.png?width=200px&lightbox=false)
 
 In the final widget, it will be possible to add a `satisfaction` property (we
 see here the results with the values `100`, `75`, `50`, `25` and `0`):
 
-![step 8](/img/gadgets.doit.step8.png)
+![step 8](/img/gadgets.doit.step8.png?lightbox=false)
 
 Why not a `color` property?
 
-![step 9](/img/gadgets.doit.step9.png)
+![step 9](/img/gadgets.doit.step9.png?lightbox=false)
 
 To obtain these variants, just write:
 

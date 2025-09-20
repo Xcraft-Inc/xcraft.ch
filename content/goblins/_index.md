@@ -10,7 +10,7 @@ high intelligence (though often little common sense). Goblins speak Goblin,
 Orcish, and Common. Goblins know myriad languages in order to trade with as many
 races as possible.
 
-![Logo](/img/goblin-blupi-poly.png)
+![Logo](/img/goblin-blupi-poly.png?lightbox=false)
 
 ## You wanna start crafting with goblins?
 

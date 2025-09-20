@@ -5,4 +5,4 @@ chapter: true
 pre: '<b>1. </b>'
 ---
 
-![Xcraft](/img/x-logo.png?width=600px)
+![Xcraft](/img/x-logo.png?width=600px&lightbox=false)

@@ -7,4 +7,4 @@ pre: '<b>4.2 </b>'
 
 Be brave and go ahead
 
-![Coming soon](/img/coming-soon.png)
+![Coming soon](/img/coming-soon.png?lightbox=false)

@@ -1,7 +1,7 @@
 ---
 title: 'Paramétrage'
 weight: 30
-tags: ['carnotzet', 'os', 'settings']
+tags: ['carnotzet', 'settings']
 pre: '<b>5.3 </b>'
 ---
 

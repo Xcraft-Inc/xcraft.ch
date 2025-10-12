@@ -1,7 +1,7 @@
 ---
 title: 'Liste'
 weight: 0
-tags: ['carnotzet', 'os', 'package']
+tags: ['carnotzet', 'package']
 pre: ''
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Installation'
 weight: 20
-tags: ['carnotzet', 'os', 'install']
+tags: ['carnotzet', 'install']
 pre: '<b>5.2 </b>'
 ---
 

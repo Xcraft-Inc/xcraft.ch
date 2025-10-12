@@ -1,7 +1,7 @@
 ---
 title: 'Démarrage'
 weight: 40
-tags: ['carnotzet', 'os', 'bootstrap']
+tags: ['carnotzet', 'bootstrap']
 pre: '<b>5.4 </b>'
 ---
 

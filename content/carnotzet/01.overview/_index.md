@@ -1,7 +1,7 @@
 ---
 title: 'Avant-propos'
 weight: 10
-tags: ['carnotzet', 'os']
+tags: ['carnotzet']
 pre: '<b>5.1 </b>'
 ---
 

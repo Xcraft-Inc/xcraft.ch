@@ -1,7 +1,7 @@
 ---
 title: 'Services'
 weight: 50
-tags: ['carnotzet', 'os', 'service']
+tags: ['carnotzet', 'service']
 pre: '<b>5.5 </b>'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Paquets'
 weight: 60
-tags: ['carnotzet', 'os', 'package']
+tags: ['carnotzet', 'package']
 pre: '<b>5.6 </b>'
 ---
 

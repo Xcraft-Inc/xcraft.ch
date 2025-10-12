@@ -5,10 +5,10 @@ tags: ['carnotzet', 'package']
 pre: ''
 ---
 
-Cette liste ne contient pas tous les pawuets de **Carnotzet OS**, mais
-uniquement quelques paquets disponibles dans le dépôt d'origine et non installé
-par défaut. Je vous invite à consulter la page [sur les paquets][1] pour une
-documentation succinte sur l'utilisation de la commande wpkg.
+Cette liste ne contient pas tous les paquets de Carnotzet OS, mais uniquement
+quelques paquets disponibles dans le dépôt d'origine et non installés par
+défaut. Je vous invite à consulter la page [sur les paquets][1] pour une
+documentation succincte sur l'utilisation de la commande wpkg.
 
 | Logiciel | Installation                                       |
 | -------- | -------------------------------------------------- |

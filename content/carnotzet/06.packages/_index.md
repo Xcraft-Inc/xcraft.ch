@@ -34,8 +34,7 @@ wpkg -v --list
 ### Mettre à jour les indexes
 
 Les sources des paquets sont paramétrés dans le fichier
-[`/boot/sources.list`](/carnotzet/03.settings/#bootsourceslist) présenté à la
-section 3.
+[`/boot/sources.list`](/carnotzet/03.settings/#bootsourceslist).
 
 ```
 wpkg -v --update

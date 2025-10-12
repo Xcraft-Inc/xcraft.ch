@@ -71,8 +71,8 @@ wpkg -v --upgrade
 
 ## La liste est pauvre
 
-En effet, il existe encore peu de paquets destinés à **Carnotzet OS**. Cette
-liste augmentera au fur et à mesure des besoins remontés jusqu'aux oreils du
+En effet, il existe encore peu de paquets destinés à **Carnotzet OS**. [Cette
+liste][1] augmentera au fur et à mesure des besoins remontés jusqu'aux oreils du
 projet.
 
 ## Pourquoi wpkg
@@ -92,3 +92,5 @@ compiler un dépôt entier de paquets sources en paquets binaires correspondants
 Cet aspect très versatile le rend très puissant. Il a également été modifié pour
 les besoins d'Xcraft, sa base de code étant devenue maîtrisable. En construisant
 **Carnotzet OS** il était évident qu'il deviendrait centrale au système.
+
+[1]: /carnotzet/06.packages/list

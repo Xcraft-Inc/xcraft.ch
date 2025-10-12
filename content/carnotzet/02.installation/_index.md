@@ -13,9 +13,10 @@ carte, néanmoins ce serait dommage de limiter les performances de lecture /
 
 ## Images µSD
 
-| Matériel        | Image                                                             | Taille |
-| --------------- | ----------------------------------------------------------------- | ------ |
-| Raspberry Pi 4B | [carnotzet-os-1.0.0-rpi4b.img.gz][img-rpi4b] **(NON DISPONIBLE)** | 1 GB   |
+| Matériel              | Image                                                               | Taille |
+| --------------------- | ------------------------------------------------------------------- | ------ |
+| Raspberry Pi 4B       | [carnotzet-os-1.0.0-rpi4b.img.gz][img-rpi4b] **(NON DISPONIBLE)**   | 1 GB   |
+| Raspberry Pi Zero 2 W | [carnotzet-os-1.0.0-rpiz2w.img.gz][img-rpiz2w] **(NON DISPONIBLE)** | 1 GB   |
 
 ## Déploiement
 
@@ -95,3 +96,5 @@ exemple) ? Alors allez voir [Paramétrage](/carnotzet/03.settings.md).
 [balenaEtcher]: https://etcher.balena.io/
 [img-rpi4b]:
   https://carnotzet.xcraft.js/downloads/carnotzet-os-1.0.0-rpi4b.img.gz
+[img-rpiz2w]:
+  https://carnotzet.xcraft.js/downloads/carnotzet-os-1.0.0-rpiz2w.img.gz

@@ -56,7 +56,7 @@ Pour installer un nouveau paquet, il suffit de donner son nom à la commande
 procédez ainsi :
 
 ```
-wpkg -v --install openbsd+openssh-rpi4b-x+bin
+wpkg -v --install openbsd+openssh-rpi64-x+bin
 ```
 
 ### Effectuer une mise à niveau

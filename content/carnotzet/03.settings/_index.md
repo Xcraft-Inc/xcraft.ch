@@ -126,7 +126,7 @@ ainsi (pour le Raspberry Pi 4B) :
 
 ```sh
 # Auto-generated sources.list file
-wpkg https://carnotzet.xcraft.ch/ rpi4b/
+wpkg https://carnotzet.xcraft.ch/ rpi64/
 ```
 
 ### Sources des paquets

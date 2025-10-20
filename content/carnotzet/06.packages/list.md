@@ -12,8 +12,8 @@ documentation succincte sur l'utilisation de la commande wpkg.
 
 | Logiciel | Installation                                       |
 | -------- | -------------------------------------------------- |
-| iptables | `wpkg -v --install netfilter+iptables-rpi4b-x+bin` |
-| Node.js  | `wpkg -v --install openjs+nodejs22-rpi4b-x+bin`    |
-| OpenSSH  | `wpkg -v --install openbsd+openssh-rpi4b-x+bin`    |
+| iptables | `wpkg -v --install netfilter+iptables-rpi64-x+bin` |
+| Node.js  | `wpkg -v --install openjs+nodejs22-rpi64-x+bin`    |
+| OpenSSH  | `wpkg -v --install openbsd+openssh-rpi64-x+bin`    |
 
 [1]: /carnotzet/06.packages
